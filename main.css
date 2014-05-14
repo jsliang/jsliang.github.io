@@ -1,0 +1,33 @@
+article
+{
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: "Microsoft YaHei", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+body,
+p,
+address
+{
+    font-family: 'Proxima Nova Regular', 'Helvetica Neue', Calibri, 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+address
+{
+    font-style: normal;
+}
+
+footer
+{
+    text-align: center;
+}
