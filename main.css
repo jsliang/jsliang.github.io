@@ -136,6 +136,31 @@ footer > p
     margin: 0.5em 0;
 }
 
+section
+{
+    border-top: 1px dashed #555555;
+    padding: 3em 1em;
+}
+
+ul
+{
+    padding: 0;
+}
+
+ul > li
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5em 1em;
+}
+
+ul > li:hover
+{
+    background-color: #FFFFDD;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+}
+
 ul > li > p.title
 {
     color: #000000;
