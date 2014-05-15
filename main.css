@@ -33,7 +33,7 @@ h1
 dl {
     margin-bottom: 2em;
 }
- 
+
 dl dt {
     color: #000000;
     float: left;
@@ -42,7 +42,7 @@ dl dt {
     text-align: right;
     width: 6em;
 }
- 
+
 dl dd {
     margin: 0.2em 0; 
     padding: 5px 0;
@@ -88,4 +88,10 @@ ul > li > p.title
     color: #000000;
     font-weight: bold;
     font-family: 'Proxima Nova Regular', 'Helvetica Neue', Calibri, 'Droid Sans', Helvetica, Arial, sans-serif;
+}
+
+ul > li > p.duration
+{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 0.9em;
 }
