@@ -40,7 +40,7 @@ body,
 p,
 address
 {
-    font-family: 'Proxima Nova Regular', 'Helvetica Neue', Calibri, 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-family: 'Proxima Nova Bold', 'Helvetica Neue', Calibri, 'Droid Sans', Helvetica, Arial, sans-serif;
     font-size: 15px;
 }
 
@@ -52,4 +52,10 @@ address
 footer
 {
     text-align: center;
+}
+
+.title
+{
+    font-weight: bold;
+    font-family: 'Proxima Nova Regular', 'Helvetica Neue', Calibri, 'Droid Sans', Helvetica, Arial, sans-serif;
 }
