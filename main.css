@@ -12,7 +12,7 @@ h5,
 h6
 {
     color: #000000;
-    font-family: "Microsoft JhengHei", 'Proxima Nova Bold', 'Segoe UI Bold', 'Roboto Bold', 'Droid Sans', Arial, sans-serif;
+    font-family: "Microsoft JhengHei", 'Ubuntu', 'Droid Sans', Arial, sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
     margin-top: 2em;
@@ -52,7 +52,7 @@ body,
 p
 {
     color: #888888;
-    font-family: 'Proxima Nova Bold', 'Helvetica Neue', Calibri, 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-family: 'PT Sans', 'Helvetica Neue', 'Droid Sans', Helvetica, Arial, sans-serif;
     font-size: 16px;
 }
 
@@ -87,11 +87,11 @@ ul > li > p.title
 {
     color: #000000;
     font-weight: bold;
-    font-family: 'Proxima Nova Regular', 'Helvetica Neue', Calibri, 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-family: 'PT Sans', 'Helvetica Neue', Calibri, 'Droid Sans', Helvetica, Arial, sans-serif;
 }
 
 ul > li > p.duration
 {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: 'Arvo', Georgia, serif;
     font-size: 0.9em;
 }
