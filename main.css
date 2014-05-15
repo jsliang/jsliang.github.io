@@ -49,6 +49,18 @@ address
     font-style: normal;
 }
 
+a
+{
+    color: #0066EE;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #5588CC;
+    text-decoration: underline;
+}
+
 footer
 {
     text-align: center;
