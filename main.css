@@ -30,24 +30,6 @@ h1
     text-align: center;
 }
 
-dl {
-    margin-bottom: 2em;
-}
-
-dl dt {
-    color: #000000;
-    float: left;
-    margin-right: 1em;
-    padding: 5px 0;
-    text-align: right;
-    width: 6em;
-}
-
-dl dd {
-    margin: 0.2em 0; 
-    padding: 5px 0;
-}
-
 body,
 p
 {
