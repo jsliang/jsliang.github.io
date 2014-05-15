@@ -4,21 +4,25 @@ article
     max-width: 1024px;
 }
 
-h1
-{
-    font-family: "Microsoft YaHei", "Palatino Linotype", "Book Antiqua", Palatino, serif;
-}
-
+h1,
 h2,
 h3,
 h4,
 h5,
 h6
 {
-    font-family: 'Proxima Nova Bold', 'Segoe UI Bold', 'Roboto Bold', 'Droid Sans', Arial, sans-serif;
+    color: #000000;
+    font-family: "Microsoft JhengHei", 'Proxima Nova Bold', 'Segoe UI Bold', 'Roboto Bold', 'Droid Sans', Arial, sans-serif;
     font-weight: bold;
+    letter-spacing: 1px;
     margin-top: 2em;
+    text-align: center;
     text-transform: uppercase;
+}
+
+h1
+{
+    font-size: 2em;
 }
 
 #name
@@ -73,8 +77,9 @@ footer
     text-align: center;
 }
 
-.title
+ul > li > p.title
 {
+    color: #000000;
     font-weight: bold;
     font-family: 'Proxima Nova Regular', 'Helvetica Neue', Calibri, 'Droid Sans', Helvetica, Arial, sans-serif;
 }
