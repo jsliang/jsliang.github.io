@@ -51,7 +51,7 @@ dl dd {
 body,
 p
 {
-    color: #888888;
+    color: #777777;
     font-family: 'PT Sans', 'Helvetica Neue', 'Droid Sans', Helvetica, Arial, sans-serif;
     font-size: 16px;
 }
@@ -102,6 +102,7 @@ ul > li > p.title
     font-family: 'PT Sans', 'Helvetica Neue', Calibri, 'Droid Sans', Helvetica, Arial, sans-serif;
 }
 
+ul > li > p.where,
 ul > li > p.duration
 {
     font-family: 'Arvo', Georgia, serif;
