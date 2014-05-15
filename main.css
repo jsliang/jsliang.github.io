@@ -71,11 +71,15 @@ a
 {
     color: #0066EE;
     text-decoration: none;
+    padding: 0 0.2em;
 }
 
 a:hover
 {
-    color: #5588CC;
+    color: #FFFFFF;
+    background-color: #0066EE;
+    -webkit-border-radius: 0.3em;
+    border-radius: 0.3em;
 }
 
 footer
