@@ -155,7 +155,8 @@ header > p.contact > a:hover
 
 footer
 {
-    padding: 3em 0;
+    border-top: 1px dashed #555555;
+    padding: 2em 0;
     text-align: center;
 }
 
@@ -164,7 +165,6 @@ footer > p
 {
     color: #555555;
     font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 0.9em;
     line-height: 1em;
     margin: 0.5em 0;
 }
