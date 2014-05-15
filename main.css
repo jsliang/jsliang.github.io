@@ -27,7 +27,7 @@ h6
     font-family: "Microsoft JhengHei", 'Ubuntu', 'Droid Sans', Arial, sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-top: 0;
+    margin: 0;
     text-align: center;
     text-transform: uppercase;
 }
@@ -48,7 +48,9 @@ p
     color: #777777;
     font-family: 'PT Sans', 'Helvetica Neue', 'Droid Sans', Helvetica, Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.75;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
 }
 
 p > strong
@@ -183,7 +185,7 @@ ul
 ul > li
 {
     list-style-type: none;
-    margin: 0;
+    margin: 1em 0;
     padding: 0.5em 1em;
 }
 
