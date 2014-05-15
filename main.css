@@ -64,6 +64,57 @@ a:hover
     border-radius: 0.3em;
 }
 
+header > p
+{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+header > p.contact
+{
+    font-size: 2em;
+}
+
+header > p.contact > a:hover
+{
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: header_a_hover;
+    -webkitanimation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-name: header_a_hover;
+    background-color: transparent;
+    color: #E92CA5;
+}
+
+@keyframes header_a_hover
+{
+    from
+    {
+        background-color: transparent;
+        color: #0066EE;
+    }
+    to
+    {
+        background-color: transparent;
+        color: #E92CA5;
+    }
+}
+
+@-webkit-keyframes header_a_hover /*Safari and Chrome*/
+{
+    from
+    {
+        background-color: transparent;
+        color: #0066EE;
+    }
+    to
+    {
+        background-color: transparent;
+        color: #E92CA5;
+    }
+}
+
 footer
 {
     padding: 3em 0;
