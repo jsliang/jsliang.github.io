@@ -80,7 +80,15 @@ a:hover
 
 footer
 {
+    padding: 3em 0;
     text-align: center;
+}
+
+footer > address > p
+{
+    color: #000000;
+    font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.9em;
 }
 
 ul > li > p.title
