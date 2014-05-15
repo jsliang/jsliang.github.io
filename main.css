@@ -4,14 +4,21 @@ article
     max-width: 1024px;
 }
 
-h1,
+h1
+{
+    font-family: "Microsoft YaHei", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6
 {
-    font-family: "Microsoft YaHei", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: 'Proxima Nova Bold', 'Segoe UI Bold', 'Roboto Bold', 'Droid Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 2em;
+    text-transform: uppercase;
 }
 
 #name
