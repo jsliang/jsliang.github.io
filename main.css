@@ -15,7 +15,7 @@ h6
     font-family: "Microsoft JhengHei", 'Ubuntu', 'Droid Sans', Arial, sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-top: 2em;
+    margin-top: 0;
     text-align: center;
     text-transform: uppercase;
 }
@@ -62,6 +62,11 @@ a:hover
     background-color: #0066EE;
     -webkit-border-radius: 0.3em;
     border-radius: 0.3em;
+}
+
+header
+{
+    padding: 3em;
 }
 
 header > p
