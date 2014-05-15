@@ -70,11 +70,14 @@ footer
     text-align: center;
 }
 
-footer > address > p
+footer > address,
+footer > p
 {
-    color: #000000;
+    color: #555555;
     font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 0.9em;
+    line-height: 1em;
+    margin: 0.5em 0;
 }
 
 ul > li > p.title
