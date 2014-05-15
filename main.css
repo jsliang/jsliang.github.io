@@ -103,3 +103,23 @@ ul > li > p.duration
     font-family: 'Arvo', Georgia, serif;
     font-size: 0.9em;
 }
+
+ul > li > p.marks > mark
+{
+    -webkit-border-radius: 0.5em;
+    background-color: #E92CA5;
+    border-radius: 0.5em;
+    border: #E92CA5 1px solid;
+    color: #FFFFFF;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.8em;
+    padding: 0.2em 0.4em;
+}
+
+ul > li > p.marks > mark:hover
+{
+    background-color: #FFFFFF;
+    border: #E92CA5 1px solid;
+    color: #E92CA5;
+    cursor: default;
+}
