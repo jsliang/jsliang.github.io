@@ -16,12 +16,7 @@ article
     max-width: 1024px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
+h1, h2, h3, h4, h5, h6
 {
     color: #000000;
     font-family: "Microsoft JhengHei", 'Ubuntu', 'Droid Sans', Arial, sans-serif;
@@ -116,29 +111,24 @@ header > p.contact > a:hover
     color: #E92CA5;
 }
 
-@keyframes header_a_hover
-{
-    from
-    {
+@keyframes header_a_hover {
+    from {
         background-color: transparent;
         color: #0066EE;
     }
-    to
-    {
+    to {
         background-color: transparent;
         color: #E92CA5;
     }
 }
 
-@-webkit-keyframes header_a_hover /*Safari and Chrome*/
-{
-    from
-    {
+/*Safari and Chrome*/
+@-webkit-keyframes header_a_hover {
+    from {
         background-color: transparent;
         color: #0066EE;
     }
-    to
-    {
+    to {
         background-color: transparent;
         color: #E92CA5;
     }
@@ -211,28 +201,23 @@ ul > li:hover
     border-radius: 1em;
 }
 
-@keyframes ul_li_hover
-{
-    from
-    {
+@keyframes ul_li_hover {
+    from {
         background-color: transparent;
     }
-    to
-    {
+    to {
         background-color: #FFFFEE;
         -webkit-border-radius: 1em;
         border-radius: 1em;
     }
 }
 
-@-webkit-keyframes ul_li_hover /*Safari and Chrome*/
-{
-    from
-    {
+/*Safari and Chrome*/
+@-webkit-keyframes ul_li_hover {
+    from {
         background-color: transparent;
     }
-    to
-    {
+    to {
         background-color: #FFFFEE;
         -webkit-border-radius: 1em;
         border-radius: 1em;
