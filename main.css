@@ -192,43 +192,6 @@ ul > li > p,
     padding: 0 1em;
 }
 
-ul > li:hover,
-.row > [class^="col-"]:hover
-{
-    -webkit-animation-duration: 2s;
-    -webkit-animation-name: ul_li_hover;
-    -webkitanimation-fill-mode: forwards;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-name: ul_li_hover;
-    background-color: #FFFFEE;
-    -webkit-border-radius: 1em;
-    border-radius: 1em;
-}
-
-@keyframes ul_li_hover {
-    from {
-        background-color: transparent;
-    }
-    to {
-        background-color: #FFFFEE;
-        -webkit-border-radius: 1em;
-        border-radius: 1em;
-    }
-}
-
-/*Safari and Chrome*/
-@-webkit-keyframes ul_li_hover {
-    from {
-        background-color: transparent;
-    }
-    to {
-        background-color: #FFFFEE;
-        -webkit-border-radius: 1em;
-        border-radius: 1em;
-    }
-}
-
 ul > li > p.title,
 .row > [class^="col-"] > p.title
 {
