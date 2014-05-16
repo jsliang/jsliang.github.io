@@ -1,0 +1,38 @@
+.row {
+    clear: both;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.row:after {
+    clear: left;
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.row > [class^="col-"] {
+    float: left;
+    list-style: none;
+    margin: 0 2% 0 0;
+    padding: 0;
+    position: relative;
+}
+
+.row > [class^="col-"]:last-child {
+    margin: 0;
+}
+
+.col-1  { width:   6.5%; }
+.col-2  { width:  15.0%; }
+.col-3  { width:  23.5%; }
+.col-4  { width:  32.0%; }
+.col-5  { width:  40.5%; }
+.col-6  { width:  49.0%; }
+.col-7  { width:  57.5%; }
+.col-8  { width:  66.0%; }
+.col-9  { width:  74.5%; }
+.col-10 { width:  83.0%; }
+.col-11 { width:  91.5%; }
+.col-12 { width: 100.0%; }
