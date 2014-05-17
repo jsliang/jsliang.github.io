@@ -36,3 +36,19 @@
 .col-10 { width:  83.0%; }
 .col-11 { width:  91.5%; }
 .col-12 { width: 100.0%; }
+
+@media only screen and (max-width: 400px) {
+    .row > [class^="col-"] { margin: 0; }
+    .col-1  { width: 100.0%; }
+    .col-2  { width: 100.0%; }
+    .col-3  { width: 100.0%; }
+    .col-4  { width: 100.0%; }
+    .col-5  { width: 100.0%; }
+    .col-6  { width: 100.0%; }
+    .col-7  { width: 100.0%; }
+    .col-8  { width: 100.0%; }
+    .col-9  { width: 100.0%; }
+    .col-10 { width: 100.0%; }
+    .col-11 { width: 100.0%; }
+    .col-12 { width: 100.0%; }
+}
