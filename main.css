@@ -189,7 +189,7 @@ ul > li > p,
 {
     line-height: 1.5;
     margin: 1em 0;
-    padding: 0 1em;
+    padding: 0 10px;
 }
 
 ul > li > p.title,
@@ -274,4 +274,8 @@ ul > li > p.marks > mark:hover,
         color: #E92CA5;
         cursor: default;
     }
+}
+
+section > ul > li > p {
+    text-align: center;
 }
