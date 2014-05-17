@@ -1,3 +1,7 @@
+a {
+    word-break: break-all;
+}
+
 .row {
     clear: both;
     margin: 0 auto;
@@ -37,8 +41,8 @@
 .col-11 { width:  91.5%; }
 .col-12 { width: 100.0%; }
 
-@media only screen and (max-width: 400px) {
-    .row > [class^="col-"] { margin: 0; }
+@media only screen and (max-width: 600px) {
+    .row > [class^="col-"] { margin: 0.5em 0; }
     .col-1  { width: 100.0%; }
     .col-2  { width: 100.0%; }
     .col-3  { width: 100.0%; }
