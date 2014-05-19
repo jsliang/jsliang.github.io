@@ -151,6 +151,7 @@ header > p.contact > a:hover
 
     header > p {
         font-size: 1.1em;
+        line-height: 1.5;
     }
 }
 
