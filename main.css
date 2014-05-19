@@ -305,3 +305,7 @@ section > ul > li > p,
 section > .row > [class^="col-"] > p {
     text-align: center;
 }
+
+.present > p.title {
+    text-shadow: 0 0 10px #FFF0BB;
+}
