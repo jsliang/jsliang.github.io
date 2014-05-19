@@ -249,7 +249,7 @@ ul > li > p.marks > mark,
     -webkit-border-radius: 0.5em;
     background-color: #E92CA5;
     border-radius: 0.5em;
-    border: #E92CA5 1px solid;
+    border: 0;
     color: #FFFFFF;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 0.7em;
@@ -267,7 +267,7 @@ ul > li > p.marks > mark:hover,
     animation-fill-mode: forwards;
     animation-name: mark_hover;
     background-color: #FFFFFF;
-    border: #E92CA5 1px solid;
+    box-shadow: 0 0 5px #E92CA5;
     color: #E92CA5;
     cursor: default;
 }
@@ -275,12 +275,11 @@ ul > li > p.marks > mark:hover,
 @keyframes mark_hover {
     from {
         background-color: #E92CA5;
-        border: #E92CA5 1px solid;
         color: #FFFFFF;
     }
     to {
         background-color: #FFFFFF;
-        border: #E92CA5 1px solid;
+        box-shadow: 0 0 5px #E92CA5;
         color: #E92CA5;
         cursor: default;
     }
@@ -290,12 +289,11 @@ ul > li > p.marks > mark:hover,
 @-webkit-keyframes mark_hover {
     from {
         background-color: #E92CA5;
-        border: #E92CA5 1px solid;
         color: #FFFFFF;
     }
     to {
         background-color: #FFFFFF;
-        border: #E92CA5 1px solid;
+        box-shadow: 0 0 5px #E92CA5;
         color: #E92CA5;
         cursor: default;
     }
