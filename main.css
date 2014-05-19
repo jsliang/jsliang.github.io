@@ -214,10 +214,17 @@ ul > li > p.duration,
     margin: 0;
 }
 
+ul > li > p.description,
+.row > [class^="col-"] > p.description
+{
+    margin-bottom: 0;
+}
+
 ul > li > p.marks,
 .row > [class^="col-"] > p.marks
 {
     line-height: 1.3;
+    margin-top: 0;
 }
 
 ul > li > p.marks > mark,
@@ -278,6 +285,7 @@ ul > li > p.marks > mark:hover,
     }
 }
 
-section > ul > li > p {
+section > ul > li > p,
+section > .row > [class^="col-"] > p {
     text-align: center;
 }
