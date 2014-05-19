@@ -204,6 +204,18 @@ ul > li > p.title,
     font-weight: bold;
     letter-spacing: -1px;
 }
+@media only screen and (max-width: 700px) {
+    ul > li > p.title,
+    .row > [class^="col-"] > p.title {
+        font-size: 0.9em;
+    }
+}
+@media only screen and (max-width: 600px) {
+    ul > li > p.title,
+    .row > [class^="col-"] > p.title {
+        font-size: 1.1em;
+    }
+}
 
 ul > li > p.where,
 ul > li > p.duration,
