@@ -217,10 +217,12 @@ ul > li > p.title,
     }
 }
 
-ul > li > p.where,
 ul > li > p.duration,
-.row > [class^="col-"] > p.where,
-.row > [class^="col-"] > p.duration
+ul > li > p.school,
+ul > li > p.where,
+.row > [class^="col-"] > p.duration,
+.row > [class^="col-"] > p.school,
+.row > [class^="col-"] > p.where
 {
     color: #999999;
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
