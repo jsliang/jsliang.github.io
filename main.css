@@ -187,6 +187,10 @@ ul,
     padding: 0;
 }
 
+ul > li.contribution {
+    margin: 1em 0;
+}
+
 ul > li > p,
 .row > [class^="col-"] > p
 {
@@ -255,7 +259,8 @@ ul > li > p.marks,
 }
 
 ul > li > p.marks > mark,
-.row > [class^="col-"] > p.marks > mark
+.row > [class^="col-"] > p.marks > mark,
+ul > li.contribution > mark
 {
     -webkit-border-radius: 0.5em;
     background-color: #E92CA5;
@@ -269,7 +274,8 @@ ul > li > p.marks > mark,
 }
 
 ul > li > p.marks > mark:hover,
-.row > [class^="col-"] > p.marks > mark:hover
+.row > [class^="col-"] > p.marks > mark:hover,
+ul > li.contribution > mark:hover
 {
     -webkit-animation-duration: 0.5s;
     -webkit-animation-name: mark_hover;
