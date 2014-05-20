@@ -346,4 +346,11 @@ section > .row > [class^="col-"] > p {
         text-align: center;
         width: 100%;
     }
+
+    header p.contact > a
+    {
+        white-space: nowrap;
+        font-size: 1em;
+        line-height: 2.5;
+    }
 }
