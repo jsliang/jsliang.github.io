@@ -55,12 +55,4 @@ a.breakall {
     .col-10 { width: 100.0%; }
     .col-11 { width: 100.0%; }
     .col-12 { width: 100.0%; }
-    .row > [class^="col-"]:before {
-        color: #DDDDDD;
-        content: "# ===== #";
-        display: block;
-        margin: 1em 0;
-        text-align: center;
-        width: 100%;
-    }
 }
