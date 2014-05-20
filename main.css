@@ -230,6 +230,17 @@ ul > li > p.where,
     margin: 0;
 }
 
+ul > li > p.source,
+ul > li > p.siteurl,
+.row > [class^="col-"] > p.source,
+.row > [class^="col-"] > p.siteurl
+{
+    color: #000000;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
 ul > li > p.description,
 .row > [class^="col-"] > p.description
 {
