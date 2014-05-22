@@ -40,7 +40,7 @@ h2
 
 body
 {
-    color: #777777;
+    color: #000000;
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0 1em;
@@ -53,9 +53,15 @@ p {
     padding: 0;
 }
 
-p > strong
+header p
 {
-    color: #000000;
+    color: #693726;
+    font-weight: normal;
+}
+
+header p > strong
+{
+    color: #CC1238;
     font-weight: bold;
 }
 
@@ -208,7 +214,7 @@ ul > li > p,
 ul > li > p.title,
 .row > [class^="col-"] > p.title
 {
-    color: #000000;
+    color: #693726;
     font-family: 'Arvo', Georgia, serif;
     font-size: 1.2em;
     font-weight: bold;
@@ -234,7 +240,7 @@ ul > li > p.where,
 .row > [class^="col-"] > p.school,
 .row > [class^="col-"] > p.where
 {
-    color: #999999;
+    color: #693726;
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
     line-height: 1.5;
     margin: 0;
@@ -245,7 +251,7 @@ ul > li > p.siteurl,
 .row > [class^="col-"] > p.source,
 .row > [class^="col-"] > p.siteurl
 {
-    color: #000000;
+    color: #693726;
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
     line-height: 1.5;
     margin: 0;
