@@ -5,7 +5,6 @@ a.breakall {
 .row {
     clear: both;
     margin: 0 auto;
-    max-width: 1024px;
 }
 
 .row:after {
