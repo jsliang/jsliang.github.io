@@ -39,8 +39,21 @@ a.breakall {
 .col-10 { width:  83.0%; }
 .col-11 { width:  91.5%; }
 .col-12 { width: 100.0%; }
+.offset-1  { margin-left:   6.5% !important; }
+.offset-2  { margin-left:  15.0% !important; }
+.offset-3  { margin-left:  23.5% !important; }
+.offset-4  { margin-left:  32.0% !important; }
+.offset-5  { margin-left:  40.5% !important; }
+.offset-6  { margin-left:  49.0% !important; }
+.offset-7  { margin-left:  57.5% !important; }
+.offset-8  { margin-left:  66.0% !important; }
+.offset-9  { margin-left:  74.5% !important; }
+.offset-10 { margin-left:  83.0% !important; }
+.offset-11 { margin-left:  91.5% !important; }
+.offset-12 { margin-left: 100.0% !important; }
 
 @media only screen and (max-width: 600px) {
+    .row > [class^="offset-"] { margin: 0; }
     .row > [class^="col-"] { margin: 0.5em 0; }
     .col-1  { width: 100.0%; }
     .col-2  { width: 100.0%; }
