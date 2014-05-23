@@ -219,6 +219,7 @@ ul > li > p.title,
     font-size: 1.2em;
     font-weight: bold;
     letter-spacing: -1px;
+    margin: 0;
 }
 @media only screen and (max-width: 700px) {
     ul > li > p.title,
@@ -231,6 +232,35 @@ ul > li > p.title,
     .row > [class^="col-"] > p.title {
         font-size: 1.1em;
     }
+}
+
+ul > li p.image,
+.row > [class^="col-"] p.image {
+    margin: 0;
+}
+
+ul > li p.image img,
+.row > [class^="col-"] p.image img {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 7px #777777;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+}
+
+ul > li p.image img:hover,
+.row > [class^="col-"] p.image img:hover {
+    box-shadow: 0 0 7px #FFF0BB;
+}
+
+ul > li p.image a,
+ul > li p.image a:hover,
+.row > [class^="col-"] p.image a,
+.row > [class^="col-"] p.image a:hover {
+    background: transparent;
+    padding: 0;
+    text-decoration: none;
 }
 
 ul > li > p.duration,
