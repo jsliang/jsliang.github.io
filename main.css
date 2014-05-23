@@ -393,3 +393,9 @@ section > .row > [class^="col-"] > p {
         line-height: 2.5;
     }
 }
+
+ul > li:hover,
+.row > [class^="col-"]:hover
+{
+    text-shadow: 0 0 7px #FFF0BB;
+}
