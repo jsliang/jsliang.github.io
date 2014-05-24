@@ -1,3 +1,5 @@
 .DS_Store
 .picasa.ini
+.sass-cache
+fire_app_log.txt
 screenshots/.picasaoriginals
