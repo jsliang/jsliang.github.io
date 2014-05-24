@@ -112,6 +112,11 @@ header img:hover {
   -webkit-box-shadow: 0 0 7px #FFF0BB;
   box-shadow: 0 0 7px #FFF0BB;
 }
+@media only screen and (max-width: 600px) {
+  header ul > li, header .row > [class^="col-"] {
+    margin: 0 !important;
+  }
+}
 
 @keyframes header_a_hover {
   from {

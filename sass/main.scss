@@ -114,6 +114,11 @@ header {
     -webkit-box-shadow: 0 0 7px #FFF0BB;
     box-shadow: 0 0 7px #FFF0BB;
   }
+  ul > li, .row > [class^="col-"] {
+    @media only screen and (max-width: 600px) {
+      margin: 0 !important;
+    }
+  }
 }
 
 @keyframes header_a_hover {
