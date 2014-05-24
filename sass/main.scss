@@ -1,4 +1,5 @@
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -48,10 +49,10 @@ p {
 header p {
   color: #693726;
   font-weight: normal;
-}
-header p > strong {
-  color: #CC1238;
-  font-weight: bold;
+  > strong {
+    color: #CC1238;
+    font-weight: bold;
+  }
 }
 
 address {
@@ -62,12 +63,12 @@ a {
   color: #0066EE;
   text-decoration: none;
   padding: 0 0.2em;
-}
-a:hover {
-  color: #FFFFFF;
-  background-color: #0066EE;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  &:hover {
+    color: #FFFFFF;
+    background-color: #0066EE;
+    -webkit-border-radius: 0.3em;
+    border-radius: 0.3em;
+  }
 }
 
 #avatar {
@@ -79,27 +80,27 @@ a:hover {
 
 header {
   padding: 3em;
-}
-header p {
-  font-size: 1.3em;
-  text-align: center;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
-}
-header p.contact {
-  font-size: 1em;
-}
-header p.contact .fa {
-  font-size: 1.5em;
-}
-header p.contact > a:hover {
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-name: header_a_hover;
-  -webkitanimation-fill-mode: forwards;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-name: header_a_hover;
-  background-color: transparent;
-  color: #E92CA5;
+  p {
+    font-size: 1.3em;
+    text-align: center;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    &.contact {
+      font-size: 1em;
+      .fa {
+        font-size: 1.5em;
+      }
+      > a:hover {
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-name: header_a_hover;
+        -webkitanimation-fill-mode: forwards;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-name: header_a_hover;
+        background-color: transparent;
+        color: #E92CA5;
+      }
+    }
+  }
 }
 
 @keyframes header_a_hover {
@@ -107,12 +108,12 @@ header p.contact > a:hover {
     background-color: transparent;
     color: #0066EE;
   }
-
   to {
     background-color: transparent;
     color: #E92CA5;
   }
 }
+
 
 /*Safari and Chrome*/
 @-webkit-keyframes header_a_hover {
@@ -120,42 +121,44 @@ header p.contact > a:hover {
     background-color: transparent;
     color: #0066EE;
   }
-
   to {
     background-color: transparent;
     color: #E92CA5;
   }
 }
 
+
 @media only screen and (max-width: 700px) {
   h1 {
     font-size: 2em;
   }
-
   h2 {
     font-size: 1.3em;
   }
 }
+
 @media only screen and (max-width: 500px) {
   h1 > small {
     display: none;
   }
-
   header p {
     font-size: 1.1em;
     line-height: 1.5;
   }
 }
+
 footer {
   border-top: 1px dashed #555555;
   padding: 2em 0;
   text-align: center;
-}
-footer > address, footer > p {
-  color: #555555;
-  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-  line-height: 1.2em;
-  margin: 0.5em 0;
+  > {
+    address, p {
+      color: #555555;
+      font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+      line-height: 1.2em;
+      margin: 0.5em 0;
+    }
+  }
 }
 
 section {
@@ -169,13 +172,15 @@ ul, .row {
   padding: 0;
 }
 
-ul > li.contribution {
-  margin: 1em 0;
-}
-ul > li > p {
-  line-height: 1.5;
-  margin: 1em 0;
-  padding: 0 10px;
+ul > li {
+  &.contribution {
+    margin: 1em 0;
+  }
+  > p {
+    line-height: 1.5;
+    margin: 1em 0;
+    padding: 0 10px;
+  }
 }
 
 .row > [class^="col-"] > p {
@@ -198,11 +203,13 @@ ul > li > p.title, .row > [class^="col-"] > p.title {
     font-size: 0.9em;
   }
 }
+
 @media only screen and (max-width: 600px) {
   ul > li > p.title, .row > [class^="col-"] > p.title {
     font-size: 1.1em;
   }
 }
+
 ul > li p.image, .row > [class^="col-"] p.image {
   margin: 0;
 }
@@ -224,39 +231,47 @@ ul > li p.image a, .row > [class^="col-"] p.image a {
   background: transparent;
   padding: 0;
   text-decoration: none;
-}
-ul > li p.image a:hover, .row > [class^="col-"] p.image a:hover {
-  background: transparent;
-  padding: 0;
-  text-decoration: none;
-}
-
-ul > li > p.duration, ul > li > p.school, ul > li > p.where {
-  color: #693726;
-  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  margin: 0;
+  &:hover {
+    background: transparent;
+    padding: 0;
+    text-decoration: none;
+  }
 }
 
-.row > [class^="col-"] > p.duration, .row > [class^="col-"] > p.school, .row > [class^="col-"] > p.where {
-  color: #693726;
-  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  margin: 0;
+ul > li > p {
+  &.duration, &.school, &.where {
+    color: #693726;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+  }
 }
 
-ul > li > p.source, ul > li > p.siteurl {
-  color: #693726;
-  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  margin: 0;
+.row > [class^="col-"] > p {
+  &.duration, &.school, &.where {
+    color: #693726;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+  }
 }
 
-.row > [class^="col-"] > p.source, .row > [class^="col-"] > p.siteurl {
-  color: #693726;
-  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  margin: 0;
+ul > li > p {
+  &.source, &.siteurl {
+    color: #693726;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+.row > [class^="col-"] > p {
+  &.source, &.siteurl {
+    color: #693726;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+  }
 }
 
 ul > li > p.description, .row > [class^="col-"] > p.description {
@@ -280,16 +295,18 @@ ul > li > p.marks > mark {
   white-space: nowrap;
 }
 
-.row > [class^="col-"] > p.marks > mark, .row > .contribution mark {
-  -webkit-border-radius: 0.5em;
-  background-color: #FFFFFF;
-  border: 0;
-  box-shadow: 0 0 5px #E92CA5;
-  color: #E92CA5;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 0.7em;
-  padding: 0.2em 0.4em;
-  white-space: nowrap;
+.row > {
+  [class^="col-"] > p.marks > mark, .contribution mark {
+    -webkit-border-radius: 0.5em;
+    background-color: #FFFFFF;
+    border: 0;
+    box-shadow: 0 0 5px #E92CA5;
+    color: #E92CA5;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+    padding: 0.2em 0.4em;
+    white-space: nowrap;
+  }
 }
 
 ul > li > p.marks > mark:hover {
@@ -306,18 +323,20 @@ ul > li > p.marks > mark:hover {
   cursor: default;
 }
 
-.row > [class^="col-"] > p.marks > mark:hover, .row > .contribution mark:hover {
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-name: mark_hover;
-  -webkitanimation-fill-mode: forwards;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-name: mark_hover;
-  background-color: #E92CA5;
-  border-radius: 0.5em;
-  box-shadow: none;
-  color: #FFFFFF;
-  cursor: default;
+.row > {
+  [class^="col-"] > p.marks > mark:hover, .contribution mark:hover {
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: mark_hover;
+    -webkitanimation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-name: mark_hover;
+    background-color: #E92CA5;
+    border-radius: 0.5em;
+    box-shadow: none;
+    color: #FFFFFF;
+    cursor: default;
+  }
 }
 
 @keyframes mark_hover {
@@ -326,7 +345,6 @@ ul > li > p.marks > mark:hover {
     box-shadow: 0 0 5px #E92CA5;
     color: #E92CA5;
   }
-
   to {
     background-color: #E92CA5;
     box-shadow: none;
@@ -334,6 +352,7 @@ ul > li > p.marks > mark:hover {
     cursor: default;
   }
 }
+
 
 /*Safari and Chrome*/
 @-webkit-keyframes mark_hover {
@@ -342,7 +361,6 @@ ul > li > p.marks > mark:hover {
     box-shadow: 0 0 5px #E92CA5;
     color: #E92CA5;
   }
-
   to {
     background-color: #E92CA5;
     box-shadow: none;
@@ -351,8 +369,11 @@ ul > li > p.marks > mark:hover {
   }
 }
 
-section > ul > li > p, section > .row > [class^="col-"] > p {
-  text-align: center;
+
+section > {
+  ul > li > p, .row > [class^="col-"] > p {
+    text-align: center;
+  }
 }
 
 .present > p.title {
@@ -368,13 +389,13 @@ section > ul > li > p, section > .row > [class^="col-"] > p {
     text-align: center;
     width: 100%;
   }
-
   header p.contact > a {
     white-space: nowrap;
     font-size: 1em;
     line-height: 2.5;
   }
 }
+
 ul > li:hover, .row > [class^="col-"]:hover {
   text-shadow: 0 0 7px #FFF0BB;
 }
