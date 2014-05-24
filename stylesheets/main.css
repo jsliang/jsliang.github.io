@@ -45,15 +45,6 @@ p {
   padding: 0;
 }
 
-header p {
-  color: #693726;
-  font-weight: normal;
-}
-header p > strong {
-  color: #CC1238;
-  font-weight: bold;
-}
-
 address {
   font-style: normal;
 }
@@ -81,9 +72,11 @@ header {
   padding: 3em;
 }
 header p {
-  font-size: 1.3em;
-  text-align: center;
+  color: #693726;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight: normal;
+  text-align: center;
 }
 header p.contact {
   font-size: 1em;
@@ -100,6 +93,10 @@ header p.contact > a:hover {
   animation-name: header_a_hover;
   background-color: transparent;
   color: #E92CA5;
+}
+header p > strong {
+  color: #CC1238;
+  font-weight: bold;
 }
 
 @keyframes header_a_hover {

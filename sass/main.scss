@@ -46,15 +46,6 @@ p {
   padding: 0;
 }
 
-header p {
-  color: #693726;
-  font-weight: normal;
-  > strong {
-    color: #CC1238;
-    font-weight: bold;
-  }
-}
-
 address {
   font-style: normal;
 }
@@ -81,9 +72,11 @@ a {
 header {
   padding: 3em;
   p {
-    font-size: 1.3em;
-    text-align: center;
+    color: #693726;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    font-weight: normal;
+    text-align: center;
     &.contact {
       font-size: 1em;
       .fa {
@@ -99,6 +92,10 @@ header {
         background-color: transparent;
         color: #E92CA5;
       }
+    }
+    > strong {
+      color: #CC1238;
+      font-weight: bold;
     }
   }
 }
