@@ -166,45 +166,18 @@ ul, .row {
   padding: 0;
 }
 
-ul > li.contribution {
-  margin: 1em 0;
-}
-ul > li > p {
-  line-height: 1.5;
-  margin: 1em 0;
-  padding: 0 10px;
-}
-
+ul > li > p,
 .row > [class^="col-"] > p {
   line-height: 1.5;
   margin: 1em 0;
   padding: 0 10px;
 }
-
-ul > li > p.title, .row > [class^="col-"] > p.title {
-  color: #693726;
-  font-family: 'Arvo', Georgia, serif;
-  font-size: 1.2em;
-  font-weight: bold;
-  letter-spacing: -1px;
+ul > li > p.image,
+.row > [class^="col-"] > p.image {
   margin: 0;
 }
-
-@media only screen and (max-width: 700px) {
-  ul > li > p.title, .row > [class^="col-"] > p.title {
-    font-size: 0.9em;
-  }
-}
-@media only screen and (max-width: 600px) {
-  ul > li > p.title, .row > [class^="col-"] > p.title {
-    font-size: 1.1em;
-  }
-}
-ul > li p.image, .row > [class^="col-"] p.image {
-  margin: 0;
-}
-
-ul > li p.image img, .row > [class^="col-"] p.image img {
+ul > li > p.image img,
+.row > [class^="col-"] > p.image img {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   box-shadow: 0 0 7px #777777;
@@ -212,60 +185,73 @@ ul > li p.image img, .row > [class^="col-"] p.image img {
   max-width: 100%;
   padding: 0;
 }
-
-ul > li p.image img:hover, .row > [class^="col-"] p.image img:hover {
+ul > li > p.image img:hover,
+.row > [class^="col-"] > p.image img:hover {
   box-shadow: 0 0 7px #FFF0BB;
 }
-
-ul > li p.image a, .row > [class^="col-"] p.image a {
+ul > li > p.image a,
+.row > [class^="col-"] > p.image a {
   background: transparent;
   padding: 0;
   text-decoration: none;
 }
-ul > li p.image a:hover, .row > [class^="col-"] p.image a:hover {
+ul > li > p.image a:hover,
+.row > [class^="col-"] > p.image a:hover {
   background: transparent;
   padding: 0;
   text-decoration: none;
 }
-
-ul > li > p.duration, ul > li > p.school, ul > li > p.where {
+ul > li > p.title,
+.row > [class^="col-"] > p.title {
+  color: #693726;
+  font-family: 'Arvo', Georgia, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin: 0;
+}
+@media only screen and (max-width: 700px) {
+  ul > li > p.title,
+  .row > [class^="col-"] > p.title {
+    font-size: 0.9em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  ul > li > p.title,
+  .row > [class^="col-"] > p.title {
+    font-size: 1.1em;
+  }
+}
+ul > li > p.duration, ul > li > p.school, ul > li > p.where,
+.row > [class^="col-"] > p.duration,
+.row > [class^="col-"] > p.school,
+.row > [class^="col-"] > p.where {
   color: #693726;
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   line-height: 1.5;
   margin: 0;
 }
-
-.row > [class^="col-"] > p.duration, .row > [class^="col-"] > p.school, .row > [class^="col-"] > p.where {
+ul > li > p.source, ul > li > p.siteurl,
+.row > [class^="col-"] > p.source,
+.row > [class^="col-"] > p.siteurl {
   color: #693726;
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   line-height: 1.5;
   margin: 0;
 }
-
-ul > li > p.source, ul > li > p.siteurl {
-  color: #693726;
-  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.row > [class^="col-"] > p.source, .row > [class^="col-"] > p.siteurl {
-  color: #693726;
-  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  margin: 0;
-}
-
-ul > li > p.description, .row > [class^="col-"] > p.description {
+ul > li > p.description,
+.row > [class^="col-"] > p.description {
   margin-bottom: 0;
 }
-
-ul > li > p.marks, .row > [class^="col-"] > p.marks {
+ul > li > p.marks,
+.row > [class^="col-"] > p.marks {
   line-height: 1.3;
   margin-top: 0;
 }
 
-ul > li > p.marks > mark {
+ul > li > p.marks mark,
+.row > [class^="col-"] > p.marks mark,
+.contribution mark {
   -webkit-border-radius: 0.5em;
   background-color: #FFFFFF;
   border: 0;
@@ -276,34 +262,9 @@ ul > li > p.marks > mark {
   padding: 0.2em 0.4em;
   white-space: nowrap;
 }
-
-.row > [class^="col-"] > p.marks > mark, .row > .contribution mark {
-  -webkit-border-radius: 0.5em;
-  background-color: #FFFFFF;
-  border: 0;
-  box-shadow: 0 0 5px #E92CA5;
-  color: #E92CA5;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 0.7em;
-  padding: 0.2em 0.4em;
-  white-space: nowrap;
-}
-
-ul > li > p.marks > mark:hover {
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-name: mark_hover;
-  -webkitanimation-fill-mode: forwards;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-name: mark_hover;
-  background-color: #E92CA5;
-  border-radius: 0.5em;
-  box-shadow: none;
-  color: #FFFFFF;
-  cursor: default;
-}
-
-.row > [class^="col-"] > p.marks > mark:hover, .row > .contribution mark:hover {
+ul > li > p.marks mark:hover,
+.row > [class^="col-"] > p.marks mark:hover,
+.contribution mark:hover {
   -webkit-animation-duration: 0.5s;
   -webkit-animation-name: mark_hover;
   -webkitanimation-fill-mode: forwards;
@@ -348,7 +309,8 @@ ul > li > p.marks > mark:hover {
   }
 }
 
-section > ul > li > p, section > .row > [class^="col-"] > p {
+section > ul > li > p,
+section > .row > [class^="col-"] > p {
   text-align: center;
 }
 
@@ -377,6 +339,7 @@ section > ul > li > p, section > .row > [class^="col-"] > p {
     line-height: 2.5;
   }
 }
-ul > li:hover, .row > [class^="col-"]:hover {
+ul > li:hover,
+.row > [class^="col-"]:hover {
   text-shadow: 0 0 7px #FFF0BB;
 }

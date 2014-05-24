@@ -169,131 +169,82 @@ ul, .row {
   padding: 0;
 }
 
-ul > li {
-  &.contribution {
-    margin: 1em 0;
-  }
-  > p {
-    line-height: 1.5;
-    margin: 1em 0;
-    padding: 0 10px;
-  }
-}
-
+ul > li > p,
 .row > [class^="col-"] > p {
   line-height: 1.5;
   margin: 1em 0;
   padding: 0 10px;
-}
 
-ul > li > p.title, .row > [class^="col-"] > p.title {
-  color: #693726;
-  font-family: 'Arvo', Georgia, serif;
-  font-size: 1.2em;
-  font-weight: bold;
-  letter-spacing: -1px;
-  margin: 0;
-}
-
-@media only screen and (max-width: 700px) {
-  ul > li > p.title, .row > [class^="col-"] > p.title {
-    font-size: 0.9em;
+  &.image {
+    margin: 0;
+    img {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 7px #777777;
+      margin: 0;
+      max-width: 100%;
+      padding: 0;
+      &:hover {
+        box-shadow: 0 0 7px #FFF0BB;
+      }
+    }
+    a {
+      background: transparent;
+      padding: 0;
+      text-decoration: none;
+      &:hover {
+        background: transparent;
+        padding: 0;
+        text-decoration: none;
+      }
+    }
   }
-}
 
-@media only screen and (max-width: 600px) {
-  ul > li > p.title, .row > [class^="col-"] > p.title {
-    font-size: 1.1em;
+  &.title {
+    color: #693726;
+    font-family: 'Arvo', Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin: 0;
+
+    @media only screen and (max-width: 700px) {
+      font-size: 0.9em;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.1em;
+    }
   }
-}
 
-ul > li p.image, .row > [class^="col-"] p.image {
-  margin: 0;
-}
-
-ul > li p.image img, .row > [class^="col-"] p.image img {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 7px #777777;
-  margin: 0;
-  max-width: 100%;
-  padding: 0;
-}
-
-ul > li p.image img:hover, .row > [class^="col-"] p.image img:hover {
-  box-shadow: 0 0 7px #FFF0BB;
-}
-
-ul > li p.image a, .row > [class^="col-"] p.image a {
-  background: transparent;
-  padding: 0;
-  text-decoration: none;
-  &:hover {
-    background: transparent;
-    padding: 0;
-    text-decoration: none;
-  }
-}
-
-ul > li > p {
   &.duration, &.school, &.where {
     color: #693726;
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
     line-height: 1.5;
     margin: 0;
   }
-}
 
-.row > [class^="col-"] > p {
-  &.duration, &.school, &.where {
-    color: #693726;
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    margin: 0;
-  }
-}
-
-ul > li > p {
   &.source, &.siteurl {
     color: #693726;
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
     line-height: 1.5;
     margin: 0;
   }
-}
 
-.row > [class^="col-"] > p {
-  &.source, &.siteurl {
-    color: #693726;
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    margin: 0;
+  &.description {
+    margin-bottom: 0;
+  }
+
+  &.marks {
+    line-height: 1.3;
+    margin-top: 0;
   }
 }
 
-ul > li > p.description, .row > [class^="col-"] > p.description {
-  margin-bottom: 0;
-}
-
-ul > li > p.marks, .row > [class^="col-"] > p.marks {
-  line-height: 1.3;
-  margin-top: 0;
-}
-
-ul > li > p.marks > mark {
-  -webkit-border-radius: 0.5em;
-  background-color: #FFFFFF;
-  border: 0;
-  box-shadow: 0 0 5px #E92CA5;
-  color: #E92CA5;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 0.7em;
-  padding: 0.2em 0.4em;
-  white-space: nowrap;
-}
-
-.row > {
-  [class^="col-"] > p.marks > mark, .contribution mark {
+ul > li > p.marks,
+.row > [class^="col-"] > p.marks,
+.contribution {
+  mark {
     -webkit-border-radius: 0.5em;
     background-color: #FFFFFF;
     border: 0;
@@ -303,36 +254,19 @@ ul > li > p.marks > mark {
     font-size: 0.7em;
     padding: 0.2em 0.4em;
     white-space: nowrap;
-  }
-}
-
-ul > li > p.marks > mark:hover {
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-name: mark_hover;
-  -webkitanimation-fill-mode: forwards;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-name: mark_hover;
-  background-color: #E92CA5;
-  border-radius: 0.5em;
-  box-shadow: none;
-  color: #FFFFFF;
-  cursor: default;
-}
-
-.row > {
-  [class^="col-"] > p.marks > mark:hover, .contribution mark:hover {
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-name: mark_hover;
-    -webkitanimation-fill-mode: forwards;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    animation-name: mark_hover;
-    background-color: #E92CA5;
-    border-radius: 0.5em;
-    box-shadow: none;
-    color: #FFFFFF;
-    cursor: default;
+    &:hover {
+      -webkit-animation-duration: 0.5s;
+      -webkit-animation-name: mark_hover;
+      -webkitanimation-fill-mode: forwards;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      animation-name: mark_hover;
+      background-color: #E92CA5;
+      border-radius: 0.5em;
+      box-shadow: none;
+      color: #FFFFFF;
+      cursor: default;
+    }
   }
 }
 
@@ -366,9 +300,9 @@ ul > li > p.marks > mark:hover {
   }
 }
 
-
 section > {
-  ul > li > p, .row > [class^="col-"] > p {
+  ul > li > p,
+  .row > [class^="col-"] > p {
     text-align: center;
   }
 }
@@ -400,6 +334,7 @@ section > {
   }
 }
 
-ul > li:hover, .row > [class^="col-"]:hover {
+ul > li:hover,
+.row > [class^="col-"]:hover {
   text-shadow: 0 0 7px #FFF0BB;
 }
