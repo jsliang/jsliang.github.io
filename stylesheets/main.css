@@ -185,8 +185,8 @@ ul > li > p.image img,
   border-radius: 10px;
   box-shadow: 0 0 7px #777777;
   margin: 0;
-  max-width: 100%;
   padding: 0;
+  width: 100%;
 }
 ul > li > p.image img:hover,
 .row > [class^="col-"] > p.image img:hover {
