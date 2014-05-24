@@ -20,6 +20,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   text-align: center;
   text-transform: uppercase;
+  &:hover {
+    text-shadow: 0 0 7px #FFF0BB;
+  }
 }
 
 h1 {
@@ -104,9 +107,6 @@ header {
       color: #CC1238;
       font-weight: bold;
     }
-  }
-  h1:hover {
-    text-shadow: 0 0 7px #FFF0BB;
   }
   img:hover {
     -webkit-box-shadow: 0 0 7px #FFF0BB;

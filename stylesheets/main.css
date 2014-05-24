@@ -20,6 +20,9 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   text-transform: uppercase;
 }
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  text-shadow: 0 0 7px #FFF0BB;
+}
 
 h1 {
   font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -104,9 +107,6 @@ header p.contact > a:hover {
 header p > strong {
   color: #CC1238;
   font-weight: bold;
-}
-header h1:hover {
-  text-shadow: 0 0 7px #FFF0BB;
 }
 header img:hover {
   -webkit-box-shadow: 0 0 7px #FFF0BB;
