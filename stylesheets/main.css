@@ -350,3 +350,7 @@ ul > li > p.marks,
 .present > p.duration time {
   text-shadow: none;
 }
+
+.nobr {
+  white-space: nowrap;
+}
