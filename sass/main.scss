@@ -179,9 +179,14 @@ footer {
   }
 }
 
-section {
+.section {
   border-top: 1px dashed #555555;
   padding: 3em 1em;
+  ul > li, .row > [class^="col-"] {
+    > p {
+      text-align: center;
+    }
+  }
 }
 
 ul, .row {
@@ -330,14 +335,6 @@ ul > li,
     box-shadow: none;
     color: #FFFFFF;
     cursor: default;
-  }
-}
-
-section > {
-  ul > li, .row > [class^="col-"] {
-    > p {
-      text-align: center;
-    }
   }
 }
 

@@ -174,9 +174,12 @@ footer > address, footer > p {
   margin: 0.5em 0;
 }
 
-section {
+.section {
   border-top: 1px dashed #555555;
   padding: 3em 1em;
+}
+.section ul > li > p, .section .row > [class^="col-"] > p {
+  text-align: center;
 }
 
 ul, .row {
@@ -339,10 +342,6 @@ ul > li > p.marks,
     color: #FFFFFF;
     cursor: default;
   }
-}
-
-section > ul > li > p, section > .row > [class^="col-"] > p {
-  text-align: center;
 }
 
 .present > p.title, .present > p.duration {
