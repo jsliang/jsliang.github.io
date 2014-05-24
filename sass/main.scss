@@ -73,7 +73,9 @@ a {
 }
 
 header {
-  padding: 3em;
+  h1 {
+    margin-top: 1em;
+  }
   p {
     color: #693726;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
@@ -111,9 +113,6 @@ header {
   img:hover {
     -webkit-box-shadow: 0 0 7px #FFF0BB;
     box-shadow: 0 0 7px #FFF0BB;
-  }
-  .row {
-    margin: 0 !important;
   }
 }
 
@@ -191,6 +190,10 @@ ul, .row {
 
 ul > li,
 .row > [class^="col-"] {
+  @media only screen and (max-width: 600px) {
+    margin: 2em 0 !important;
+  }
+
   &:hover {
     text-shadow: 0 0 7px #FFF0BB;
   }

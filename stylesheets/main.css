@@ -71,8 +71,8 @@ a:hover {
   width: 100%;
 }
 
-header {
-  padding: 3em;
+header h1 {
+  margin-top: 1em;
 }
 header p {
   color: #693726;
@@ -111,9 +111,6 @@ header p > strong {
 header img:hover {
   -webkit-box-shadow: 0 0 7px #FFF0BB;
   box-shadow: 0 0 7px #FFF0BB;
-}
-header .row {
-  margin: 0 !important;
 }
 
 @keyframes header_a_hover {
@@ -188,6 +185,12 @@ ul, .row {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  ul > li,
+  .row > [class^="col-"] {
+    margin: 2em 0 !important;
+  }
+}
 ul > li:hover,
 .row > [class^="col-"]:hover {
   text-shadow: 0 0 7px #FFF0BB;
