@@ -98,6 +98,9 @@ header p > strong {
   color: #CC1238;
   font-weight: bold;
 }
+header .row {
+  margin: 0 !important;
+}
 
 @keyframes header_a_hover {
   from {
