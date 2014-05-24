@@ -98,7 +98,7 @@ a.breakall {
 
 @media only screen and (max-width: 600px) {
   .row [class^="col-"] {
-    margin: 0.5em 0 !important;
+    margin: 0 !important;
   }
   .row .col-1,
   .row .col-2,
@@ -113,5 +113,6 @@ a.breakall {
   .row .col-11,
   .row .col-12 {
     width: 100.0%;
+    margin: 1.75em 0 !important;
   }
 }

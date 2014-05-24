@@ -84,6 +84,13 @@ header p.contact {
 header p.contact .fa {
   font-size: 1.5em;
 }
+@media only screen and (max-width: 600px) {
+  header p.contact > a {
+    white-space: nowrap;
+    font-size: 1em;
+    line-height: 2.5;
+  }
+}
 header p.contact > a:hover {
   -webkit-animation-duration: 0.5s;
   -webkit-animation-name: header_a_hover;
@@ -168,7 +175,16 @@ ul, .row {
   margin: 2em 0 !important;
   padding: 0;
 }
+@media only screen and (max-width: 600px) {
+  ul, .row {
+    margin: 0 !important;
+  }
+}
 
+ul > li:hover,
+.row > [class^="col-"]:hover {
+  text-shadow: 0 0 7px #FFF0BB;
+}
 ul > li > p,
 .row > [class^="col-"] > p {
   line-height: 1.5;
@@ -252,9 +268,8 @@ ul > li > p.marks,
   margin-top: 0;
 }
 
-ul > li > p.marks mark,
-.row > [class^="col-"] > p.marks mark,
-.contribution mark {
+.contribution mark, ul > li > p.marks mark,
+.row > [class^="col-"] > p.marks mark {
   -webkit-border-radius: 0.5em;
   background-color: #FFFFFF;
   border: 0;
@@ -265,9 +280,8 @@ ul > li > p.marks mark,
   padding: 0.2em 0.4em;
   white-space: nowrap;
 }
-ul > li > p.marks mark:hover,
-.row > [class^="col-"] > p.marks mark:hover,
-.contribution mark:hover {
+.contribution mark:hover, ul > li > p.marks mark:hover,
+.row > [class^="col-"] > p.marks mark:hover {
   -webkit-animation-duration: 0.5s;
   -webkit-animation-name: mark_hover;
   -webkitanimation-fill-mode: forwards;
@@ -312,8 +326,7 @@ ul > li > p.marks mark:hover,
   }
 }
 
-section > ul > li > p,
-section > .row > [class^="col-"] > p {
+section > ul > li > p, section > .row > [class^="col-"] > p {
   text-align: center;
 }
 
@@ -322,30 +335,4 @@ section > .row > [class^="col-"] > p {
 }
 .present > p.duration time {
   text-shadow: none;
-}
-
-@media only screen and (max-width: 600px) {
-  #job .row > [class^="col-"]:before,
-  #tech .row > [class^="col-"]:before,
-  #projects .row > [class^="col-"]:before,
-  #contributions .row > [class^="col-"]:before,
-  #education .row > [class^="col-"]:before,
-  #awards .row > [class^="col-"]:before {
-    color: #DDDDDD;
-    content: "# ===== #";
-    display: block;
-    margin: 1em 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  header p.contact > a {
-    white-space: nowrap;
-    font-size: 1em;
-    line-height: 2.5;
-  }
-}
-ul > li:hover,
-.row > [class^="col-"]:hover {
-  text-shadow: 0 0 7px #FFF0BB;
 }

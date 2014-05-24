@@ -82,15 +82,22 @@ header {
       .fa {
         font-size: 1.5em;
       }
-      > a:hover {
-        -webkit-animation-duration: 0.5s;
-        -webkit-animation-name: header_a_hover;
-        -webkitanimation-fill-mode: forwards;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards;
-        animation-name: header_a_hover;
-        background-color: transparent;
-        color: #E92CA5;
+      > a {
+        @media only screen and (max-width: 600px) {
+          white-space: nowrap;
+          font-size: 1em;
+          line-height: 2.5;
+        }
+        &:hover {
+          -webkit-animation-duration: 0.5s;
+          -webkit-animation-name: header_a_hover;
+          -webkitanimation-fill-mode: forwards;
+          animation-duration: 0.5s;
+          animation-fill-mode: forwards;
+          animation-name: header_a_hover;
+          background-color: transparent;
+          color: #E92CA5;
+        }
       }
     }
     > strong {
@@ -170,82 +177,90 @@ ul, .row {
   list-style: none;
   margin: 2em 0 !important;
   padding: 0;
+  @media only screen and (max-width: 600px) {
+    margin: 0 !important;
+  }
 }
 
-ul > li > p,
-.row > [class^="col-"] > p {
-  line-height: 1.5;
-  margin: 1em 0;
-  padding: 0 10px;
+ul > li,
+.row > [class^="col-"] {
+  &:hover {
+    text-shadow: 0 0 7px #FFF0BB;
+  }
 
-  &.image {
-    margin: 0;
-    img {
-      -webkit-border-radius: 10px;
-      border-radius: 10px;
-      box-shadow: 0 0 7px #777777;
+  > p {
+    line-height: 1.5;
+    margin: 1em 0;
+    padding: 0 10px;
+
+    &.image {
       margin: 0;
-      padding: 0;
-      width: 100%;
-      &:hover {
-        box-shadow: 0 0 7px #FFF0BB;
+      img {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 7px #777777;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        &:hover {
+          box-shadow: 0 0 7px #FFF0BB;
+        }
       }
-    }
-    a {
-      background: transparent;
-      padding: 0;
-      text-decoration: none;
-      &:hover {
+      a {
         background: transparent;
         padding: 0;
         text-decoration: none;
+        &:hover {
+          background: transparent;
+          padding: 0;
+          text-decoration: none;
+        }
       }
     }
-  }
 
-  &.title {
-    color: #693726;
-    font-family: 'Arvo', Georgia, serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    letter-spacing: -1px;
-    margin: 0;
+    &.title {
+      color: #693726;
+      font-family: 'Arvo', Georgia, serif;
+      font-size: 1.2em;
+      font-weight: bold;
+      letter-spacing: -1px;
+      margin: 0;
 
-    @media only screen and (max-width: 700px) {
-      font-size: 0.9em;
+      @media only screen and (max-width: 700px) {
+        font-size: 0.9em;
+      }
+
+      @media only screen and (max-width: 600px) {
+        font-size: 1.1em;
+      }
     }
 
-    @media only screen and (max-width: 600px) {
-      font-size: 1.1em;
+    &.duration, &.school, &.where {
+      color: #693726;
+      font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      margin: 0;
     }
-  }
 
-  &.duration, &.school, &.where {
-    color: #693726;
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    margin: 0;
-  }
+    &.source, &.siteurl {
+      color: #693726;
+      font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      margin: 0;
+    }
 
-  &.source, &.siteurl {
-    color: #693726;
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    margin: 0;
-  }
+    &.description {
+      margin-bottom: 0;
+    }
 
-  &.description {
-    margin-bottom: 0;
-  }
-
-  &.marks {
-    line-height: 1.3;
-    margin-top: 0;
+    &.marks {
+      line-height: 1.3;
+      margin-top: 0;
+      @extend .contribution
+    }
   }
 }
 
-ul > li > p.marks,
-.row > [class^="col-"] > p.marks,
 .contribution {
   mark {
     -webkit-border-radius: 0.5em;
@@ -304,9 +319,10 @@ ul > li > p.marks,
 }
 
 section > {
-  ul > li > p,
-  .row > [class^="col-"] > p {
-    text-align: center;
+  ul > li, .row > [class^="col-"] {
+    > p {
+      text-align: center;
+    }
   }
 }
 
@@ -317,32 +333,4 @@ section > {
   &.duration time {
     text-shadow: none;
   }
-}
-
-@media only screen and (max-width: 600px) {
-  #job,
-  #tech,
-  #projects,
-  #contributions,
-  #education,
-  #awards {
-    .row > [class^="col-"]:before {
-      color: #DDDDDD;
-      content: "# ===== #";
-      display: block;
-      margin: 1em 0;
-      text-align: center;
-      width: 100%;
-    }
-  }
-  header p.contact > a {
-    white-space: nowrap;
-    font-size: 1em;
-    line-height: 2.5;
-  }
-}
-
-ul > li:hover,
-.row > [class^="col-"]:hover {
-  text-shadow: 0 0 7px #FFF0BB;
 }
