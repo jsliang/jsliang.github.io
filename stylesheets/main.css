@@ -357,7 +357,12 @@ section > ul > li > p, section > .row > [class^="col-"] > p {
 }
 
 @media only screen and (max-width: 600px) {
-  #job .row > [class^="col-"]:before, #tech .row > [class^="col-"]:before, #projects .row > [class^="col-"]:before, #contributions .contribution:before, #education .row > [class^="col-"]:before, #awards .row > [class^="col-"]:before {
+  #job .row > [class^="col-"]:before,
+  #tech .row > [class^="col-"]:before,
+  #projects .row > [class^="col-"]:before,
+  #contributions .row > [class^="col-"]:before,
+  #education .row > [class^="col-"]:before,
+  #awards .row > [class^="col-"]:before {
     color: #DDDDDD;
     content: "# ===== #";
     display: block;
