@@ -27,73 +27,70 @@ a.breakall {
   width: 6.5%;
 }
 .row .col-2 {
-  width: 15.0%;
+  width: 15%;
 }
 .row .col-3 {
   width: 23.5%;
 }
 .row .col-4 {
-  width: 32.0%;
+  width: 32%;
 }
 .row .col-5 {
   width: 40.5%;
 }
 .row .col-6 {
-  width: 49.0%;
+  width: 49%;
 }
 .row .col-7 {
   width: 57.5%;
 }
 .row .col-8 {
-  width: 66.0%;
+  width: 66%;
 }
 .row .col-9 {
   width: 74.5%;
 }
 .row .col-10 {
-  width: 83.0%;
+  width: 83%;
 }
 .row .col-11 {
   width: 91.5%;
 }
 .row .col-12 {
-  width: 100.0%;
+  width: 100%;
 }
 .row .offset-1 {
-  margin-left: 6.5% !important;
+  margin-left: 8.5% !important;
 }
 .row .offset-2 {
-  margin-left: 15.0% !important;
+  margin-left: 17% !important;
 }
 .row .offset-3 {
-  margin-left: 23.5% !important;
+  margin-left: 25.5% !important;
 }
 .row .offset-4 {
-  margin-left: 32.0% !important;
+  margin-left: 34% !important;
 }
 .row .offset-5 {
-  margin-left: 40.5% !important;
+  margin-left: 42.5% !important;
 }
 .row .offset-6 {
-  margin-left: 49.0% !important;
+  margin-left: 51% !important;
 }
 .row .offset-7 {
-  margin-left: 57.5% !important;
+  margin-left: 59.5% !important;
 }
 .row .offset-8 {
-  margin-left: 66.0% !important;
+  margin-left: 68% !important;
 }
 .row .offset-9 {
-  margin-left: 74.5% !important;
+  margin-left: 76.5% !important;
 }
 .row .offset-10 {
-  margin-left: 83.0% !important;
+  margin-left: 85% !important;
 }
 .row .offset-11 {
-  margin-left: 91.5% !important;
-}
-.row .offset-12 {
-  margin-left: 100.0% !important;
+  margin-left: 93.5% !important;
 }
 
 @media only screen and (max-width: 600px) {

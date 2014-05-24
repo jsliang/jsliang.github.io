@@ -24,31 +24,33 @@ a.breakall {
     }
   }
 
-  .col-1 { width: 6.5%; }
-  .col-2 { width: 15.0%; }
-  .col-3 { width: 23.5%; }
-  .col-4 { width: 32.0%; }
-  .col-5 { width: 40.5%; }
-  .col-6 { width: 49.0%; }
-  .col-7 { width: 57.5%; }
-  .col-8 { width: 66.0%; }
-  .col-9 { width: 74.5%; }
-  .col-10 { width: 83.0%; }
-  .col-11 { width: 91.5%; }
-  .col-12 { width: 100.0%; }
+  $gutter: 2%;
+  $colwidth: (100%-$gutter*11)/12;
 
-  .offset-1 { margin-left: 6.5% !important; }
-  .offset-2 { margin-left: 15.0% !important; }
-  .offset-3 { margin-left: 23.5% !important; }
-  .offset-4 { margin-left: 32.0% !important; }
-  .offset-5 { margin-left: 40.5% !important; }
-  .offset-6 { margin-left: 49.0% !important; }
-  .offset-7 { margin-left: 57.5% !important; }
-  .offset-8 { margin-left: 66.0% !important; }
-  .offset-9 { margin-left: 74.5% !important; }
-  .offset-10 { margin-left: 83.0% !important; }
-  .offset-11 { margin-left: 91.5% !important; }
-  .offset-12 { margin-left: 100.0% !important; }
+  .col-1  { width: $colwidth*1  + $gutter*0; }
+  .col-2  { width: $colwidth*2  + $gutter*1; }
+  .col-3  { width: $colwidth*3  + $gutter*2; }
+  .col-4  { width: $colwidth*4  + $gutter*3; }
+  .col-5  { width: $colwidth*5  + $gutter*4; }
+  .col-6  { width: $colwidth*6  + $gutter*5; }
+  .col-7  { width: $colwidth*7  + $gutter*6; }
+  .col-8  { width: $colwidth*8  + $gutter*7; }
+  .col-9  { width: $colwidth*9  + $gutter*8; }
+  .col-10 { width: $colwidth*10 + $gutter*9; }
+  .col-11 { width: $colwidth*11 + $gutter*10; }
+  .col-12 { width: $colwidth*12 + $gutter*11; }
+
+  .offset-1  { margin-left: ($colwidth + $gutter)*1  !important; }
+  .offset-2  { margin-left: ($colwidth + $gutter)*2  !important; }
+  .offset-3  { margin-left: ($colwidth + $gutter)*3  !important; }
+  .offset-4  { margin-left: ($colwidth + $gutter)*4  !important; }
+  .offset-5  { margin-left: ($colwidth + $gutter)*5  !important; }
+  .offset-6  { margin-left: ($colwidth + $gutter)*6  !important; }
+  .offset-7  { margin-left: ($colwidth + $gutter)*7  !important; }
+  .offset-8  { margin-left: ($colwidth + $gutter)*8  !important; }
+  .offset-9  { margin-left: ($colwidth + $gutter)*9  !important; }
+  .offset-10 { margin-left: ($colwidth + $gutter)*10 !important; }
+  .offset-11 { margin-left: ($colwidth + $gutter)*11 !important; }
 }
 
 @media only screen and (max-width: 600px) {
