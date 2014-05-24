@@ -105,6 +105,13 @@ header {
       font-weight: bold;
     }
   }
+  h1:hover {
+    text-shadow: 0 0 7px #FFF0BB;
+  }
+  img:hover {
+    -webkit-box-shadow: 0 0 7px #FFF0BB;
+    box-shadow: 0 0 7px #FFF0BB;
+  }
   .row {
     margin: 0 !important;
   }
