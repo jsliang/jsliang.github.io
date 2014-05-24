@@ -317,8 +317,11 @@ section > .row > [class^="col-"] > p {
   text-align: center;
 }
 
-.present > p.title {
+.present > p.title, .present > p.duration {
   text-shadow: 0 0 10px #FFF0BB;
+}
+.present > p.duration time {
+  text-shadow: none;
 }
 
 @media only screen and (max-width: 600px) {
