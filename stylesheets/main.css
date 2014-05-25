@@ -390,3 +390,7 @@ ul > li > p.marks,
     margin: 0 !important;
   }
 }
+
+.trigger {
+  font-size: 1.25em;
+}
