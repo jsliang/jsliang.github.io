@@ -27,6 +27,71 @@
           }
         }
       }
+    },
+    genNavMenu: function(nav_ul_selector, heading_selector) {
+      /*
+      install navigation menu based on nav_ul_selector & heading_selector
+      
+      Usage example:
+      <ul id="navmenu"></ul>
+      <div class="section"><h2>Heading A</h2></div>
+      <div class="section"><h2>Heading B</h2></div>
+      <div class="section"><h2>Heading C</h2></div>
+      <script>
+      window.aboutJS.genNavMenu("#navmenu", ".section > h2");
+      </script>
+      */
+
+      var heading, headings_info, hid, htext, li_node, nav_ul, setupHeadings, text_node, _i, _len, _results;
+
+      setupHeadings = function(heading_selector) {
+        var entry, heading, heading_text, headings, headings_info, stripHTMLTags, stripWhitespace, _i, _len;
+
+        stripHTMLTags = function(orig_str) {
+          return orig_str.replace(/(<([^>]+)>)/ig, "").trim();
+        };
+        stripWhitespace = function(orig_str) {
+          return orig_str.replace(/(\s)/ig, "").trim();
+        };
+        headings_info = [];
+        headings = document.querySelectorAll(heading_selector);
+        for (_i = 0, _len = headings.length; _i < _len; _i++) {
+          heading = headings[_i];
+          heading_text = stripHTMLTags(heading.innerHTML);
+          heading.id = "nav" + stripWhitespace(heading_text);
+          entry = {
+            id: heading.id,
+            text: heading_text
+          };
+          headings_info.push(entry);
+        }
+        return headings_info;
+      };
+      nav_ul = document.querySelector(nav_ul_selector);
+      if (nav_ul != null) {
+        headings_info = setupHeadings(heading_selector);
+        if (headings_info.length > 0) {
+          _results = [];
+          for (_i = 0, _len = headings_info.length; _i < _len; _i++) {
+            heading = headings_info[_i];
+            hid = heading.id;
+            htext = heading.text;
+            li_node = document.createElement("li");
+            li_node.headingid = hid;
+            text_node = document.createTextNode(htext);
+            li_node.appendChild(text_node);
+            li_node.onclick = function() {
+              var heading_element, heading_top;
+
+              heading_element = document.getElementById(this.headingid);
+              heading_top = heading_element.parentNode.offsetTop;
+              return window.scrollTo(0, heading_top);
+            };
+            _results.push(nav_ul.appendChild(li_node));
+          }
+          return _results;
+        }
+      }
     }
   };
 

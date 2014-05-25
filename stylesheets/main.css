@@ -354,3 +354,34 @@ ul > li > p.marks,
 .nobr {
   white-space: nowrap;
 }
+
+#navmenu {
+  -webkit-border-bottom-left-radius: 10px;
+  background-color: #B30000;
+  border-bottom-left-radius: 10px;
+  color: #FFFFFF;
+  margin: 0 !important;
+  position: fixed;
+  right: 0;
+  text-shadow: 1px 1px 2px #000000;
+  top: 0;
+  z-index: 300;
+}
+#navmenu li {
+  background-color: transparent;
+  font-family: 'Arvo', Georgia, serif;
+  margin: 0;
+  padding: 1em;
+}
+#navmenu li a {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+#navmenu li:hover {
+  background-color: #DB2121;
+  cursor: pointer;
+}
+#navmenu li:last-child {
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
