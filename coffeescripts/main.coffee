@@ -63,7 +63,18 @@ aboutJS =
         if nav_ul?
             headings_info = setupHeadings(heading_selector)
             if headings_info.length > 0
-                for heading in headings_info
+                gen_home_li_node = (nav_ul) ->
+                    home_li_node = document.createElement("li")
+
+                    text_node = document.createTextNode("Home")
+                    home_li_node.appendChild(text_node)
+
+                    home_li_node.onclick = () ->
+                        window.scrollTo(0, 0)
+
+                    nav_ul.appendChild(home_li_node)
+
+                gen_heading_li_node = (nav_ul, heading) ->
                     hid = heading.id
                     htext = heading.text
 
@@ -79,6 +90,11 @@ aboutJS =
                         window.scrollTo(0, heading_top)
 
                     nav_ul.appendChild(li_node)
+
+                gen_home_li_node(nav_ul)
+
+                for heading in headings_info
+                    gen_heading_li_node(nav_ul, heading)
 
 ###
 top-level function for other scripts to use

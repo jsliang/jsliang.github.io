@@ -42,7 +42,7 @@
       </script>
       */
 
-      var heading, headings_info, hid, htext, li_node, nav_ul, setupHeadings, text_node, _i, _len, _results;
+      var gen_heading_li_node, gen_home_li_node, heading, headings_info, nav_ul, setupHeadings, _i, _len, _results;
 
       setupHeadings = function(heading_selector) {
         var entry, heading, heading_text, headings, headings_info, stripHTMLTags, stripWhitespace, _i, _len;
@@ -71,9 +71,20 @@
       if (nav_ul != null) {
         headings_info = setupHeadings(heading_selector);
         if (headings_info.length > 0) {
-          _results = [];
-          for (_i = 0, _len = headings_info.length; _i < _len; _i++) {
-            heading = headings_info[_i];
+          gen_home_li_node = function(nav_ul) {
+            var home_li_node, text_node;
+
+            home_li_node = document.createElement("li");
+            text_node = document.createTextNode("Home");
+            home_li_node.appendChild(text_node);
+            home_li_node.onclick = function() {
+              return window.scrollTo(0, 0);
+            };
+            return nav_ul.appendChild(home_li_node);
+          };
+          gen_heading_li_node = function(nav_ul, heading) {
+            var hid, htext, li_node, text_node;
+
             hid = heading.id;
             htext = heading.text;
             li_node = document.createElement("li");
@@ -87,7 +98,13 @@
               heading_top = heading_element.parentNode.offsetTop;
               return window.scrollTo(0, heading_top);
             };
-            _results.push(nav_ul.appendChild(li_node));
+            return nav_ul.appendChild(li_node);
+          };
+          gen_home_li_node(nav_ul);
+          _results = [];
+          for (_i = 0, _len = headings_info.length; _i < _len; _i++) {
+            heading = headings_info[_i];
+            _results.push(gen_heading_li_node(nav_ul, heading));
           }
           return _results;
         }
