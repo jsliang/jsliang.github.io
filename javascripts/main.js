@@ -20,7 +20,7 @@
         client_height = window.innerHeight || document.documentElement.clientHeight;
         cover_height = cover.getBoundingClientRect().height;
         if (cover_height < client_height) {
-          header_top = cover.getBoundingClientRect().top;
+          header_top = cover.offsetTop;
           if (header_top > 0) {
             cover_style_height = client_height - header_top;
             return cover.style.height = cover_style_height + "px";

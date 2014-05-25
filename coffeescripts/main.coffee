@@ -16,7 +16,7 @@ aboutJS =
 
             # strech only if header#cover is shorter than browser inner height
             if cover_height < client_height
-                header_top = cover.getBoundingClientRect().top
+                header_top = cover.offsetTop
 
                 if header_top > 0
                     cover_style_height = client_height - header_top
