@@ -44,13 +44,13 @@ aboutJS =
         if nav_ul?
             trigger_button = nav_ul.querySelector(trigger_button_selector)
             trigger_button.onclick = () ->
-                genNavMenu(nav_ul_selector, heading_selector)
+                _genNavMenu(nav_ul_selector, heading_selector)
 
-        genNavMenu = (nav_ul_selector, heading_selector) ->
-            setupHeadings = (heading_selector) ->
-                stripHTMLTags = (orig_str) ->
+        _genNavMenu = (nav_ul_selector, heading_selector) ->
+            _setupHeadings = (heading_selector) ->
+                _stripHTMLTags = (orig_str) ->
                     return orig_str.replace(/(<([^>]+)>)/ig, "").trim()
-                stripWhitespace = (orig_str) ->
+                _stripWhitespace = (orig_str) ->
                     return orig_str.replace(/(\s)/ig, "").trim()
 
                 headings_info = []
@@ -58,15 +58,15 @@ aboutJS =
                 headings = document.querySelectorAll(heading_selector)
 
                 for heading in headings
-                    heading_text = stripHTMLTags(heading.innerHTML)
+                    heading_text = _stripHTMLTags(heading.innerHTML)
 
                     # add id to each heading for anchoring
-                    heading.id = "nav" + stripWhitespace(heading_text)
+                    heading.id = "nav" + _stripWhitespace(heading_text)
 
-                    entry = 
+                    entry =
                         id: heading.id
                         text: heading_text
-                    
+
                     headings_info.push(entry)
 
                 return headings_info
@@ -74,16 +74,16 @@ aboutJS =
             generated_class = "generated"
 
             if nav_ul?
-                headings_info = setupHeadings(heading_selector)
+                headings_info = _setupHeadings(heading_selector)
                 if headings_info.length > 0
-                    hide_generated_li_nodes = () ->
+                    _hideGeneratedLiNodes = () ->
                         trigger_button.style.display = "inherit";
 
                         for generated_li in document.querySelectorAll("." + generated_class)
                             console.log generated_li
                             generated_li.parentNode.removeChild(generated_li)
 
-                    gen_home_li_node = (nav_ul) ->
+                    _genHomeLiNode = (nav_ul) ->
                         home_li_node = document.createElement("li")
 
                         text_node = document.createTextNode("Home")
@@ -92,11 +92,11 @@ aboutJS =
 
                         home_li_node.onclick = () ->
                             window.scrollTo(0, 0)
-                            hide_generated_li_nodes()
+                            _hideGeneratedLiNodes()
 
                         nav_ul.appendChild(home_li_node)
 
-                    gen_heading_li_node = (nav_ul, heading) ->
+                    _genHeadingLiNode = (nav_ul, heading) ->
                         hid = heading.id
                         htext = heading.text
 
@@ -113,14 +113,14 @@ aboutJS =
                             heading_top = heading_element.parentNode.offsetTop
                             window.scrollTo(0, heading_top)
 
-                            hide_generated_li_nodes()
+                            _hideGeneratedLiNodes()
 
                         nav_ul.appendChild(li_node)
 
-                    gen_home_li_node(nav_ul)
+                    _genHomeLiNode(nav_ul)
 
                     for heading in headings_info
-                        gen_heading_li_node(nav_ul, heading)
+                        _genHeadingLiNode(nav_ul, heading)
 
                     trigger_button.style.display = "none";
 

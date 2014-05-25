@@ -46,34 +46,34 @@
       </script>
       */
 
-      var genNavMenu, nav_ul, trigger_button, trigger_button_selector;
+      var nav_ul, trigger_button, trigger_button_selector, _genNavMenu;
 
       trigger_button_selector = ".trigger";
       nav_ul = document.querySelector(nav_ul_selector);
       if (nav_ul != null) {
         trigger_button = nav_ul.querySelector(trigger_button_selector);
         trigger_button.onclick = function() {
-          return genNavMenu(nav_ul_selector, heading_selector);
+          return _genNavMenu(nav_ul_selector, heading_selector);
         };
       }
-      return genNavMenu = function(nav_ul_selector, heading_selector) {
-        var gen_heading_li_node, gen_home_li_node, generated_class, heading, headings_info, hide_generated_li_nodes, setupHeadings, _i, _len;
+      return _genNavMenu = function(nav_ul_selector, heading_selector) {
+        var generated_class, heading, headings_info, _genHeadingLiNode, _genHomeLiNode, _hideGeneratedLiNodes, _i, _len, _setupHeadings;
 
-        setupHeadings = function(heading_selector) {
-          var entry, heading, heading_text, headings, headings_info, stripHTMLTags, stripWhitespace, _i, _len;
+        _setupHeadings = function(heading_selector) {
+          var entry, heading, heading_text, headings, headings_info, _i, _len, _stripHTMLTags, _stripWhitespace;
 
-          stripHTMLTags = function(orig_str) {
+          _stripHTMLTags = function(orig_str) {
             return orig_str.replace(/(<([^>]+)>)/ig, "").trim();
           };
-          stripWhitespace = function(orig_str) {
+          _stripWhitespace = function(orig_str) {
             return orig_str.replace(/(\s)/ig, "").trim();
           };
           headings_info = [];
           headings = document.querySelectorAll(heading_selector);
           for (_i = 0, _len = headings.length; _i < _len; _i++) {
             heading = headings[_i];
-            heading_text = stripHTMLTags(heading.innerHTML);
-            heading.id = "nav" + stripWhitespace(heading_text);
+            heading_text = _stripHTMLTags(heading.innerHTML);
+            heading.id = "nav" + _stripWhitespace(heading_text);
             entry = {
               id: heading.id,
               text: heading_text
@@ -84,9 +84,9 @@
         };
         generated_class = "generated";
         if (nav_ul != null) {
-          headings_info = setupHeadings(heading_selector);
+          headings_info = _setupHeadings(heading_selector);
           if (headings_info.length > 0) {
-            hide_generated_li_nodes = function() {
+            _hideGeneratedLiNodes = function() {
               var generated_li, _i, _len, _ref, _results;
 
               trigger_button.style.display = "inherit";
@@ -99,7 +99,7 @@
               }
               return _results;
             };
-            gen_home_li_node = function(nav_ul) {
+            _genHomeLiNode = function(nav_ul) {
               var home_li_node, text_node;
 
               home_li_node = document.createElement("li");
@@ -108,11 +108,11 @@
               home_li_node.setAttribute("class", generated_class);
               home_li_node.onclick = function() {
                 window.scrollTo(0, 0);
-                return hide_generated_li_nodes();
+                return _hideGeneratedLiNodes();
               };
               return nav_ul.appendChild(home_li_node);
             };
-            gen_heading_li_node = function(nav_ul, heading) {
+            _genHeadingLiNode = function(nav_ul, heading) {
               var hid, htext, li_node, text_node;
 
               hid = heading.id;
@@ -128,14 +128,14 @@
                 heading_element = document.getElementById(this.headingid);
                 heading_top = heading_element.parentNode.offsetTop;
                 window.scrollTo(0, heading_top);
-                return hide_generated_li_nodes();
+                return _hideGeneratedLiNodes();
               };
               return nav_ul.appendChild(li_node);
             };
-            gen_home_li_node(nav_ul);
+            _genHomeLiNode(nav_ul);
             for (_i = 0, _len = headings_info.length; _i < _len; _i++) {
               heading = headings_info[_i];
-              gen_heading_li_node(nav_ul, heading);
+              _genHeadingLiNode(nav_ul, heading);
             }
             return trigger_button.style.display = "none";
           }
