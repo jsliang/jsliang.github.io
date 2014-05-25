@@ -361,6 +361,9 @@ ul > li > p.marks,
   border-bottom-left-radius: 10px;
   color: #FFFFFF;
   margin: 0 !important;
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
   position: fixed;
   right: 0;
   text-shadow: 1px 1px 2px #000000;
