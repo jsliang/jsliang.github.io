@@ -385,3 +385,8 @@ ul > li > p.marks,
   -webkit-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+@media only screen and (max-width: 600px) {
+  #navmenu li {
+    margin: 0 !important;
+  }
+}

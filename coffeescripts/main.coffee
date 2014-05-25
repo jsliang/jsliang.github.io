@@ -22,79 +22,108 @@ aboutJS =
                     cover_style_height = client_height - header_top
                     cover.style.height = cover_style_height + "px"
 
-    genNavMenu: (nav_ul_selector, heading_selector) ->
+    setupNavMenu: (nav_ul_selector, heading_selector) ->
         ###
         install navigation menu based on nav_ul_selector & heading_selector
 
         Usage example:
-        <ul id="navmenu"></ul>
+        <ul id="navmenu">
+            <li class="trigger">
+                <i class='fa fa-bars'></i>
+            </li>
+        </ul>
         <div class="section"><h2>Heading A</h2></div>
         <div class="section"><h2>Heading B</h2></div>
         <div class="section"><h2>Heading C</h2></div>
         <script>
-        window.aboutJS.genNavMenu("#navmenu", ".section > h2");
+        window.aboutJS.setupNavMenu("#navmenu", ".section > h2");
         </script>
         ###
-        setupHeadings = (heading_selector) ->
-            stripHTMLTags = (orig_str) ->
-                return orig_str.replace(/(<([^>]+)>)/ig, "").trim()
-            stripWhitespace = (orig_str) ->
-                return orig_str.replace(/(\s)/ig, "").trim()
-
-            headings_info = []
-
-            headings = document.querySelectorAll(heading_selector)
-
-            for heading in headings
-                heading_text = stripHTMLTags(heading.innerHTML)
-
-                # add id to each heading for anchoring
-                heading.id = "nav" + stripWhitespace(heading_text)
-
-                entry = 
-                    id: heading.id
-                    text: heading_text
-                
-                headings_info.push(entry)
-
-            return headings_info
-
+        trigger_button_selector = ".trigger"
         nav_ul = document.querySelector(nav_ul_selector)
         if nav_ul?
-            headings_info = setupHeadings(heading_selector)
-            if headings_info.length > 0
-                gen_home_li_node = (nav_ul) ->
-                    home_li_node = document.createElement("li")
+            trigger_button = nav_ul.querySelector(trigger_button_selector)
+            trigger_button.onclick = () ->
+                genNavMenu(nav_ul_selector, heading_selector)
 
-                    text_node = document.createTextNode("Home")
-                    home_li_node.appendChild(text_node)
+        genNavMenu = (nav_ul_selector, heading_selector) ->
+            setupHeadings = (heading_selector) ->
+                stripHTMLTags = (orig_str) ->
+                    return orig_str.replace(/(<([^>]+)>)/ig, "").trim()
+                stripWhitespace = (orig_str) ->
+                    return orig_str.replace(/(\s)/ig, "").trim()
 
-                    home_li_node.onclick = () ->
-                        window.scrollTo(0, 0)
+                headings_info = []
 
-                    nav_ul.appendChild(home_li_node)
+                headings = document.querySelectorAll(heading_selector)
 
-                gen_heading_li_node = (nav_ul, heading) ->
-                    hid = heading.id
-                    htext = heading.text
+                for heading in headings
+                    heading_text = stripHTMLTags(heading.innerHTML)
 
-                    li_node = document.createElement("li")
-                    li_node.headingid = hid
+                    # add id to each heading for anchoring
+                    heading.id = "nav" + stripWhitespace(heading_text)
 
-                    text_node = document.createTextNode(htext)
-                    li_node.appendChild(text_node)
+                    entry = 
+                        id: heading.id
+                        text: heading_text
+                    
+                    headings_info.push(entry)
 
-                    li_node.onclick = () ->
-                        heading_element = document.getElementById(this.headingid)
-                        heading_top = heading_element.parentNode.offsetTop
-                        window.scrollTo(0, heading_top)
+                return headings_info
 
-                    nav_ul.appendChild(li_node)
+            generated_class = "generated"
 
-                gen_home_li_node(nav_ul)
+            if nav_ul?
+                headings_info = setupHeadings(heading_selector)
+                if headings_info.length > 0
+                    hide_generated_li_nodes = () ->
+                        trigger_button.style.display = "inherit";
 
-                for heading in headings_info
-                    gen_heading_li_node(nav_ul, heading)
+                        for generated_li in document.querySelectorAll("." + generated_class)
+                            console.log generated_li
+                            generated_li.parentNode.removeChild(generated_li)
+
+                    gen_home_li_node = (nav_ul) ->
+                        home_li_node = document.createElement("li")
+
+                        text_node = document.createTextNode("Home")
+                        home_li_node.appendChild(text_node)
+                        home_li_node.setAttribute("class", generated_class)
+
+                        home_li_node.onclick = () ->
+                            window.scrollTo(0, 0)
+                            hide_generated_li_nodes()
+
+                        nav_ul.appendChild(home_li_node)
+
+                    gen_heading_li_node = (nav_ul, heading) ->
+                        hid = heading.id
+                        htext = heading.text
+
+                        li_node = document.createElement("li")
+                        li_node.headingid = hid
+
+                        li_node.setAttribute("class", generated_class)
+
+                        text_node = document.createTextNode(htext)
+                        li_node.appendChild(text_node)
+
+                        li_node.onclick = () ->
+                            heading_element = document.getElementById(this.headingid)
+                            heading_top = heading_element.parentNode.offsetTop
+                            window.scrollTo(0, heading_top)
+
+                            hide_generated_li_nodes()
+
+                        nav_ul.appendChild(li_node)
+
+                    gen_home_li_node(nav_ul)
+
+                    for heading in headings_info
+                        gen_heading_li_node(nav_ul, heading)
+
+                    trigger_button.style.display = "none";
+
 
 ###
 top-level function for other scripts to use
