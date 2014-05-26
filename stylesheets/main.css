@@ -744,6 +744,7 @@ ul > li > p.marks,
   color: #FFFFFF;
   margin: 0 !important;
   max-height: 100%;
+  opacity: 0.9;
   overflow-x: hidden;
   overflow-y: auto;
   position: fixed;
@@ -752,35 +753,35 @@ ul > li > p.marks,
   top: 0;
   z-index: 300;
 }
-/* line 21, ../sass/aboutJS-navmenu.scss */
+/* line 22, ../sass/aboutJS-navmenu.scss */
 .aboutjs-navmenu li {
   background-color: transparent;
   font-family: 'Arvo', Georgia, serif;
   margin: 0;
   padding: 1em;
 }
-/* line 26, ../sass/aboutJS-navmenu.scss */
+/* line 27, ../sass/aboutJS-navmenu.scss */
 .aboutjs-navmenu li a {
   background-color: transparent;
   color: #FFFFFF;
 }
-/* line 30, ../sass/aboutJS-navmenu.scss */
+/* line 31, ../sass/aboutJS-navmenu.scss */
 .aboutjs-navmenu li:hover {
   background-color: #DB2121;
   cursor: pointer;
 }
-/* line 34, ../sass/aboutJS-navmenu.scss */
+/* line 35, ../sass/aboutJS-navmenu.scss */
 .aboutjs-navmenu li:last-child {
   -webkit-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 @media only screen and (max-width: 600px) {
-  /* line 21, ../sass/aboutJS-navmenu.scss */
+  /* line 22, ../sass/aboutJS-navmenu.scss */
   .aboutjs-navmenu li {
     margin: 0 !important;
   }
 }
-/* line 42, ../sass/aboutJS-navmenu.scss */
+/* line 43, ../sass/aboutJS-navmenu.scss */
 .aboutjs-navmenu .trigger {
   font-size: 1.25em;
 }
