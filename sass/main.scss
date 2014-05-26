@@ -90,6 +90,26 @@ a {
     }
 }
 
+mark {
+    @include border-radius(0.5em);
+    @include box-shadow(0 0 5px $c-mark);
+    background-color: $c-background;
+    border: 0;
+    color: $c-mark;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+    padding: 0.2em 0.4em;
+    white-space: nowrap;
+    &:hover {
+        @include animation(0.5s, mark_hover, forwards);
+        @include border-radius(0.5em);
+        @include box-shadow(none);
+        background-color: $c-mark;
+        color: $c-background;
+        cursor: default;
+    }
+}
+
 .avatar {
     @include border-radius(75px);
     max-width: 200px;
@@ -255,29 +275,6 @@ ul > li,
         &.marks {
             line-height: 1.3;
             margin-top: 0;
-            @extend .contribution;
-        }
-    }
-}
-
-.contribution {
-    mark {
-        @include border-radius(0.5em);
-        @include box-shadow(0 0 5px $c-mark);
-        background-color: $c-background;
-        border: 0;
-        color: $c-mark;
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-size: 0.7em;
-        padding: 0.2em 0.4em;
-        white-space: nowrap;
-        &:hover {
-            @include animation(0.5s, mark_hover, forwards);
-            @include border-radius(0.5em);
-            @include box-shadow(none);
-            background-color: $c-mark;
-            color: $c-background;
-            cursor: default;
         }
     }
 }
