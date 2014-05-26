@@ -3,6 +3,7 @@
  * Richard Clark (http://richclarkdesign.com)
  * http://cssreset.com
  */
+/* line 17, ../sass/reset.scss */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -24,29 +25,35 @@ time, mark, audio, video {
   background: transparent;
 }
 
+/* line 26, ../sass/reset.scss */
 body {
   line-height: 1;
 }
 
+/* line 30, ../sass/reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+/* line 33, ../sass/reset.scss */
 nav ul {
   list-style: none;
 }
 
+/* line 36, ../sass/reset.scss */
 blockquote, q {
   quotes: none;
 }
 
+/* line 40, ../sass/reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
+/* line 44, ../sass/reset.scss */
 a {
   margin: 0;
   padding: 0;
@@ -55,12 +62,14 @@ a {
   background: transparent;
 }
 
+/* line 52, ../sass/reset.scss */
 ins {
   background-color: #ff9;
   color: #000;
   text-decoration: none;
 }
 
+/* line 58, ../sass/reset.scss */
 mark {
   background-color: #ff9;
   color: #000;
@@ -68,20 +77,24 @@ mark {
   font-weight: 400;
 }
 
+/* line 64, ../sass/reset.scss */
 del {
   text-decoration: line-through;
 }
 
+/* line 67, ../sass/reset.scss */
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
   cursor: help;
 }
 
+/* line 71, ../sass/reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* line 76, ../sass/reset.scss */
 hr {
   display: block;
   height: 1px;
@@ -91,6 +104,7 @@ hr {
   padding: 0;
 }
 
+/* line 84, ../sass/reset.scss */
 input, select {
   vertical-align: middle;
 }
@@ -98,15 +112,18 @@ input, select {
 /**
  * CSS Styles for http://jsliang.com
  */
+/* line 7, ../sass/main.scss */
 small {
   font-size: 0.8em;
 }
 
+/* line 11, ../sass/main.scss */
 article {
   margin: 0 auto;
   max-width: 1280px;
 }
 
+/* line 16, ../sass/main.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #000000;
   font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
@@ -115,35 +132,42 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   text-transform: uppercase;
 }
+/* line 23, ../sass/main.scss */
 h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
   text-shadow: 0 0 7px #FFF0BB;
 }
 
+/* line 28, ../sass/main.scss */
 h1 {
   font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
   font-size: 3em;
   font-weight: normal;
 }
 @media only screen and (max-width: 700px) {
+  /* line 28, ../sass/main.scss */
   h1 {
     font-size: 2em;
   }
 }
 @media only screen and (max-width: 500px) {
+  /* line 37, ../sass/main.scss */
   h1 small {
     display: none;
   }
 }
 
+/* line 43, ../sass/main.scss */
 h2 {
   font-size: 2em;
 }
 @media only screen and (max-width: 700px) {
+  /* line 43, ../sass/main.scss */
   h2 {
     font-size: 1.3em;
   }
 }
 
+/* line 50, ../sass/main.scss */
 body {
   color: #000000;
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
@@ -151,6 +175,7 @@ body {
   padding: 0 1em;
 }
 
+/* line 57, ../sass/main.scss */
 p {
   font-size: 16px;
   line-height: 2;
@@ -158,15 +183,18 @@ p {
   padding: 0;
 }
 
+/* line 64, ../sass/main.scss */
 address {
   font-style: normal;
 }
 
+/* line 68, ../sass/main.scss */
 a {
   color: #0066EE;
   text-decoration: none;
   padding: 0 0.2em;
 }
+/* line 72, ../sass/main.scss */
 a:hover {
   color: #FFFFFF;
   background-color: #0066EE;
@@ -174,6 +202,7 @@ a:hover {
   border-radius: 0.3em;
 }
 
+/* line 80, ../sass/main.scss */
 .avatar {
   -webkit-border-radius: 75px;
   border-radius: 75px;
@@ -181,9 +210,11 @@ a:hover {
   width: 100%;
 }
 
+/* line 88, ../sass/main.scss */
 header h1 {
   margin-top: 1em;
 }
+/* line 91, ../sass/main.scss */
 header p {
   color: #693726;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
@@ -191,19 +222,23 @@ header p {
   font-weight: normal;
   text-align: center;
 }
+/* line 97, ../sass/main.scss */
 header p.contact {
   font-size: 1em;
 }
+/* line 99, ../sass/main.scss */
 header p.contact .fa {
   font-size: 1.5em;
 }
 @media only screen and (max-width: 600px) {
+  /* line 102, ../sass/main.scss */
   header p.contact > a {
     white-space: nowrap;
     font-size: 1em;
     line-height: 2.5;
   }
 }
+/* line 108, ../sass/main.scss */
 header p.contact > a:hover {
   -webkit-animation-duration: 0.5s;
   -webkit-animation-name: header_a_hover;
@@ -214,32 +249,38 @@ header p.contact > a:hover {
   background-color: transparent;
   color: #E92CA5;
 }
+/* line 120, ../sass/main.scss */
 header p > strong {
   color: #CC1238;
   font-weight: bold;
 }
 @media only screen and (max-width: 500px) {
+  /* line 91, ../sass/main.scss */
   header p {
     font-size: 1.1em;
     line-height: 1.5;
   }
 }
+/* line 130, ../sass/main.scss */
 header img:hover {
   -webkit-box-shadow: 0 0 7px #FFF0BB;
   box-shadow: 0 0 7px #FFF0BB;
 }
 @media only screen and (max-width: 600px) {
+  /* line 134, ../sass/main.scss */
   header ul > li, header .row > [class^="col-"] {
     margin: 0 !important;
   }
 }
 
 @keyframes header_a_hover {
+  /* line 142, ../sass/main.scss */
   from {
     background-color: transparent;
     color: #0066EE;
   }
 
+  /* line 146, ../sass/main.scss */
   to {
     background-color: transparent;
     color: #E92CA5;
@@ -248,22 +289,26 @@ header img:hover {
 
 /*Safari and Chrome*/
 @-webkit-keyframes header_a_hover {
+  /* line 155, ../sass/main.scss */
   from {
     background-color: transparent;
     color: #0066EE;
   }
 
+  /* line 159, ../sass/main.scss */
   to {
     background-color: transparent;
     color: #E92CA5;
   }
 }
 
+/* line 165, ../sass/main.scss */
 footer {
   border-top: 1px dashed #555555;
   padding: 2em 0;
   text-align: center;
 }
+/* line 170, ../sass/main.scss */
 footer > address, footer > p {
   color: #555555;
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
@@ -271,45 +316,54 @@ footer > address, footer > p {
   margin: 0.5em 0;
 }
 
+/* line 179, ../sass/main.scss */
 .section {
   border-top: 1px dashed #555555;
   padding: 3em 1em;
 }
+/* line 183, ../sass/main.scss */
 .section ul > li > p, .section .row > [class^="col-"] > p {
   text-align: center;
 }
 
+/* line 189, ../sass/main.scss */
 ul, .row {
   list-style: none;
   margin: 2em 0 !important;
   padding: 0;
 }
 @media only screen and (max-width: 600px) {
+  /* line 189, ../sass/main.scss */
   ul, .row {
     margin: 0 !important;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  /* line 199, ../sass/main.scss */
   ul > li,
   .row > [class^="col-"] {
     margin: 2em 0 !important;
   }
 }
+/* line 203, ../sass/main.scss */
 ul > li:hover,
 .row > [class^="col-"]:hover {
   text-shadow: 0 0 7px #FFF0BB;
 }
+/* line 206, ../sass/main.scss */
 ul > li > p,
 .row > [class^="col-"] > p {
   line-height: 1.5;
   margin: 1em 0;
   padding: 0 10px;
 }
+/* line 210, ../sass/main.scss */
 ul > li > p.image,
 .row > [class^="col-"] > p.image {
   margin: 0;
 }
+/* line 212, ../sass/main.scss */
 ul > li > p.image img,
 .row > [class^="col-"] > p.image img {
   -webkit-border-radius: 10px;
@@ -320,22 +374,26 @@ ul > li > p.image img,
   padding: 0;
   width: 100%;
 }
+/* line 220, ../sass/main.scss */
 ul > li > p.image img:hover,
 .row > [class^="col-"] > p.image img:hover {
   box-shadow: 0 0 7px #FFF0BB;
 }
+/* line 224, ../sass/main.scss */
 ul > li > p.image a,
 .row > [class^="col-"] > p.image a {
   background: transparent;
   padding: 0;
   text-decoration: none;
 }
+/* line 228, ../sass/main.scss */
 ul > li > p.image a:hover,
 .row > [class^="col-"] > p.image a:hover {
   background: transparent;
   padding: 0;
   text-decoration: none;
 }
+/* line 235, ../sass/main.scss */
 ul > li > p.title,
 .row > [class^="col-"] > p.title {
   color: #693726;
@@ -346,17 +404,20 @@ ul > li > p.title,
   margin: 0;
 }
 @media only screen and (max-width: 700px) {
+  /* line 235, ../sass/main.scss */
   ul > li > p.title,
   .row > [class^="col-"] > p.title {
     font-size: 0.9em;
   }
 }
 @media only screen and (max-width: 600px) {
+  /* line 235, ../sass/main.scss */
   ul > li > p.title,
   .row > [class^="col-"] > p.title {
     font-size: 1.1em;
   }
 }
+/* line 249, ../sass/main.scss */
 ul > li > p.duration, ul > li > p.school, ul > li > p.where,
 .row > [class^="col-"] > p.duration,
 .row > [class^="col-"] > p.school,
@@ -366,6 +427,7 @@ ul > li > p.duration, ul > li > p.school, ul > li > p.where,
   line-height: 1.5;
   margin: 0;
 }
+/* line 255, ../sass/main.scss */
 ul > li > p.source, ul > li > p.siteurl,
 .row > [class^="col-"] > p.source,
 .row > [class^="col-"] > p.siteurl {
@@ -374,16 +436,19 @@ ul > li > p.source, ul > li > p.siteurl,
   line-height: 1.5;
   margin: 0;
 }
+/* line 261, ../sass/main.scss */
 ul > li > p.description,
 .row > [class^="col-"] > p.description {
   margin-bottom: 0;
 }
+/* line 264, ../sass/main.scss */
 ul > li > p.marks,
 .row > [class^="col-"] > p.marks {
   line-height: 1.3;
   margin-top: 0;
 }
 
+/* line 274, ../sass/main.scss */
 .contribution mark, ul > li > p.marks mark,
 .row > [class^="col-"] > p.marks mark {
   -webkit-border-radius: 0.5em;
@@ -396,6 +461,7 @@ ul > li > p.marks,
   padding: 0.2em 0.4em;
   white-space: nowrap;
 }
+/* line 284, ../sass/main.scss */
 .contribution mark:hover, ul > li > p.marks mark:hover,
 .row > [class^="col-"] > p.marks mark:hover {
   -webkit-animation-duration: 0.5s;
@@ -412,12 +478,14 @@ ul > li > p.marks,
 }
 
 @keyframes mark_hover {
+  /* line 301, ../sass/main.scss */
   from {
     background-color: #FFFFFF;
     box-shadow: 0 0 5px #E92CA5;
     color: #E92CA5;
   }
 
+  /* line 306, ../sass/main.scss */
   to {
     background-color: #E92CA5;
     box-shadow: none;
@@ -428,12 +496,14 @@ ul > li > p.marks,
 
 /*Safari and Chrome*/
 @-webkit-keyframes mark_hover {
+  /* line 317, ../sass/main.scss */
   from {
     background-color: #FFFFFF;
     box-shadow: 0 0 5px #E92CA5;
     color: #E92CA5;
   }
 
+  /* line 322, ../sass/main.scss */
   to {
     background-color: #E92CA5;
     box-shadow: none;
@@ -442,13 +512,16 @@ ul > li > p.marks,
   }
 }
 
+/* line 332, ../sass/main.scss */
 .present > p.title, .present > p.duration {
   text-shadow: 0 0 10px #FFF0BB;
 }
+/* line 335, ../sass/main.scss */
 .present > p.duration time {
   text-shadow: none;
 }
 
+/* line 340, ../sass/main.scss */
 .nobr {
   white-space: nowrap;
 }
@@ -457,6 +530,7 @@ ul > li > p.marks,
  * CSS Styles for navigation menu for http://jsliang.com
  * working with: aboutJS.js
  */
+/* line 7, ../sass/aboutJS-navmenu.scss */
 .aboutjs-navmenu {
   -webkit-border-bottom-left-radius: 10px;
   background-color: #B30000;
@@ -472,29 +546,35 @@ ul > li > p.marks,
   top: 0;
   z-index: 300;
 }
+/* line 21, ../sass/aboutJS-navmenu.scss */
 .aboutjs-navmenu li {
   background-color: transparent;
   font-family: 'Arvo', Georgia, serif;
   margin: 0;
   padding: 1em;
 }
+/* line 26, ../sass/aboutJS-navmenu.scss */
 .aboutjs-navmenu li a {
   background-color: transparent;
   color: #FFFFFF;
 }
+/* line 30, ../sass/aboutJS-navmenu.scss */
 .aboutjs-navmenu li:hover {
   background-color: #DB2121;
   cursor: pointer;
 }
+/* line 34, ../sass/aboutJS-navmenu.scss */
 .aboutjs-navmenu li:last-child {
   -webkit-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 @media only screen and (max-width: 600px) {
+  /* line 21, ../sass/aboutJS-navmenu.scss */
   .aboutjs-navmenu li {
     margin: 0 !important;
   }
 }
+/* line 42, ../sass/aboutJS-navmenu.scss */
 .aboutjs-navmenu .trigger {
   font-size: 1.25em;
 }
