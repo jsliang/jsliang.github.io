@@ -32,6 +32,12 @@ h1 {
     @media only screen and (max-width: 700px) {
         font-size: 2em;
     }
+
+    @media only screen and (max-width: 500px) {
+        small {
+            display: none;
+        }
+    }
 }
 
 h2 {
@@ -115,6 +121,11 @@ header {
             color: #CC1238;
             font-weight: bold;
         }
+
+        @media only screen and (max-width: 500px) {
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
     }
     img:hover {
         -webkit-box-shadow: 0 0 7px #FFF0BB;
@@ -148,16 +159,6 @@ header {
     to {
         background-color: transparent;
         color: #E92CA5;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    h1 > small {
-        display: none;
-    }
-    header p {
-        font-size: 1.1em;
-        line-height: 1.5;
     }
 }
 

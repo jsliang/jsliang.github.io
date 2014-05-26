@@ -34,6 +34,11 @@ h1 {
     font-size: 2em;
   }
 }
+@media only screen and (max-width: 500px) {
+  h1 small {
+    display: none;
+  }
+}
 
 h2 {
   font-size: 2em;
@@ -118,6 +123,12 @@ header p > strong {
   color: #CC1238;
   font-weight: bold;
 }
+@media only screen and (max-width: 500px) {
+  header p {
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
+}
 header img:hover {
   -webkit-box-shadow: 0 0 7px #FFF0BB;
   box-shadow: 0 0 7px #FFF0BB;
@@ -153,16 +164,6 @@ header img:hover {
   }
 }
 
-@media only screen and (max-width: 500px) {
-  h1 > small {
-    display: none;
-  }
-
-  header p {
-    font-size: 1.1em;
-    line-height: 1.5;
-  }
-}
 footer {
   border-top: 1px dashed #555555;
   padding: 2em 0;
