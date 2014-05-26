@@ -358,7 +358,7 @@ ul > li > p.marks,
   white-space: nowrap;
 }
 
-#navmenu {
+.navmenu {
   -webkit-border-bottom-left-radius: 10px;
   background-color: #B30000;
   border-bottom-left-radius: 10px;
@@ -373,30 +373,29 @@ ul > li > p.marks,
   top: 0;
   z-index: 300;
 }
-#navmenu li {
+.navmenu li {
   background-color: transparent;
   font-family: 'Arvo', Georgia, serif;
   margin: 0;
   padding: 1em;
 }
-#navmenu li a {
+.navmenu li a {
   background-color: transparent;
   color: #FFFFFF;
 }
-#navmenu li:hover {
+.navmenu li:hover {
   background-color: #DB2121;
   cursor: pointer;
 }
-#navmenu li:last-child {
+.navmenu li:last-child {
   -webkit-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 @media only screen and (max-width: 600px) {
-  #navmenu li {
+  .navmenu li {
     margin: 0 !important;
   }
 }
-
-.trigger {
+.navmenu .trigger {
   font-size: 1.25em;
 }

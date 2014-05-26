@@ -341,7 +341,7 @@ ul > li,
     white-space: nowrap;
 }
 
-#navmenu {
+.navmenu {
     -webkit-border-bottom-left-radius: 10px;
     background-color: #B30000;
     border-bottom-left-radius: 10px;
@@ -376,8 +376,7 @@ ul > li,
             margin: 0 !important;
         }
     }
-}
-
-.trigger {
-    font-size: 1.25em;
+    .trigger {
+        font-size: 1.25em;
+    }
 }
