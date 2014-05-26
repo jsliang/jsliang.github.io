@@ -1,0 +1,52 @@
+
+@mixin animation($duration, $name, $fill-mode) {
+    -moz-animation-duration: $duration;
+    -moz-animation-fill-mode: $fill-mode;
+    -moz-animation-name: $name;
+    -ms-animation-duration: $duration;
+    -ms-animation-fill-mode: $fill-mode;
+    -ms-animation-name: $name;
+    -o-animation-duration: $duration;
+    -o-animation-fill-mode: $fill-mode;
+    -o-animation-name: $name;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-fill-mode: $fill-mode;
+    -webkit-animation-name: $name;
+    animation-duration: $duration;
+    animation-fill-mode: $fill-mode;
+    animation-name: $name;
+}
+
+@mixin border-radius($radius) {
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+    -moz-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+    -o-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    @-o-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}

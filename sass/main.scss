@@ -4,6 +4,8 @@
  * CSS Styles for http://jsliang.com
  */
 
+@import "main-mixin.scss";
+
 small {
     font-size: 0.8em;
 }
@@ -70,16 +72,14 @@ a {
     text-decoration: none;
     padding: 0 0.2em;
     &:hover {
-        color: #FFFFFF;
+        @include border-radius(0.3em);
         background-color: #0066EE;
-        -webkit-border-radius: 0.3em;
-        border-radius: 0.3em;
+        color: #FFFFFF;
     }
 }
 
 .avatar {
-    -webkit-border-radius: 75px;
-    border-radius: 75px;
+    @include border-radius(75px);
     max-width: 200px;
     width: 100%;
 }
@@ -106,12 +106,7 @@ header {
                     line-height: 2.5;
                 }
                 &:hover {
-                    -webkit-animation-duration: 0.5s;
-                    -webkit-animation-name: header_a_hover;
-                    -webkit-animation-fill-mode: forwards;
-                    animation-duration: 0.5s;
-                    animation-fill-mode: forwards;
-                    animation-name: header_a_hover;
+                    @include animation(0.5s, header_a_hover, forwards);
                     background-color: transparent;
                     color: #E92CA5;
                 }
@@ -128,8 +123,7 @@ header {
         }
     }
     img:hover {
-        -webkit-box-shadow: 0 0 7px #FFF0BB;
-        box-shadow: 0 0 7px #FFF0BB;
+        @include box-shadow(0 0 7px #FFF0BB);
     }
     ul > li, .row > [class^="col-"] {
         @media only screen and (max-width: 600px) {
@@ -138,20 +132,7 @@ header {
     }
 }
 
-@keyframes header_a_hover {
-    from {
-        background-color: transparent;
-        color: #0066EE;
-    }
-    to {
-        background-color: transparent;
-        color: #E92CA5;
-    }
-}
-
-
-/*Safari and Chrome*/
-@-webkit-keyframes header_a_hover {
+@include keyframes(header_a_hover) {
     from {
         background-color: transparent;
         color: #0066EE;
@@ -210,15 +191,14 @@ ul > li,
         &.image {
             margin: 0;
             img {
-                -webkit-border-radius: 10px;
-                border-radius: 10px;
-                box-shadow: 0 0 7px #777777;
+                @include border-radius(10px);
+                @include box-shadow(0 0 7px #777777);
                 margin: 0;
                 max-width: 370px;
                 padding: 0;
                 width: 100%;
                 &:hover {
-                    box-shadow: 0 0 7px #FFF0BB;
+                    @include box-shadow(0 0 7px #FFF0BB);
                 }
             }
             a {
@@ -272,61 +252,39 @@ ul > li,
 
 .contribution {
     mark {
-        -webkit-border-radius: 0.5em;
+        @include border-radius(0.5em);
+        @include box-shadow(0 0 5px #E92CA5);
         background-color: #FFFFFF;
         border: 0;
-        box-shadow: 0 0 5px #E92CA5;
         color: #E92CA5;
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 0.7em;
         padding: 0.2em 0.4em;
         white-space: nowrap;
         &:hover {
-            -webkit-animation-duration: 0.5s;
-            -webkit-animation-name: mark_hover;
-            -webkit-animation-fill-mode: forwards;
-            animation-duration: 0.5s;
-            animation-fill-mode: forwards;
-            animation-name: mark_hover;
+            @include animation(0.5s, mark_hover, forwards);
+            @include border-radius(0.5em);
+            @include box-shadow(none);
             background-color: #E92CA5;
-            border-radius: 0.5em;
-            box-shadow: none;
             color: #FFFFFF;
             cursor: default;
         }
     }
 }
 
-@keyframes mark_hover {
+@include keyframes(mark_hover) {
     from {
+        @include box-shadow(0 0 5px #E92CA5);
         background-color: #FFFFFF;
-        box-shadow: 0 0 5px #E92CA5;
         color: #E92CA5;
     }
     to {
+        @include box-shadow(none);
         background-color: #E92CA5;
-        box-shadow: none;
         color: #FFFFFF;
         cursor: default;
     }
 }
-
-
-/*Safari and Chrome*/
-@-webkit-keyframes mark_hover {
-    from {
-        background-color: #FFFFFF;
-        box-shadow: 0 0 5px #E92CA5;
-        color: #E92CA5;
-    }
-    to {
-        background-color: #E92CA5;
-        box-shadow: none;
-        color: #FFFFFF;
-        cursor: default;
-    }
-}
-
 
 .present > p {
     &.title, &.duration {
