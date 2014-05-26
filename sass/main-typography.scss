@@ -1,0 +1,65 @@
+
+$font-family-body: 'PT Sans', Helvetica, Arial, sans-serif;
+
+small {
+    font-size: 0.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+body {
+    font-family: $font-family-body;
+}
+
+p {
+    font-size: 16px;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+mark {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+}
+
+header {
+    p {
+        font-family: 'Raleway', Helvetica, Arial, sans-serif;
+        font-size: 1.3em;
+        font-weight: normal;
+        text-align: center;
+        &.contact {
+            font-size: 1em;
+        }
+        > strong {
+            font-weight: bold;
+        }
+    }
+}
+
+footer {
+    > {
+        address, p {
+            font-family: $font-family-body;
+            line-height: 1.2em;
+        }
+    }
+}
