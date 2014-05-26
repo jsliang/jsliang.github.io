@@ -1,0 +1,45 @@
+
+/**
+ * CSS Styles for navigation menu for http://jsliang.com
+ * working with: aboutJS.js
+ */
+
+ .aboutjs-navmenu {
+    -webkit-border-bottom-left-radius: 10px;
+    background-color: #B30000;
+    border-bottom-left-radius: 10px;
+    color: #FFFFFF;
+    margin: 0 !important;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    text-shadow: 1px 1px 2px #000000;
+    top: 0;
+    z-index: 300;
+    li {
+        background-color: transparent;
+        font-family: 'Arvo', Georgia, serif;
+        margin: 0;
+        padding: 1em;
+        a {
+            background-color: transparent;
+            color: #FFFFFF;
+        }
+        &:hover {
+            background-color: #DB2121;
+            cursor: pointer;
+        }
+        &:last-child {
+            -webkit-border-bottom-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        @media only screen and (max-width: 600px) {
+            margin: 0 !important;
+        }
+    }
+    .trigger {
+        font-size: 1.25em;
+    }
+}
