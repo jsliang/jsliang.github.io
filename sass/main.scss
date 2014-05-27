@@ -1,16 +1,16 @@
-@import "reset.scss";
+@import "_reset.scss";
 
 /**
  * CSS Styles for http://jsliang.com
  */
 
-@import "main-mixin.scss";
+@import "_mixin.scss";
 
 // my typography
-@import "main-typography.scss";
+@import "_typography.scss";
 
 // my color definitions
-@import "main-color.scss";
+@import "_color.scss";
 
 $c-light-shadow:    $color-yellow;
 $c-foreground:      $color-black;
@@ -274,4 +274,4 @@ ul > li,
     white-space: nowrap;
 }
 
-@import "aboutJS-navmenu.scss";
+@import "_aboutJS-navmenu.scss";
