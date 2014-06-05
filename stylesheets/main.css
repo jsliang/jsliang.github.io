@@ -1,3 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
 /**
  * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
  * Richard Clark (http://richclarkdesign.com)
@@ -113,12 +118,12 @@ input, select {
 /**
  * CSS Styles for http://jsliang.com
  */
-/* line 4, ../sass/_typography.scss */
+/* line 10, ../sass/_typography.scss */
 small {
   font-size: 0.8em;
 }
 
-/* line 8, ../sass/_typography.scss */
+/* line 14, ../sass/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -126,57 +131,57 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-/* line 15, ../sass/_typography.scss */
+/* line 21, ../sass/_typography.scss */
 h1 {
   font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
   font-size: 3em;
   font-weight: normal;
 }
 
-/* line 21, ../sass/_typography.scss */
+/* line 27, ../sass/_typography.scss */
 h2 {
   font-size: 2em;
 }
 
-/* line 25, ../sass/_typography.scss */
+/* line 31, ../sass/_typography.scss */
 body {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 
-/* line 29, ../sass/_typography.scss */
+/* line 35, ../sass/_typography.scss */
 p {
   font-size: 16px;
   line-height: 2;
 }
 
-/* line 34, ../sass/_typography.scss */
+/* line 40, ../sass/_typography.scss */
 a {
   text-decoration: none;
 }
 
-/* line 38, ../sass/_typography.scss */
+/* line 44, ../sass/_typography.scss */
 mark {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.7em;
 }
 
-/* line 44, ../sass/_typography.scss */
+/* line 50, ../sass/_typography.scss */
 header p {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 1.3em;
   font-weight: normal;
   text-align: center;
 }
-/* line 49, ../sass/_typography.scss */
+/* line 55, ../sass/_typography.scss */
 header p.contact {
   font-size: 1em;
 }
-/* line 52, ../sass/_typography.scss */
+/* line 58, ../sass/_typography.scss */
 header p > strong {
   font-weight: bold;
 }
 
-/* line 60, ../sass/_typography.scss */
+/* line 66, ../sass/_typography.scss */
 footer > address, footer > p {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   line-height: 1.2em;
