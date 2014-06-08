@@ -25,6 +25,14 @@
     border-radius: $radius;
 }
 
+@mixin border-bottom-left-radius($radius) {
+    -moz-border-bottom-left-radius: $radius;
+    -ms-border-bottom-left-radius: $radius;
+    -o-border-bottom-left-radius: $radius;
+    -webkit-border-bottom-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+}
+
 @mixin box-shadow($shadow) {
     -moz-box-shadow: $shadow;
     -ms-box-shadow: $shadow;

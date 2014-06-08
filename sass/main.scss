@@ -91,62 +91,17 @@ mark {
     }
 }
 
-.avatar {
-    @include border-radius(75px);
-    max-width: 200px;
-    width: 100%;
-}
-
-header {
-    h1 {
-        margin-top: 1em;
-    }
-    p {
-        color: $c-entry-info;
-        &.contact {
-            .fa {
-                font-size: 1.5em;
-            }
-            > a {
-                @media only screen and (max-width: 600px) {
-                    white-space: nowrap;
-                    font-size: 1em;
-                    line-height: 2.5;
-                }
-                &:hover {
-                    @include animation(0.5s, header_a_hover, forwards);
-                    background-color: transparent;
-                    color: $c-mark;
-                }
-            }
-        }
-        > strong {
-            color: darken($c-mark, 10%);
-        }
-
-        @media only screen and (max-width: 500px) {
-            font-size: 1.1em;
-            line-height: 1.5;
-        }
-    }
-    img:hover {
-        @include box-shadow(0 0 7px $c-light-shadow);
-    }
-    ul > li, .row > [class^="col-"] {
-        @media only screen and (max-width: 600px) {
-            margin: 0 !important;
-        }
-    }
-}
-
-@include keyframes(header_a_hover) {
+@include keyframes(mark_hover) {
     from {
-        background-color: transparent;
-        color: $c-link;
+        @include box-shadow(0 0 5px $c-mark);
+        background-color: $c-background;
+        color: $c-mark;
     }
     to {
-        background-color: transparent;
-        color: $c-mark;
+        @include box-shadow(none);
+        background-color: $c-mark;
+        color: $c-background;
+        cursor: default;
     }
 }
 
@@ -172,106 +127,15 @@ footer {
     }
 }
 
-ul, .row {
-    list-style: none;
-    margin: 2em 0 !important;
-    padding: 0;
-    @media only screen and (max-width: 600px) {
-        margin: 0 !important;
-    }
-}
-
-ul > li,
-.row > [class^="col-"] {
-    @media only screen and (max-width: 600px) {
-        margin: 2em 0 !important;
-    }
-    &:hover {
-        text-shadow: 0 0 7px $c-light-shadow;
-    }
-    > p {
-        color: $c-entry-info;
-        line-height: 1.5;
-        margin: 1em 0;
-        padding: 0 10px;
-        &.image {
-            margin: 0;
-            img {
-                @include border-radius(10px);
-                @include box-shadow(0 0 7px lighten($c-foreground, 55%));
-                margin: 0;
-                max-width: 370px;
-                padding: 0;
-                width: 100%;
-                &:hover {
-                    @include box-shadow(0 0 7px $c-light-shadow);
-                }
-            }
-            a {
-                background: transparent;
-                padding: 0;
-                text-decoration: none;
-                &:hover {
-                    background: transparent;
-                    padding: 0;
-                    text-decoration: none;
-                }
-            }
-        }
-        &.title {
-            font-family: 'Arvo', Georgia, serif;
-            font-size: 1.2em;
-            font-weight: bold;
-            letter-spacing: -1px;
-            margin: 0;
-            @media only screen and (max-width: 700px) {
-                font-size: 0.9em;
-            }
-            @media only screen and (max-width: 600px) {
-                font-size: 1.1em;
-            }
-        }
-        &.duration, &.school, &.where, &.source, &.siteurl {
-            font-family: $font-family-body;
-            line-height: 1.5;
-            margin: 0;
-        }
-        &.description {
-            color: $c-foreground;
-            margin-bottom: 0;
-        }
-        &.marks {
-            line-height: 1.3;
-            margin-top: 0;
-        }
-    }
-}
-
-@include keyframes(mark_hover) {
-    from {
-        @include box-shadow(0 0 5px $c-mark);
-        background-color: $c-background;
-        color: $c-mark;
-    }
-    to {
-        @include box-shadow(none);
-        background-color: $c-mark;
-        color: $c-background;
-        cursor: default;
-    }
-}
-
-.present > p {
-    &.title, &.duration {
-        text-shadow: 0 0 10px $c-light-shadow;
-    }
-    &.duration time {
-        text-shadow: none;
-    }
-}
-
 .nobr {
     white-space: nowrap;
 }
 
+// header
+@import "_header.scss";
+
+// content (li, div.col-*, ...)
+@import "_content.scss";
+
+// navigation menu
 @import "_aboutJS-navmenu.scss";
