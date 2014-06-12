@@ -124,14 +124,14 @@ mark {
     white-space: nowrap;
 }
 
-// header
-@import "_header.scss";
-
 // content (li, div.col-*, ...)
 @import "_content.scss";
 
 // navigation menu
 @import "_aboutJS-navmenu.scss";
+
+// header
+@import "_header.scss";
 
 // footer
 @import "_footer.scss";

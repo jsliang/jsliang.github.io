@@ -431,163 +431,16 @@ mark:hover {
   white-space: nowrap;
 }
 
-/* line 3, ../sass/_header.scss */
-header h1 {
-  margin-top: 1.5rem;
-}
-/* line 6, ../sass/_header.scss */
-header p {
-  color: #693726;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  font-size: 1.3rem;
-  font-weight: normal;
-  line-height: 1.5rem;
-  text-align: center;
-}
-@media only screen and (max-width: 600px) {
-  /* line 14, ../sass/_header.scss */
-  header p.contact > a {
-    white-space: nowrap;
-    line-height: 4.5rem;
-  }
-}
-/* line 19, ../sass/_header.scss */
-header p.contact > a:hover {
-  -moz-animation-duration: 0.5s;
-  -moz-animation-fill-mode: forwards;
-  -moz-animation-name: header_a_hover;
-  -ms-animation-duration: 0.5s;
-  -ms-animation-fill-mode: forwards;
-  -ms-animation-name: header_a_hover;
-  -o-animation-duration: 0.5s;
-  -o-animation-fill-mode: forwards;
-  -o-animation-name: header_a_hover;
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-  -webkit-animation-name: header_a_hover;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-name: header_a_hover;
-  background-color: transparent;
-  color: #ec254e;
-}
-/* line 26, ../sass/_header.scss */
-header p > strong {
-  color: #cc1238;
-  font-weight: bold;
-}
-@media only screen and (max-width: 500px) {
-  /* line 6, ../sass/_header.scss */
-  header p {
-    font-size: 1.1rem;
-    line-height: 3rem;
-  }
-}
-/* line 36, ../sass/_header.scss */
-header img:hover {
-  -moz-box-shadow: 0 0 7px #fff0bb;
-  -ms-box-shadow: 0 0 7px #fff0bb;
-  -o-box-shadow: 0 0 7px #fff0bb;
-  -webkit-box-shadow: 0 0 7px #fff0bb;
-  box-shadow: 0 0 7px #fff0bb;
-}
-@media only screen and (max-width: 600px) {
-  /* line 39, ../sass/_header.scss */
-  header ul > li, header .row > [class^="col-"] {
-    margin: 0 !important;
-  }
-}
-/* line 44, ../sass/_header.scss */
-header .avatar {
-  -moz-border-radius: 75px;
-  -ms-border-radius: 75px;
-  -o-border-radius: 75px;
-  -webkit-border-radius: 75px;
-  border-radius: 75px;
-  max-width: 13.5rem;
-  width: 100%;
-}
-
-@-webkit-keyframes header_a_hover {
-  /* line 52, ../sass/_header.scss */
-  from {
-    background-color: transparent;
-    color: #0066ee;
-  }
-
-  /* line 56, ../sass/_header.scss */
-  to {
-    background-color: transparent;
-    color: #ec254e;
-  }
-}
-
-@-moz-keyframes header_a_hover {
-  /* line 52, ../sass/_header.scss */
-  from {
-    background-color: transparent;
-    color: #0066ee;
-  }
-
-  /* line 56, ../sass/_header.scss */
-  to {
-    background-color: transparent;
-    color: #ec254e;
-  }
-}
-
-@-ms-keyframes header_a_hover {
-  /* line 52, ../sass/_header.scss */
-  from {
-    background-color: transparent;
-    color: #0066ee;
-  }
-
-  /* line 56, ../sass/_header.scss */
-  to {
-    background-color: transparent;
-    color: #ec254e;
-  }
-}
-
-@-o-keyframes header_a_hover {
-  /* line 52, ../sass/_header.scss */
-  from {
-    background-color: transparent;
-    color: #0066ee;
-  }
-
-  /* line 56, ../sass/_header.scss */
-  to {
-    background-color: transparent;
-    color: #ec254e;
-  }
-}
-
-@keyframes header_a_hover {
-  /* line 52, ../sass/_header.scss */
-  from {
-    background-color: transparent;
-    color: #0066ee;
-  }
-
-  /* line 56, ../sass/_header.scss */
-  to {
-    background-color: transparent;
-    color: #ec254e;
-  }
-}
-
 /* line 2, ../sass/_content.scss */
 ul, .row {
   list-style: none;
-  margin: 3rem 0 !important;
+  margin: 3rem 0;
   padding: 0;
 }
 @media only screen and (max-width: 600px) {
   /* line 2, ../sass/_content.scss */
   ul, .row {
-    margin: 0 !important;
+    margin: 0;
   }
 }
 
@@ -595,7 +448,7 @@ ul, .row {
   /* line 12, ../sass/_content.scss */
   ul > li,
   .row > [class^="col-"] {
-    margin: 3rem 0 !important;
+    margin: 3rem 0;
   }
 }
 /* line 16, ../sass/_content.scss */
@@ -775,6 +628,157 @@ ul > li > p.marks,
 .aboutjs-navmenu .trigger {
   font-size: 1.25rem;
   line-height: 1.5rem;
+}
+
+/* line 3, ../sass/_header.scss */
+header h1 {
+  margin-top: 1.5rem;
+}
+/* line 6, ../sass/_header.scss */
+header p {
+  color: #693726;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  /* line 14, ../sass/_header.scss */
+  header p.contact > a {
+    white-space: nowrap;
+    line-height: 4.5rem;
+  }
+}
+/* line 19, ../sass/_header.scss */
+header p.contact > a:hover {
+  -moz-animation-duration: 0.5s;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-name: header_a_hover;
+  -ms-animation-duration: 0.5s;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-name: header_a_hover;
+  -o-animation-duration: 0.5s;
+  -o-animation-fill-mode: forwards;
+  -o-animation-name: header_a_hover;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-name: header_a_hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: header_a_hover;
+  background-color: transparent;
+  color: #ec254e;
+}
+/* line 26, ../sass/_header.scss */
+header p > strong {
+  color: #cc1238;
+  font-weight: bold;
+}
+@media only screen and (max-width: 500px) {
+  /* line 6, ../sass/_header.scss */
+  header p {
+    font-size: 1.1rem;
+    line-height: 3rem;
+  }
+}
+/* line 36, ../sass/_header.scss */
+header img:hover {
+  -moz-box-shadow: 0 0 7px #fff0bb;
+  -ms-box-shadow: 0 0 7px #fff0bb;
+  -o-box-shadow: 0 0 7px #fff0bb;
+  -webkit-box-shadow: 0 0 7px #fff0bb;
+  box-shadow: 0 0 7px #fff0bb;
+}
+@media only screen and (max-width: 600px) {
+  /* line 39, ../sass/_header.scss */
+  header ul > li, header .row > [class^="col-"] {
+    margin: 0 !important;
+  }
+}
+/* line 44, ../sass/_header.scss */
+header .avatar {
+  -moz-border-radius: 75px;
+  -ms-border-radius: 75px;
+  -o-border-radius: 75px;
+  -webkit-border-radius: 75px;
+  border-radius: 75px;
+  max-width: 13.5rem;
+  width: 100%;
+}
+/* line 49, ../sass/_header.scss */
+header ul, header .row {
+  margin: 0;
+}
+
+@-webkit-keyframes header_a_hover {
+  /* line 55, ../sass/_header.scss */
+  from {
+    background-color: transparent;
+    color: #0066ee;
+  }
+
+  /* line 59, ../sass/_header.scss */
+  to {
+    background-color: transparent;
+    color: #ec254e;
+  }
+}
+
+@-moz-keyframes header_a_hover {
+  /* line 55, ../sass/_header.scss */
+  from {
+    background-color: transparent;
+    color: #0066ee;
+  }
+
+  /* line 59, ../sass/_header.scss */
+  to {
+    background-color: transparent;
+    color: #ec254e;
+  }
+}
+
+@-ms-keyframes header_a_hover {
+  /* line 55, ../sass/_header.scss */
+  from {
+    background-color: transparent;
+    color: #0066ee;
+  }
+
+  /* line 59, ../sass/_header.scss */
+  to {
+    background-color: transparent;
+    color: #ec254e;
+  }
+}
+
+@-o-keyframes header_a_hover {
+  /* line 55, ../sass/_header.scss */
+  from {
+    background-color: transparent;
+    color: #0066ee;
+  }
+
+  /* line 59, ../sass/_header.scss */
+  to {
+    background-color: transparent;
+    color: #ec254e;
+  }
+}
+
+@keyframes header_a_hover {
+  /* line 55, ../sass/_header.scss */
+  from {
+    background-color: transparent;
+    color: #0066ee;
+  }
+
+  /* line 59, ../sass/_header.scss */
+  to {
+    background-color: transparent;
+    color: #ec254e;
+  }
 }
 
 /* line 2, ../sass/_footer.scss */

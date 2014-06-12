@@ -1,17 +1,17 @@
 
 ul, .row {
     list-style: none;
-    margin: nearest-line-height($root-font-size*2) 0 !important;
+    margin: nearest-line-height($root-font-size*2) 0;
     padding: 0;
     @media only screen and (max-width: 600px) {
-        margin: 0 !important;
+        margin: 0;
     }
 }
 
 ul > li,
 .row > [class^="col-"] {
     @media only screen and (max-width: 600px) {
-        margin: nearest-line-height($root-font-size*2) 0 !important;
+        margin: nearest-line-height($root-font-size*2) 0;
     }
     &:hover {
         text-shadow: 0 0 7px $c-light-shadow;
