@@ -49,12 +49,3 @@ mark {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 0.7rem;
 }
-
-footer {
-    > {
-        address, p {
-            font-family: $font-family-body;
-            line-height: 1.2rem;
-        }
-    }
-}

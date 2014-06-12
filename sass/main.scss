@@ -105,18 +105,6 @@ mark {
     }
 }
 
-footer {
-    border-top: 1px dashed $c-middleground;
-    padding: 2rem 0;
-    text-align: center;
-    > {
-        address, p {
-            color: $c-middleground;
-            margin: 0.5rem 0;
-        }
-    }
-}
-
 .section {
     border-top: 1px dashed $c-middleground;
     padding: 3rem 1rem;
@@ -139,3 +127,6 @@ footer {
 
 // navigation menu
 @import "_aboutJS-navmenu.scss";
+
+// footer
+@import "_footer.scss";

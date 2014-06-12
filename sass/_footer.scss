@@ -1,0 +1,14 @@
+
+footer {
+    border-top: 1px dashed $c-middleground;
+    padding: 2rem 0;
+    text-align: center;
+    > {
+        address, p {
+            color: $c-middleground;
+            font-family: $font-family-body;
+            line-height: 1.2rem;
+            margin: 0.5rem 0;
+        }
+    }
+}

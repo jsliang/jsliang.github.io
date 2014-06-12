@@ -169,12 +169,6 @@ mark {
   font-size: 0.7rem;
 }
 
-/* line 55, ../sass/_typography.scss */
-footer > address, footer > p {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  line-height: 1.2rem;
-}
-
 /* line 23, ../sass/main.scss */
 article {
   margin: 0 auto;
@@ -417,28 +411,16 @@ mark:hover {
 }
 
 /* line 108, ../sass/main.scss */
-footer {
-  border-top: 1px dashed #666666;
-  padding: 2rem 0;
-  text-align: center;
-}
-/* line 113, ../sass/main.scss */
-footer > address, footer > p {
-  color: #666666;
-  margin: 0.5rem 0;
-}
-
-/* line 120, ../sass/main.scss */
 .section {
   border-top: 1px dashed #666666;
   padding: 3rem 1rem;
 }
-/* line 124, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 .section ul > li > p, .section .row > [class^="col-"] > p {
   text-align: center;
 }
 
-/* line 130, ../sass/main.scss */
+/* line 118, ../sass/main.scss */
 .nobr {
   white-space: nowrap;
 }
@@ -782,4 +764,18 @@ ul > li > p.marks,
 /* line 41, ../sass/_aboutJS-navmenu.scss */
 .aboutjs-navmenu .trigger {
   font-size: 1.25rem;
+}
+
+/* line 2, ../sass/_footer.scss */
+footer {
+  border-top: 1px dashed #666666;
+  padding: 2rem 0;
+  text-align: center;
+}
+/* line 7, ../sass/_footer.scss */
+footer > address, footer > p {
+  color: #666666;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.2rem;
+  margin: 0.5rem 0;
 }
