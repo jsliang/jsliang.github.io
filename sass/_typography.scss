@@ -7,6 +7,11 @@
 
 $font-family-body: 'PT Sans', Helvetica, Arial, sans-serif;
 
+// root element for rem
+html {
+    font-size: 16px;
+}
+
 small {
     font-size: 0.8em;
 }
@@ -20,12 +25,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: normal;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 body {
@@ -33,7 +38,6 @@ body {
 }
 
 p {
-    font-size: 16px;
     line-height: 2;
 }
 
@@ -43,18 +47,15 @@ a {
 
 mark {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 0.7em;
+    font-size: 0.7rem;
 }
 
 header {
     p {
         font-family: 'Raleway', Helvetica, Arial, sans-serif;
-        font-size: 1.3em;
+        font-size: 1.3rem;
         font-weight: normal;
         text-align: center;
-        &.contact {
-            font-size: 1em;
-        }
         > strong {
             font-weight: bold;
         }
@@ -65,7 +66,7 @@ footer {
     > {
         address, p {
             font-family: $font-family-body;
-            line-height: 1.2em;
+            line-height: 1.2rem;
         }
     }
 }

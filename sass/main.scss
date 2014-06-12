@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     @media only screen and (max-width: 700px) {
-        font-size: 2em;
+        font-size: 2rem;
     }
 
     @media only screen and (max-width: 500px) {
@@ -47,7 +47,7 @@ h1 {
 
 h2 {
     @media only screen and (max-width: 700px) {
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
 }
 
@@ -55,35 +55,35 @@ body {
     color: $c-foreground;
     background-color: $c-background;
     margin: 0;
-    padding: 0 1em;
+    padding: 0 1rem;
 }
 
 p {
-    margin: 0.5em 0;
+    margin: 0.5rem 0;
     padding: 0;
 }
 
 a {
     color: $c-link;
-    padding: 0 0.2em;
+    padding: 0 0.2rem;
     &:hover {
-        @include border-radius(0.3em);
+        @include border-radius(0.3rem);
         background-color: $c-link;
         color: $c-background;
     }
 }
 
 mark {
-    @include border-radius(0.5em);
+    @include border-radius(0.5rem);
     @include box-shadow(0 0 5px $c-mark);
     background-color: $c-background;
     border: 0;
     color: $c-mark;
-    padding: 0.2em 0.4em;
+    padding: 0.2rem 0.4rem;
     white-space: nowrap;
     &:hover {
         @include animation(0.5s, mark_hover, forwards);
-        @include border-radius(0.5em);
+        @include border-radius(0.5rem);
         @include box-shadow(none);
         background-color: $c-mark;
         color: $c-background;
@@ -107,19 +107,19 @@ mark {
 
 footer {
     border-top: 1px dashed $c-middleground;
-    padding: 2em 0;
+    padding: 2rem 0;
     text-align: center;
     > {
         address, p {
             color: $c-middleground;
-            margin: 0.5em 0;
+            margin: 0.5rem 0;
         }
     }
 }
 
 .section {
     border-top: 1px dashed $c-middleground;
-    padding: 3em 1em;
+    padding: 3rem 1rem;
     ul > li, .row > [class^="col-"] {
         > p {
             text-align: center;
