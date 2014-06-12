@@ -169,19 +169,7 @@ mark {
   font-size: 0.7rem;
 }
 
-/* line 54, ../sass/_typography.scss */
-header p {
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  font-size: 1.3rem;
-  font-weight: normal;
-  text-align: center;
-}
-/* line 59, ../sass/_typography.scss */
-header p > strong {
-  font-weight: bold;
-}
-
-/* line 67, ../sass/_typography.scss */
+/* line 55, ../sass/_typography.scss */
 footer > address, footer > p {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   line-height: 1.2rem;
@@ -462,19 +450,19 @@ header h1 {
 /* line 6, ../sass/_header.scss */
 header p {
   color: #693726;
-}
-/* line 9, ../sass/_header.scss */
-header p.contact .fa {
-  font-size: 1.5rem;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-align: center;
 }
 @media only screen and (max-width: 600px) {
-  /* line 12, ../sass/_header.scss */
+  /* line 13, ../sass/_header.scss */
   header p.contact > a {
     white-space: nowrap;
     line-height: 2.5;
   }
 }
-/* line 17, ../sass/_header.scss */
+/* line 18, ../sass/_header.scss */
 header p.contact > a:hover {
   -moz-animation-duration: 0.5s;
   -moz-animation-fill-mode: forwards;
@@ -494,9 +482,10 @@ header p.contact > a:hover {
   background-color: transparent;
   color: #ec254e;
 }
-/* line 24, ../sass/_header.scss */
+/* line 25, ../sass/_header.scss */
 header p > strong {
   color: #cc1238;
+  font-weight: bold;
 }
 @media only screen and (max-width: 500px) {
   /* line 6, ../sass/_header.scss */
@@ -505,7 +494,7 @@ header p > strong {
     line-height: 1.5;
   }
 }
-/* line 33, ../sass/_header.scss */
+/* line 35, ../sass/_header.scss */
 header img:hover {
   -moz-box-shadow: 0 0 7px #fff0bb;
   -ms-box-shadow: 0 0 7px #fff0bb;
@@ -514,12 +503,12 @@ header img:hover {
   box-shadow: 0 0 7px #fff0bb;
 }
 @media only screen and (max-width: 600px) {
-  /* line 36, ../sass/_header.scss */
+  /* line 38, ../sass/_header.scss */
   header ul > li, header .row > [class^="col-"] {
     margin: 0 !important;
   }
 }
-/* line 41, ../sass/_header.scss */
+/* line 43, ../sass/_header.scss */
 header .avatar {
   -moz-border-radius: 75px;
   -ms-border-radius: 75px;
@@ -531,13 +520,13 @@ header .avatar {
 }
 
 @-webkit-keyframes header_a_hover {
-  /* line 49, ../sass/_header.scss */
+  /* line 51, ../sass/_header.scss */
   from {
     background-color: transparent;
     color: #0066ee;
   }
 
-  /* line 53, ../sass/_header.scss */
+  /* line 55, ../sass/_header.scss */
   to {
     background-color: transparent;
     color: #ec254e;
@@ -545,13 +534,13 @@ header .avatar {
 }
 
 @-moz-keyframes header_a_hover {
-  /* line 49, ../sass/_header.scss */
+  /* line 51, ../sass/_header.scss */
   from {
     background-color: transparent;
     color: #0066ee;
   }
 
-  /* line 53, ../sass/_header.scss */
+  /* line 55, ../sass/_header.scss */
   to {
     background-color: transparent;
     color: #ec254e;
@@ -559,13 +548,13 @@ header .avatar {
 }
 
 @-ms-keyframes header_a_hover {
-  /* line 49, ../sass/_header.scss */
+  /* line 51, ../sass/_header.scss */
   from {
     background-color: transparent;
     color: #0066ee;
   }
 
-  /* line 53, ../sass/_header.scss */
+  /* line 55, ../sass/_header.scss */
   to {
     background-color: transparent;
     color: #ec254e;
@@ -573,13 +562,13 @@ header .avatar {
 }
 
 @-o-keyframes header_a_hover {
-  /* line 49, ../sass/_header.scss */
+  /* line 51, ../sass/_header.scss */
   from {
     background-color: transparent;
     color: #0066ee;
   }
 
-  /* line 53, ../sass/_header.scss */
+  /* line 55, ../sass/_header.scss */
   to {
     background-color: transparent;
     color: #ec254e;
@@ -587,13 +576,13 @@ header .avatar {
 }
 
 @keyframes header_a_hover {
-  /* line 49, ../sass/_header.scss */
+  /* line 51, ../sass/_header.scss */
   from {
     background-color: transparent;
     color: #0066ee;
   }
 
-  /* line 53, ../sass/_header.scss */
+  /* line 55, ../sass/_header.scss */
   to {
     background-color: transparent;
     color: #ec254e;
