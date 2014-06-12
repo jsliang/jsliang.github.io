@@ -1,3 +1,6 @@
+$root-font-size: 16px;
+$root-line-height: 24px;
+
 @import "_reset.scss";
 
 /**
@@ -36,6 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     @media only screen and (max-width: 700px) {
         font-size: 2rem;
+        line-height: nearest-line-height($root-font-size*2);
     }
 
     @media only screen and (max-width: 500px) {
@@ -48,6 +52,7 @@ h1 {
 h2 {
     @media only screen and (max-width: 700px) {
         font-size: 1.3rem;
+        line-height: nearest-line-height($root-font-size*1.3);
     }
 }
 
@@ -55,26 +60,26 @@ body {
     color: $c-foreground;
     background-color: $c-background;
     margin: 0;
-    padding: 0 1rem;
+    padding: 0 nearest-line-height($root-font-size*1);
 }
 
 p {
-    margin: 0.5rem 0;
+    margin: nearest-line-height($root-font-size*0.5) 0;
     padding: 0;
 }
 
 a {
     color: $c-link;
-    padding: 0 0.2rem;
+    padding: 0 0.2em;
     &:hover {
-        @include border-radius(0.3rem);
+        @include border-radius( nearest-line-height($root-font-size*0.3) );
         background-color: $c-link;
         color: $c-background;
     }
 }
 
 mark {
-    @include border-radius(0.5rem);
+    @include border-radius( nearest-line-height($root-font-size*0.5) );
     @include box-shadow(0 0 5px $c-mark);
     background-color: $c-background;
     border: 0;
@@ -83,7 +88,7 @@ mark {
     white-space: nowrap;
     &:hover {
         @include animation(0.5s, mark_hover, forwards);
-        @include border-radius(0.5rem);
+        @include border-radius(nearest-line-height($root-font-size*0.5));
         @include box-shadow(none);
         background-color: $c-mark;
         color: $c-background;
@@ -107,7 +112,7 @@ mark {
 
 .section {
     border-top: 1px dashed $c-middleground;
-    padding: 3rem 1rem;
+    padding: nearest-line-height($root-font-size*3) nearest-line-height($root-font-size*1);
     ul > li, .row > [class^="col-"] {
         > p {
             text-align: center;

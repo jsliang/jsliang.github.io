@@ -58,3 +58,17 @@
         @content;
     }
 }
+
+// vertical rhythm
+
+@function nearest-line-height($px) {
+  @if unitless($px) {
+    @warn "Assuming #{$px} to be in pixels";
+    $px: 1px * $px;
+  } @else if unit($px) != "px" {
+    $origin-val: $px;
+    $px: $px / ($px * 0 + 1) * $root-font-size;
+    @warn "Assuming #{$origin-val} to be #{$px}";
+  }
+  @return ceil($px / $root-line-height) * $root-line-height / $root-font-size * 1rem;
+}

@@ -5,7 +5,7 @@
  */
 
  .aboutjs-navmenu {
-    @include border-bottom-left-radius(10px);
+    @include border-bottom-left-radius( nearest-line-height(10px) );
     background-color: $color-red;
     color: $color-white;
     margin: 0 !important;
@@ -22,7 +22,7 @@
         background-color: transparent;
         font-family: 'Arvo', Georgia, serif;
         margin: 0;
-        padding: 1rem;
+        padding: nearest-line-height($root-font-size*1);
         a {
             background-color: transparent;
             color: $color-white;
@@ -32,7 +32,7 @@
             cursor: pointer;
         }
         &:last-child {
-            @include border-bottom-left-radius(10px);
+            @include border-bottom-left-radius( nearest-line-height(10px) );
         }
         @media only screen and (max-width: 600px) {
             margin: 0 !important;
@@ -40,5 +40,6 @@
     }
     .trigger {
         font-size: 1.25rem;
+        line-height: nearest-line-height($root-font-size*1.25);
     }
 }

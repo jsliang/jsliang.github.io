@@ -9,7 +9,8 @@ $font-family-body: 'PT Sans', Helvetica, Arial, sans-serif;
 
 // root element for rem
 html {
-    font-size: 16px;
+    font-size: $root-font-size;
+    line-height: $root-line-height;
 }
 
 small {
@@ -27,10 +28,12 @@ h1 {
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
     font-size: 3rem;
     font-weight: normal;
+    line-height: nearest-line-height($root-font-size*3);
 }
 
 h2 {
     font-size: 2rem;
+    line-height: nearest-line-height($root-font-size*2);
 }
 
 body {
@@ -38,7 +41,7 @@ body {
 }
 
 p {
-    line-height: 2;
+    line-height: nearest-line-height($root-line-height*2);
 }
 
 a {
@@ -48,4 +51,5 @@ a {
 mark {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 0.7rem;
+    line-height: nearest-line-height($root-font-size*0.7);
 }
