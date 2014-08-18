@@ -3,4 +3,6 @@
 .picasa.ini
 .sass-cache
 fire_app_log.txt
+Gruntfile.js
+node_modules
 screenshots/.picasaoriginals

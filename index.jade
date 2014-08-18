@@ -1,0 +1,802 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        title Jui-Shan (Jenny) Liang
+        meta(name='viewport', content='width=device-width; initial-scale=1.0; maximum-scale=1;')
+        link(rel='stylesheet', type='text/css', href='stylesheets/rwd_grid.css')
+        link(rel='stylesheet', type='text/css', href='stylesheets/main.css')
+        link(rel='stylesheet', type='text/css', href='http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css')
+    body
+        nav
+            ul#nav.aboutjs-navmenu
+                li.trigger
+                    i.fa.fa-bars
+        a(href='https://github.com/jsliang/jsliang.github.io')
+            img(style='position: absolute; top: 0; left: 0; border: 0;', src='https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67', alt='Fork me on GitHub', data-canonical-src='https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png')
+        article
+            header#cover
+                h1
+                    span.nobr Jui-Shan 
+                    small (Jenny)
+                    | Liang
+                .row
+                    .col-10.offset-1
+                        p
+                            img.avatar(alt='Photo of Jenny, Jui-Shan Liang', src='http://www.gravatar.com/avatar/e200bf58d1fa8df717f5f8bc6bb0e95e?s=200')
+                .row
+                    .col-10.offset-1
+                        p
+                            | I'm 
+                            strong Jui-Shan Liang (a.k.a. Jenny / jsliang)
+                            | , a 
+                            strong software engineer 
+                            | and 
+                            strong open source enthusiast 
+                            | living in 
+                            span.nobr Taipei, Taiwan
+                            | .
+                        p
+                            | You can find out my recent projects on 
+                            span.nobr
+                                a(target='_blank', href='http://github.com/jsliang')
+                                    i.fa.fa-github
+                                    | GitHub  
+                                    small
+                                        i.fa.fa-external-link
+                                | .
+                        p.contact
+                            a(href='mailto:jenny@jsliang.me')
+                                i.fa.fa-envelope
+                                | Send me a mail
+                            | ·
+                            a(target='_blank', href='http://tw.linkedin.com/in/juishanliang/')
+                                i.fa.fa-linkedin-square
+                                | Linkedin Profile
+                            | ·
+                            a(target='_blank', href='http://github.com/jsliang')
+                                i.fa.fa-github
+                                | GitHub Profile
+                            | ·
+                            a(target='_blank', href='http://jsliang.com/blog')
+                                i.fa.fa-pencil-square-o
+                                | Blog
+            #tech.section
+                h2
+                    i.fa.fa-group
+                    | Community
+                    i.fa.fa-group
+                .row
+                    .col-4.present
+                        p.title
+                            | GitHub User
+                        p.duration
+                            time(datetime='2011-03') Mar 2011
+                            | - present
+                            | (3y+)
+                        p.description
+                            | GitHub Profile:
+                            a.breakall(target='_blank', href='http://github.com/jsliang')
+                                | http://github.com/jsliang 
+                                small
+                                    i.fa.fa-external-link
+                        p.marks
+                            mark CSS
+                            mark Git
+                            mark HTML
+                            mark JavaScript
+                            mark Python
+                    .col-4
+                        p.title
+                            | Conference Worker of
+                            span.nobr COSCUP 2014
+                        p.duration
+                            time(datetime='2014-03') Mar 2014
+                            | -
+                            time(datetime='2014-07') Jul 2014
+                            | (5m)
+                        p.description
+                            | Session Convener
+                    .col-4
+                        p.title
+                            | Speaker at
+                            span.nobr JavaScript Enthusiast
+                        p.duration
+                            time(datetime='2014-05') May 2014
+                        p.description
+                            | Lightning Talk:
+                            a(href='http://www.slideshare.net/juishanliang/lightning-talk-jspdf', target='_blank')
+                                | jsPDF 
+                                small
+                                    i.fa.fa-external-link
+                        p.marks
+                            mark JavaScript
+                            mark jsPDF
+                .row
+                    .col-4
+                        p.title
+                            | Speaker at
+                            span.nobr PyLadies Taiwan
+                        p.duration
+                            time(datetime='2014-02') Feb 2014
+                        p.description
+                            | Talk:
+                            a(href='http://www.slideshare.net/juishanliang/20120521-jsliang-wxpythonandwxformbuilder', target='_blank')
+                                | wxPython and wxFormBuilder 
+                                small
+                                    i.fa.fa-external-link
+                        p.marks
+                            mark Python
+                    .col-4
+                        p.title
+                            | Speaker at
+                            span.nobr PyConTW 2013
+                        p.duration
+                            time(datetime='2013-05-25') May 25, 2013
+                            | &amp;
+                            time(datetime='2013-05-26') May 26, 2013
+                        p.description
+                            | Regular Talk:
+                            a(href='http://www.slideshare.net/juishanliang/py-contw-2013-write-sublime-text-2-packages-with-python', target='_blank')
+                                | Write Sublime Text 2 Packages with Python 
+                                small
+                                    i.fa.fa-external-link
+                            br
+                            | Lightning talk:
+                            a(href='http://www.slideshare.net/juishanliang/py-contw2013-doctest', target='_blank')
+                                | doctest 
+                                small
+                                    i.fa.fa-external-link
+                        p.marks
+                            mark Python
+                    .col-4
+                        p.title
+                            | Conference Worker of
+                            span.nobr PyConTW 2013
+                        p.duration
+                            time(datetime='2013-01') Jan 2013
+                            | -
+                            time(datetime='2013-05') May 2013
+                            | (5m)
+                        p.description
+                            | Web Team
+                            i.fa.fa-globe
+                            | :
+                            a.breakall(target='_blank', href='http://tw.pycon.org/2013')
+                                | http://tw.pycon.org/2013 
+                                small
+                                    i.fa.fa-external-link
+                        p.marks
+                            mark CSS
+                            mark Django
+                            mark HTML
+                            mark JavaScript
+                            mark Python
+                            mark Twitter Bootstrap
+            #projects.section
+                h2
+                    i.fa.fa-heart
+                    | My Projects
+                    i.fa.fa-heart
+                .row
+                    .col-4
+                        p.image
+                            a(target='_blank', href='http://github.com/jsliang/jsliang.github.io/')
+                                img(alt='screenshot', src='screenshots/jsliang_github_io.jpg')
+                        p.title
+                            | Jui-Shan (Jenny) Liang
+                        p.source
+                            i.fa.fa-github
+                            | :
+                            a(target='_blank', href='http://github.com/jsliang/jsliang.github.io/')
+                                | jsliang/jsliang.github.io 
+                                small
+                                    i.fa.fa-external-link
+                        p.siteurl
+                            i.fa.fa-globe
+                            | :
+                            | Website
+                            | (You're browsing it!)
+                        p.duration
+                            time(datetime='2014-05') May 2014
+                            | - present
+                        p.description
+                            | This very page that introduces myself. :)
+                            br
+                            | This is also an exercise for me to do RWD without wonderful tools/libraries like
+                            a(href='http://jquery.com/') jQuery
+                            | or
+                            a(href='http://getbootstrap.com') Twitter Bootstrap
+                            | .
+                        p.marks
+                            mark CSS
+                            mark Font Awesome
+                            mark Google Font
+                            mark HTML
+                            mark SCSS
+                    .col-4
+                        p.image
+                            a(target='_blank', href='http://jsliang.com/dnj/')
+                                img(alt='screenshot', src='screenshots/dnj.jpg')
+                        p.title
+                            | Danny &amp; Jenny's Love Story
+                        p.source
+                            i.fa.fa-github
+                            | :
+                            a(target='_blank', href='http://github.com/jsliang/dnj/')
+                                | jsliang/dnj 
+                                small
+                                    i.fa.fa-external-link
+                        p.siteurl
+                            i.fa.fa-globe
+                            | :
+                            a(target='_blank', href='http://jsliang.com/dnj/')
+                                | Website 
+                                small
+                                    i.fa.fa-external-link
+                        p.duration
+                            time(datetime='2013-07') Jul 2013
+                            | -
+                            time(datetime='2014-05') May 2014
+                        p.description
+                            | A wedding memorial of my husband and me.
+                            | Features a responsive photo wall in the style of
+                            a(target='_blank', href='https://plus.google.com/photos') G+ Photos
+                            | and
+                            a(target='_blank', href='https://www.flickr.com/explore/') Flickr
+                            | .
+                        p.marks
+                            mark CSS
+                            mark Font Awesome
+                            mark Google Font
+                            mark HTML
+                            mark JavaScript
+                            mark jQuery
+                            mark SCSS
+                    .col-4
+                        p.image
+                            a(target='_blank', href='http://jsliang.com/sheetaholics/')
+                                img(alt='screenshot', src='screenshots/sheetaholics.jpg')
+                        p.title
+                            | Sheetaholics
+                        p.source
+                            i.fa.fa-github
+                            | :
+                            a(target='_blank', href='http://github.com/jsliang/sheetaholics/')
+                                | jsliang/sheetaholics 
+                                small
+                                    i.fa.fa-external-link
+                        p.siteurl
+                            i.fa.fa-globe
+                            | :
+                            a(target='_blank', href='http://jsliang.com/sheetaholics/')
+                                | Website 
+                                small
+                                    i.fa.fa-external-link
+                        p.duration
+                            time(datetime='2011-03') Mar 2011
+                            | - present
+                        p.description
+                            | A notebook sheet generator formerly named 東大筆記本產生器.
+                            | It started as a web service with PDF generated at back-end
+                            a(target='_blank', href='http://jsliang.com/blog/2010/12/dotted-lined-sheets-generator.html') 
+                                small (1)
+                            | , then a desktop application that can run offline
+                            a(target='_blank', href='http://jsliang.com/blog/2011/04/sheetaholics-v1-1.html') 
+                                small (2)
+                            | , and now a web service with PDF generated at front-end
+                            a(target='_blank', href='http://jsliang.com/sheetaholics/') 
+                                small (3)
+                            | .
+                        p.marks
+                            mark CoffeeScript
+                            mark CSS
+                            mark Django
+                            mark HTML
+                            mark JavaScript
+                            mark Python
+                .row
+                    .col-4
+                        p.image
+                            a(target='_blank', href='https://sublime.wbond.net/packages/Pelican')
+                                img(alt='screenshot', src='screenshots/sublimepelican.jpg')
+                        p.title
+                            | SublimePelican
+                        p.source
+                            i.fa.fa-github
+                            | :
+                            a(target='_blank', href='http://github.com/jsliang/sublime-pelican/')
+                                | jsliang/sublime-pelican 
+                                small
+                                    i.fa.fa-external-link
+                        p.siteurl
+                            i.fa.fa-cog
+                            | :
+                            a(target='_blank', href='https://sublime.wbond.net/packages/Pelican')
+                                | Package Control 
+                                small
+                                    i.fa.fa-external-link
+                        p.siteurl
+                            i.fa.fa-globe
+                            | :
+                            a(target='_blank', href='http://jsliang.com/sublime-pelican/')
+                                | Website 
+                                small
+                                    i.fa.fa-external-link
+                        p.duration
+                            time(datetime='2013-02') Feb 2013
+                            | - present
+                        p.description
+                            | A
+                            a(target='_blank', href='http://www.sublimetext.com/') Sublime Text
+                            | plugin that makes writing Pelican articles easier and faster.
+                        p.marks
+                            mark Python
+                    .col-4
+                        p.image
+                            a(target='_blank', href='http://jsliang.com/pelican-fresh-demo/blog/')
+                                img(alt='screenshot', src='screenshots/pelicanfresh.jpg')
+                        p.title
+                            | Fresh Theme
+                        p.source
+                            i.fa.fa-github
+                            | :
+                            a(target='_blank', href='http://github.com/jsliang/pelican-fresh/')
+                                | jsliang/pelican-fresh 
+                                small
+                                    i.fa.fa-external-link
+                        p.siteurl
+                            i.fa.fa-globe
+                            | :
+                            a(target='_blank', href='http://jsliang.com/pelican-fresh-demo/blog/')
+                                | Live Demo 
+                                small
+                                    i.fa.fa-external-link
+                        p.duration
+                            time(datetime='2013-02') Feb 2013
+                            | - present
+                        p.description
+                            | Fresh is a responsive
+                            a(target='_blank', href='http://getpelican.com') Pelican
+                            | theme. This theme uses HTML5 and its layout is responsive.
+                            | The Fresh theme has been used
+                            a(href='https://github.com/jsliang/pelican-fresh/#websites-that-use-fresh', target='_blank') around the world
+                            | .
+                        p.marks
+                            mark CSS
+                            mark HTML
+                            mark JavaScript
+                            mark Twitter Bootstrap
+                    .col-4
+                        p.image
+                            a(target='_blank', href='http://plugins.jquery.com/eqHeight/')
+                                img(alt='screenshot', src='screenshots/eqheight.jpg')
+                        p.title
+                            | eqHeight.coffee
+                        p.source
+                            i.fa.fa-github
+                            | :
+                            a(target='_blank', href='http://github.com/jsliang/eqHeight.coffee/')
+                                | jsliang/eqHeight.coffee 
+                                small
+                                    i.fa.fa-external-link
+                        p.siteurl
+                            i.fa.fa-cog
+                            | :
+                            a(target='_blank', href='http://plugins.jquery.com/eqHeight/')
+                                | jQuery Plugins Registry 
+                                small
+                                    i.fa.fa-external-link
+                        p.siteurl
+                            i.fa.fa-globe
+                            | :
+                            a(target='_blank', href='http://jsliang.com/eqHeight.coffee/')
+                                | Website & Live Demo 
+                                small
+                                    i.fa.fa-external-link
+                        p.duration
+                            time(datetime='2013-01') Jan 2013
+                            | - present
+                        p.description
+                            | A
+                            a(target='_blank', href='http://plugins.jquery.com/eqHeight/') jQuery plugin
+                            | that stretches fluid columns to equal height. It is originally designed to be used in responsive web design.
+                        p.marks
+                            mark CoffeeScript
+                            mark JavaScript
+                            mark jQuery
+                .row
+                    .col-4
+                        p.image
+                            a(target='_blank', href='http://jcards.twbbs.org/')
+                                img(alt='screenshot', src='screenshots/jcards.jpg')
+                        p.title
+                            | jCards
+                        p.source
+                            i.fa.fa-github
+                            | :
+                            a(target='_blank', href='http://github.com/jsliang/jcards/')
+                                | jsliang/jcards 
+                                small
+                                    i.fa.fa-external-link
+                        p.siteurl
+                            i.fa.fa-globe
+                            | :
+                            a(target='_blank', href='http://jcards.twbbs.org')
+                                | Live Demo 
+                                small
+                                    i.fa.fa-external-link
+                        p.duration
+                            time(datetime='2011-05') May 2011
+                            | -
+                            time(datetime='2013-03') Mar 2013
+                        p.description
+                            | An online tarot card shuffling/drawing application taking the advantage of
+                            a(target='_blank', href='http://jquery.com/') jQuery
+                            | &amp;
+                            a(target='_blank', href='http://jqueryui.com/') jQueryUI
+                            | .
+                        p.marks
+                            mark CSS
+                            mark HTML
+                            mark JavaScript
+                            mark jQuery
+                            mark jQueryUI
+                    .col-4
+                        p.image
+                            a.breakall(target='_blank', href='http://userscripts.org:8080/scripts/show/11170')
+                                img(alt='screenshot', src='screenshots/travian.jpg')
+                        p.title
+                            | Travian Selling Assistant
+                        p.source
+                            | Source:
+                            a.breakall(target='_blank', href='http://userscripts.org:8080/scripts/show/11170')
+                                | http://userscripts.org:8080/scripts/show/11170 
+                                small
+                                    i.fa.fa-external-link
+                        p.duration
+                            time(datetime='2007-08') Aug 2007
+                        p.description
+                            | A plugin of the online browser game
+                            a(target='_blank', href='http://www.travian.com/') Travian
+                            | written with JavaScript.
+                            | It has been installed 6600+ times by worldwide users.
+                            br 
+                            small
+                                | Note: this screenshot of
+                                a(target='_blank', href='http://www.travian.com/') Travian
+                                | is captured in 2014, not in 2007.
+                        p.marks
+                            mark GreaseMonkey
+                            mark HTML
+                            mark JavaScript
+            #contributions.section
+                h2
+                    i.fa.fa-heart-o
+                    | Contributed Projects
+                    i.fa.fa-heart-o
+                .row
+                    .col-4
+                        p.source
+                            i.fa.fa-github
+                            a(target='_blank', href='https://github.com/g0v/newshelper-extension/commits?author=jsliang')
+                                | g0v/newshelper-extension 
+                                small
+                                    i.fa.fa-external-link
+                        p.description
+                            | [Chrome Extension]
+                            | 協助您判別含有誤導資訊的新聞
+                            br
+                            i.fa.fa-globe
+                            | :
+                            a(target='_blank', href='http://newshelper.g0v.tw')
+                                | http://newshelper.g0v.tw 
+                                small
+                                    i.fa.fa-external-link
+                        p.marks
+                            mark CSS
+                            mark HTML
+                            mark JavaScript
+                    .col-4
+                        p.source
+                            i.fa.fa-github
+                            a(target='_blank', href='https://github.com/joelthelion/autojump/commits?author=jsliang')
+                                | joelthelion/autojump 
+                                small
+                                    i.fa.fa-external-link
+                        p.description
+                            | a cd command that learns - easily navigate directories from the command line
+                        p.marks
+                            mark Bash
+                            mark Python
+                    .col-4
+                        p.source
+                            i.fa.fa-github
+                            a(target='_blank', href='https://github.com/roots/roots/commits?author=jsliang')
+                                | roots/roots 
+                                small
+                                    i.fa.fa-external-link
+                        p.description
+                            | a WordPress starter theme based on HTML5 Boilerplate & Bootstrap
+                            br
+                            i.fa.fa-globe
+                            | :
+                            a(target='_blank', href='http://roots.io/starter-theme/')
+                                | http://roots.io/starter-theme/ 
+                                small
+                                    i.fa.fa-external-link
+                        p.marks
+                            mark CSS
+                            mark HTML
+                            mark JavaScript
+                            mark PHP
+                            mark WordPress
+            #job.section
+                h2
+                    i.fa.fa-briefcase
+                    | Employment
+                    i.fa.fa-briefcase
+                .row
+                    .col-4.present
+                        p.title
+                            | Software Engineer
+                        p.where
+                            a(target='_blank', href='http://appier.com/')
+                                | Appier 
+                                small
+                                    i.fa.fa-external-link
+                        p.duration
+                            time(datetime='2014-07') Jul 2014
+                            | -
+                            | present
+                        p.description
+                            | Front-End Developer
+                        p.marks
+                            mark Bower
+                            mark CoffeeScript
+                            mark CSS
+                            mark Flask
+                            mark Git
+                            mark Grunt
+                            mark HTML
+                            mark Jade
+                            mark JavaScript
+                            mark MongoDB
+                            mark Python
+                            mark SASS
+                    .col-4
+                        p.title
+                            | Welfare Officer
+                        p.where
+                            | 58
+                            sup th
+                            | Employee Welfare Committee,
+                            br
+                            a(target='_blank', href='http://www.ibm.com/tw/zh/')
+                                | IBM Taiwan 
+                                small
+                                    i.fa.fa-external-link
+                        p.duration
+                            time(datetime='2014-01') Jan 2014
+                            | -
+                            time(datetime='2014-07') Jul 2014
+                            | (7m)
+                        p.description
+                            | Entertaining IBMers in Taiwan...:P
+                            br
+                            | I use FQL for Facebook fan page monitoring purpose.
+                        p.marks
+                            mark FQL
+                    .col-4
+                        p.title
+                            | Software Engineer
+                        p.where
+                            a(target='_blank', href='http://www.ibm.com/tw/zh/')
+                                | IBM Taiwan 
+                                small
+                                    i.fa.fa-external-link
+                        p.duration
+                            time(datetime='2012-08') Aug 2012
+                            | -
+                            time(datetime='2014-07') Jul 2014
+                            | (2y)
+                        p.description
+                            | WebSphere DataPower Appliance Software Developer
+                        p.marks
+                            mark Agile (Scrum) Development
+                            mark C++
+                            mark Perforce (P4)
+                            mark XSLT
+                .row
+                    .col-3
+                        p.title
+                            | Manager of the Laboratory
+                        p.where
+                            a(target='_blank', href='http://pcs.csie.nctu.edu.tw/')
+                                | Laboratory 117 
+                                small
+                                    i.fa.fa-external-link
+                        p.school
+                            | National Chiao Tung University (NCTU)
+                        p.duration
+                            time(datetime='2012-07') Jul 2012
+                            | -
+                            time(datetime='2010-08') Aug 2010
+                            | (2y)
+                        p.description Good old memories with my labmates
+                    .col-3
+                        p.title
+                            | Software Engineer (Intern)
+                        p.where
+                            a(target='_blank', href='http://www.ibm.com/tw/zh/')
+                                | IBM Taiwan 
+                                small
+                                    i.fa.fa-external-link
+                        p.duration
+                            time(datetime='2010-07') Jul 2010
+                            | -
+                            time(datetime='2010-08') Aug 2010
+                            | (2m)
+                        p.description RESTful API development on IBM WebSphere Telecom Web Services Server
+                        p.marks
+                            mark Java
+                            mark SoapUI
+                    .col-3
+                        p.title
+                            | Language Documentation Writer
+                            span.nobr (Part-Time)
+                        p.where
+                            a(target='_blank', href='http://www.zillians.com')
+                                | Zillians 
+                                small
+                                    i.fa.fa-external-link
+                        p.duration
+                            time(datetime='2010-06') Jun 2010
+                            | -
+                            time(datetime='2010-09') Sep 2010
+                            | (4m)
+                        p.description ZScript language documentation writing
+                        p.marks
+                            mark Doxygen
+                            mark Inkscape
+                            mark LaTeX
+                    .col-3
+                        p.title
+                            | Software Engineer
+                            span.nobr (Part-Time)
+                        p.where
+                            a(target='_blank', href='http://www.tsmc.com.tw/')
+                                | TSMC 
+                                small
+                                    i.fa.fa-external-link
+                        p.duration
+                            time(datetime='2007-06') Jun 2007
+                            | -
+                            time(datetime='2009-12') Sep 2009
+                            | (2y7m)
+                        p.description
+                            | Developed applications to help internal people monitoring facilities (Facility Department, FAB12)
+                        p.marks
+                            mark ASP.NET
+                            mark Excel VBA
+                            mark MSSQL
+                            mark SharePoint
+                            mark SSIS
+                            mark VB.NET
+            #education.section
+                h2
+                    i.fa.fa-graduation-cap
+                    | Education
+                    i.fa.fa-graduation-cap
+                ul.row
+                    li.col-4.offset-2
+                        p.title
+                            | Master of Science
+                        p.school
+                            | National Chiao Tung University (NCTU)
+                        p.duration
+                            time(datetime='2010-09') Sep 2010
+                            | -
+                            time(datetime='2012-07') Jul 2012
+                        p.description
+                            | Institute of Network Engineering
+                            br
+                            | GPA: 4/4 (92.5/100)
+                    li.col-4
+                        p.title
+                            | Bachelor of Science
+                        p.school
+                            | National Chiao Tung University (NCTU)
+                        p.duration
+                            time(datetime='2010-09') Sep 2006
+                            | -
+                            time(datetime='2012-07') Jun 2010
+                        p.description
+                            | Department of Computer Science
+                            br
+                            | GPA: 3.96/4 (90.64/100), Rank: 1/58
+            #awards.section
+                h2
+                    i.fa.fa-trophy
+                    | Awards
+                    i.fa.fa-trophy
+                ul.row
+                    li.col-4.offset-2
+                        p.title
+                            | Google Taiwan Anita Borg Scholarship
+                        p.duration
+                            time(datetime='2011') 2011
+                        p.description
+                            | Awarded to only 5 recipients in Taiwan, who maintain excellent academic records and demonstrate leadership skills
+                    li.col-4
+                        p.title
+                            | Academic Achievement Award
+                        p.where
+                            | Department of Computer Science,
+                            br
+                            | National Chiao Tung University (NCTU)
+                        p.description
+                            | Awarded for 4 semesters (ranked top 5% in class):
+                            br
+                            | 2008 Spring, 2007 Fall &amp; Spring, 2006 Fall
+            #activities.section
+                h2
+                    i.fa.fa-paper-plane
+                    | Activities
+                    i.fa.fa-paper-plane
+                ul.row
+                    li.col-4.offset-4
+                        p.title
+                            | Founder &amp; the 1st President
+                        p.where
+                            | NCTU Flamenco Club
+                        p.duration
+                            time(datetime='2008-09') Sep 2008
+                            | -
+                            time(datetime='2009-06') Jun 2009
+                        p.description
+                            | The club was awarded First-rate Excellent Award of the year by Extracurricular Activities Division, NCTU.
+            footer
+                address
+                    | &copy; 
+                    time 2014
+                    |  jsliang
+                    | ·
+                    a(target='_blank', href='mailto:jenny@jsliang.me')
+                        i.fa.fa-envelope
+                    a(target='_blank', href='http://tw.linkedin.com/in/juishanliang/')
+                        i.fa.fa-linkedin-square
+                    a(target='_blank', href='http://github.com/jsliang')
+                        i.fa.fa-github
+                    a(target='_blank', href='http://jsliang.com/blog')
+                        i.fa.fa-pencil-square-o
+                p
+                    | Handcrafted with
+                    span.nobr
+                        a(target='_blank', href='http://sublimetext.com/')
+                            | Sublime Text
+                    | (
+                    a(href='http://validator.w3.org/check?uri=http%3A%2F%2Fjsliang.com%2F', target='_blank') W3C Validated
+                    | )
+                    br
+                    | Special thanks to
+                    span.nobr
+                        a(target='_blank', href='https://www.google.com/fonts')
+                            i.fa.fa-google
+                            | Google Fonts
+                    | ,
+                    span.nobr
+                        a(target='_blank', href='http://fortawesome.github.io/Font-Awesome/')
+                            i.fa.fa-flag
+                            | Font Awesome
+                    | and
+                    span.nobr
+                        a(target='_blank', href='http://fireapp.kkbox.com/')
+                            | Fire.app
+        script(src='javascripts/aboutJS.js')
+        script.
+            var $JS = window.aboutJS;
+            // stretch the height of header#cover to browser inner height
+            $JS.makeCover("#cover");
+            // generate navigation menu
+            $JS.setupNavMenu("#nav", ".section > h2");
