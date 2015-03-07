@@ -91,7 +91,7 @@
                     <p class="duration">
                         <time datetime="2011-03">Mar 2011</time>
                         - present
-                        (3y+)
+                        <span id="github-duration"></span>
                     </p>
                     <p class="description">
                         GitHub Profile:
@@ -975,6 +975,11 @@
 
         // generate navigation menu
         $JS.setupNavMenu("#nav", ".section > h2");
+
+        // github duration
+        var mGithubStartDate = moment([2011, 3, 21]);
+        var years = moment(new Date()).diff(mGithubStartDate, 'years', true).toFixed(1);
+        document.getElementById('github-duration').innerHTML = '(' + years + 'y)';
 
         // appier duration
         var mAppierStartDate = moment([2014, 7, 21]);
