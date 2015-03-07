@@ -644,6 +644,7 @@
                         <time datetime="2014-07">Jul 2014</time>
                         -
                         present
+                        <span id="appier-duration"></span>
                     </p>
                     <p class="description">
                         Front-End Developer
@@ -964,6 +965,7 @@
             </p>
         </footer>
     </article>
+    <script src="bower_components/moment/moment.js"></script>
     <script src="javascripts/aboutJS.js"></script>
     <script>
         var $JS = window.aboutJS;
@@ -973,6 +975,16 @@
 
         // generate navigation menu
         $JS.setupNavMenu("#nav", ".section > h2");
+
+        // appier duration
+        var mAppierStartDate = moment([2014, 7, 21]);
+        var years = moment(new Date()).diff(mAppierStartDate, 'years', true).toFixed(1);
+        var months = moment(new Date()).diff(mAppierStartDate, 'months');
+        if (years >= 1) {
+            document.getElementById('appier-duration').innerHTML = '(' + years + 'y)';
+        } else {
+            document.getElementById('appier-duration').innerHTML = '(' + months + 'm)';
+        }
     </script>
 </body>
 
