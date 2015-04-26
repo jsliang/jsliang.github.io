@@ -108,6 +108,17 @@
                         <mark>Python</mark>
                     </p>
                 </div>
+                <div class="col-4 present">
+                    <p class="title">
+                        Conference Worker of <span class="nobr">PyConAPAC 2015</span>
+                    </p>
+                    <p class="duration">
+                        <time datetime="2014-12">Dec 2014</time>
+                        - present
+                        <span id="pyconapac-duration"></span>
+                    </p>
+                    <p class="description">Speaker Night Reception Planner</p>
+                </div>
                 <div class="col-4">
                     <p class="title">
                         Conference Worker of <span class="nobr">COSCUP 2014</span>
@@ -122,7 +133,9 @@
                         Session Convener
                     </p>
                 </div>
-                <div class="col-4">
+            </div>
+            <div class="row">
+                <div class="col-3">
                     <p class="title">
                         Speaker at <span class="nobr">JavaScript Enthusiast</span>
                     </p>
@@ -141,9 +154,7 @@
                         <mark>jsPDF</mark>
                     </p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
+                <div class="col-3">
                     <p class="title">
                         Speaker at <span class="nobr">PyLadies Taiwan</span>
                     </p>
@@ -161,7 +172,7 @@
                         <mark>Python</mark>
                     </p>
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                     <p class="title">
                         Speaker at <span class="nobr">PyConTW 2013</span>
                     </p>
@@ -187,7 +198,7 @@
                         <mark>Python</mark>
                     </p>
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                     <p class="title">
                         Conference Worker of <span class="nobr">PyConTW 2013</span>
                     </p>
@@ -980,6 +991,11 @@
         var mGithubStartDate = moment([2011, 3, 21]);
         var years = moment(new Date()).diff(mGithubStartDate, 'years', true).toFixed(1).replace('.0', '');
         document.getElementById('github-duration').innerHTML = '(' + years + 'y)';
+
+        // pyconapac duration
+        var mPyConStartDate = moment([2014, 12, 10]);
+        var months = moment(new Date()).diff(mPyConStartDate, 'months');
+        document.getElementById('pyconapac-duration').innerHTML = '(' + months + 'm)';
 
         // appier duration
         var mAppierStartDate = moment([2014, 7, 21]);
