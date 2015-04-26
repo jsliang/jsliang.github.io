@@ -964,25 +964,22 @@
         // generate navigation menu
         $JS.setupNavMenu("#nav", ".section > h2");
 
-        // github duration
-        var mGithubStartDate = moment([2011, 3, 21]);
-        var years = moment(new Date()).diff(mGithubStartDate, 'years', true).toFixed(1).replace('.0', '');
-        document.getElementById('github-duration').innerHTML = '(' + years + 'y)';
-
-        // pyconapac duration
-        var mPyConStartDate = moment([2014, 12, 10]);
-        var months = moment(new Date()).diff(mPyConStartDate, 'months');
-        document.getElementById('pyconapac-duration').innerHTML = '(' + months + 'm)';
-
-        // appier duration
-        var mAppierStartDate = moment([2014, 7, 21]);
-        var years = moment(new Date()).diff(mAppierStartDate, 'years', true).toFixed(1).replace('.0', '');
-        var months = moment(new Date()).diff(mAppierStartDate, 'months');
-        if (years >= 1) {
-            document.getElementById('appier-duration').innerHTML = '(' + years + 'y)';
-        } else {
-            document.getElementById('appier-duration').innerHTML = '(' + months + 'm)';
-        }
+        // calculate durations
+        var calculateDuration = function(id, y, m, d) {
+            id = id.trim();
+            var startDate = moment([y, m, d]);
+            var years = moment(new Date()).diff(startDate, 'years', true).toFixed(1).replace('.0', '');
+            var months = moment(new Date()).diff(startDate, 'months');
+            if (years >= 1) {
+                document.getElementById(id).innerHTML = '(' + years + 'y)';
+            } else {
+                document.getElementById(id).innerHTML = '(' + months + 'm)';
+            }
+            return;
+        };
+        calculateDuration('github-duration', 2011, 3, 21);
+        calculateDuration('pyconapac-duration', 2014, 12, 10);
+        calculateDuration('appier-duration', 2014, 7, 21);
     </script>
 </body>
 
