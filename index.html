@@ -971,9 +971,9 @@
         // calculate durations
         var calculateDuration = function(id, y, m, d) {
             id = id.trim();
-            var startDate = moment([y, m, d]);
-            var years = moment(new Date()).diff(startDate, 'years', true).toFixed(1).replace('.0', '');
-            var months = moment(new Date()).diff(startDate, 'months');
+            var startDate = moment([y, m - 1, d]);
+            var years = moment().diff(startDate, 'years', true).toFixed(1).replace('.0', '');
+            var months = Math.ceil(moment().diff(startDate, 'months', true));
             if (years >= 1) {
                 document.getElementById(id).innerHTML = '(' + years + 'y)';
             } else {
