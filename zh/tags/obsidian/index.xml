@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on Jenny Liang (jsliang)</title><link>https://jsliang.com/zh/tags/obsidian/</link><description>Jenny Liang (jsliang) (Obsidian)</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Sat, 02 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jsliang.com/zh/tags/obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>我如何用 Obsidian 管理任務清單</title><link>https://jsliang.com/zh/post/task-management-with-obsidian/</link><pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate><guid>https://jsliang.com/zh/post/task-management-with-obsidian/</guid><description>&lt;p>&lt;img
+srcset="
+/zh/post/task-management-with-obsidian/01.zh_hu47e3d8bd260763ea6b72ce779c97ec60_982938_1051x0_resize_box_3.png,
+/zh/post/task-management-with-obsidian/01.zh_hu47e3d8bd260763ea6b72ce779c97ec60_982938_2102x0_resize_box_3.png 2x"
+src="https://jsliang.com/zh/post/task-management-with-obsidian/01.zh_hu47e3d8bd260763ea6b72ce779c97ec60_982938_1051x0_resize_box_3.png" width="1051" height="808" loading="lazy"/>&lt;/p>
+&lt;p>&lt;a href="https://jsliang.com/zh/post/why-i-replaced-my-bujo-with-obsidian/">前一篇文章&lt;/a>說明我為何用 &lt;a href="https://obsidian.md/">Obsidian&lt;/a> 取代子彈筆記，這篇文章分享我現在如何用 Obsidian 管理我的任務清單。&lt;/p>
+&lt;h1 id="什麼是-obsidian" >什麼是 Obsidian？
+&lt;span>
+&lt;a href="#%e4%bb%80%e9%ba%bc%e6%98%af-obsidian">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Obsidian 是使用 Markdown 語法的文字編輯器，同時也是個人知識管理（Personal Knowledge Management）軟體。目前個人使用完全免費，不過沒有開放原始碼。常見的平台都有支援：Windows、macOS、Linux、iOS、Android，我在我的 MacBook 和 Pixel 手機上都有安裝。&lt;/p>
+&lt;p>我日常寫程式時都是使用 &lt;a href="https://code.visualstudio.com/">Visual Studio Code&lt;/a>，而 Obsidian 有和 Visual Studio Code 一樣概念的 command palette、可自訂的熱鍵、支援 vim 模式、多元豐富的社群 plugin，所以我能夠把 Obsidian 的操作體驗調整到和 Visual Studio Code 非常相似，大幅降低我在兩個軟體間轉換時的心智切換成本。&lt;/p>
+&lt;p>初次使用 Obsidian 可參考：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://help.obsidian.md/Obsidian/Index">Obsidian 官方教學文件&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://pmstoolbox.com/complete-obsidian-tutorials/">PM 的學習力工具箱 - Obsidian 完整使用攻略&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>以下分享內容預設讀者已經知道 Markdown 語法，並且對於 Obsidian 怎麼使用有個大概印象。&lt;/p>
+&lt;h1 id="我在-obsidian-上的任務管理系統" >我在 Obsidian 上的任務管理系統
+&lt;span>
+&lt;a href="#%e6%88%91%e5%9c%a8-obsidian-%e4%b8%8a%e7%9a%84%e4%bb%bb%e5%8b%99%e7%ae%a1%e7%90%86%e7%b3%bb%e7%b5%b1">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>剛開始玩 Obsidian 的時候走火入魔，試了一堆有的沒的流程，最後發現對我而言愈簡單愈好。&lt;/p>
+&lt;p>所以現在我的任務管理系統只由兩種筆記組成：&lt;/p>
+&lt;ol>
+&lt;li>Action Zone 筆記：整個知識庫（vault）只有一個 Action Note 筆記。這則筆記上可以看到我本日、本週、已過期、未排程的任務。&lt;/li>
+&lt;li>Topic 主題筆記：每專案都有自己的主題筆記，記錄了專案的各種資訊（文件、聯絡人、Slack 頻道等等），以及所有的待辦事項、討論紀錄。&lt;/li>
+&lt;/ol>
+&lt;h2 id="1-用-action-zone-檢視當日行動清單" >1. 用 Action Zone 檢視當日行動清單
+&lt;span>
+&lt;a href="#1-%e7%94%a8-action-zone-%e6%aa%a2%e8%a6%96%e7%95%b6%e6%97%a5%e8%a1%8c%e5%8b%95%e6%b8%85%e5%96%ae">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>Action Zone 筆記是我的行動儀表板，靈感來自 August Bradley 的影片 &lt;a href="https://youtu.be/lK_Ysf0Ko9E%E3%80%82">Notion Daily &amp;ldquo;Action Zone&amp;rdquo; Dashboard Design&lt;/a>。我每天早上第一件事就是打開 Obsidian 上的 Action Zone 筆記，看看當日的任務有哪些。&lt;/p>
+&lt;p>下面截圖裡畫面分左右兩邊，這兩邊其實是同一份 Action Zone 筆記的不同檢視模式。左邊是原始碼模式（Source Mode），可以看到原始的 Markdown 語法；右邊是閱讀模式（Reading View），是依照語法渲染的比較好讀的畫面。可以使用熱鍵 &lt;code>Cmd&lt;/code> + &lt;code>E&lt;/code> 快速切換原始碼模式及閱讀模式。&lt;/p>
+&lt;figure>
+&lt;picture>&lt;img
+srcset="
+/zh/post/task-management-with-obsidian/01.zh_hu47e3d8bd260763ea6b72ce779c97ec60_982938_1051x0_resize_box_3.png,
+/zh/post/task-management-with-obsidian/01.zh_hu47e3d8bd260763ea6b72ce779c97ec60_982938_2102x0_resize_box_3.png 2x"
+src="https://jsliang.com/zh/post/task-management-with-obsidian/01.zh_hu47e3d8bd260763ea6b72ce779c97ec60_982938_1051x0_resize_box_3.png" title="同一份筆記的原始碼模式與閱讀模式" width="1051" height="808" loading="lazy"/>&lt;/picture>
+&lt;figcaption>同一份筆記的原始碼模式與閱讀模式&lt;/figcaption>
+&lt;/figure>
+&lt;p>Action Zone 筆記裡的任務清單是動態產生的。這些清單並不是直接寫在 Action Zone 這一份筆記，而是寫在個別的主題筆記，再透過 &lt;a href="https://github.com/schemar/obsidian-tasks">Tasks plugin&lt;/a> 的查詢語法篩選出來。&lt;/p>
+&lt;p>例如這樣的區塊：&lt;/p>
+&lt;pre>&lt;code>## 本日待辦
+```tasks
+not done
+due today
+sort by description
+```
+&lt;/code>&lt;/pre>
+&lt;p>這一段就是 Tasks plugin 的查詢語法，意思看字面應該也蠻清楚了：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>not done&lt;/code> - 未完成的任務&lt;/li>
+&lt;li>&lt;code>due today&lt;/code> - 今天到期的任務&lt;/li>
+&lt;li>&lt;code>sort by description&lt;/code> - 按照任務的敘述內容排序；我只有在本日待辦有使用這個排序，這樣我只要在任務敘述最前面用 24 小時制輸入預計要做的時間，就會有依照時間排序的效果&lt;/li>
+&lt;/ul>
+&lt;p>詳細的查詢語法可查詢 plugin 官方文件：&lt;a href="https://schemar.github.io/obsidian-tasks/queries/">Queries - Obsidian Tasks&lt;/a>&lt;/p>
+&lt;p>除了在「本日待辦」看今天要做的事，我也會看「過期待辦」，也就是我本來排了昨天要做但沒做完的任務。&lt;/p>
+&lt;p>過期待辦的查詢語法如下：&lt;/p>
+&lt;pre>&lt;code>## 過期待辦
+```tasks
+not done
+due before today
+sort by due
+```
+&lt;/code>&lt;/pre>
+&lt;p>這時我會一個一個按下每筆 task 末端的鉛筆符號，開啟編輯視窗，把 Due 欄位裡面的值改成「today」。如果確定要挪到其他天，也可以輸入下週六「next sat」甚至下個月同一天「next month」等。Tasks plugin 會自動把它轉換成對應的日期。&lt;/p>
+&lt;figure>
+&lt;picture>&lt;img
+srcset="
+/zh/post/task-management-with-obsidian/02.zh.gif,
+/zh/post/task-management-with-obsidian/02.zh.gif 2x"
+src="https://jsliang.com/zh/post/task-management-with-obsidian/02.zh.gif" title="編輯任務" width="743" height="768" loading="lazy"/>&lt;/picture>
+&lt;figcaption>編輯任務&lt;/figcaption>
+&lt;/figure>
+&lt;p>一個個修改看起來很麻煩，但對我而言這步驟就是子彈筆記的&lt;a href="https://bulletjournal.com/blogs/bulletjournalist/migration">「轉移 Migration」&lt;/a>：把前一天未完成的任務做個記號，再到今天的日誌或是其他週期誌重抄一遍。這個麻煩的過程會刺激我思考這個項目是否還有必要進行：&lt;/p>
+&lt;ul>
+&lt;li>如果不必做了，乾脆刪除眼不見為淨&lt;/li>
+&lt;li>如果要進行的話，就思考有沒有必要儘快把它處理掉
+&lt;ul>
+&lt;li>急：排在今天處理&lt;/li>
+&lt;li>不急：把它排到未來的某日，一樣眼不見為淨、暫時別讓自己分心掛念&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>至於「本週待辦」和「未排程」，我後來發現自己其實幾乎沒在看。光是當日要做的待辦事項往往都做不完了，根本無暇超前進度。列在這裡僅供參考。&lt;/p>
+&lt;pre>&lt;code>## 本週待辦
+```tasks
+not done
+due after today
+due before in 1 week
+sort by due
+```
+## 未排程
+```tasks
+not done
+no due date
+sort by path
+```
+&lt;/code>&lt;/pre>
+&lt;p>每天早上檢視 Action Zone 筆記時，除了看本來預計今天要做什麼，也再重新檢查一次自己當天的行事曆。如果有沒出現在 Action Zone 上的會議，我會根據該會議的主題，用熱鍵快速開啟所屬的主題筆記，在主題筆記上新增一個今日任務代表這個會議。（Obsidian 預設快速開啟檔案的熱鍵是 &lt;code>Cmd&lt;/code> + &lt;code>O&lt;/code>，我為了貼近平常使用 Visual Studio Code 的體驗，改成 &lt;code>Cmd&lt;/code> + &lt;code>P&lt;/code>。）&lt;/p>
+&lt;p>下一節說明主題筆記的內容，以及我怎麼在裡面新增任務。&lt;/p>
+&lt;h2 id="2-在主題筆記規劃專案內容待辦事項" >2. 在主題筆記規劃專案內容、待辦事項
+&lt;span>
+&lt;a href="#2-%e5%9c%a8%e4%b8%bb%e9%a1%8c%e7%ad%86%e8%a8%98%e8%a6%8f%e5%8a%83%e5%b0%88%e6%a1%88%e5%85%a7%e5%ae%b9%e5%be%85%e8%be%a6%e4%ba%8b%e9%a0%85">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>每個任務的尾端的鉛筆符號之前都有個超連結。超連結所連到的筆記，就是該任務真正存在的主題筆記。點擊超連結便能開啟對應的筆記。&lt;/p>
+&lt;p>&lt;img
+srcset="
+/zh/post/task-management-with-obsidian/06.zh_hu16eb9b1bd446a8605c00d1d2d75d502f_116796_518x0_resize_box_3.png,
+/zh/post/task-management-with-obsidian/06.zh_hu16eb9b1bd446a8605c00d1d2d75d502f_116796_1036x0_resize_box_3.png 2x"
+src="https://jsliang.com/zh/post/task-management-with-obsidian/06.zh_hu16eb9b1bd446a8605c00d1d2d75d502f_116796_518x0_resize_box_3.png" width="518" height="227" loading="lazy"/>&lt;/p>
+&lt;p>我在主題筆記記錄的東西主要有三項：主題相關的資訊、具體執行的任務、會議或討論紀錄。&lt;/p>
+&lt;h3 id="主題資訊" >主題資訊
+&lt;span>
+&lt;a href="#%e4%b8%bb%e9%a1%8c%e8%b3%87%e8%a8%8a">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;p>主題相關的資訊隨意：背景、文件、Slack 頻道、Trello Card、Jira Epic…等等，沒有特定格式。這邊不贅述。&lt;/p>
+&lt;h3 id="用-tasks-plugin-新增管理任務" >用 Tasks plugin 新增、管理任務
+&lt;span>
+&lt;a href="#%e7%94%a8-tasks-plugin-%e6%96%b0%e5%a2%9e%e7%ae%a1%e7%90%86%e4%bb%bb%e5%8b%99">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;p>具體執行的任務我一律透過 &lt;a href="https://github.com/schemar/obsidian-tasks">Tasks plugin&lt;/a> 去生成，因為這樣可以直接透過 plugin 的介面指定這個任務的預計執行日（due date），確保在預計要執行的那天它會出現在 Action Zone 頁面上。我最喜歡日期欄位能夠直接寫英文「today」、「tomorrow」、「next mon」…等等，省去操作日期挑選器或是心算的麻煩。&lt;/p>
+&lt;p>要叫出 Tasks plugin 的介面，必須先按 &lt;code>Cmd&lt;/code> + &lt;code>P&lt;/code> 叫出指令列表 command palette，再選擇「Tasks: Create or edit task」。為了加快這個速度，我為這個指令設了熱鍵 &lt;code>Cmd&lt;/code> + &lt;code>T&lt;/code>。這樣在編輯模式下，游標停在空白處、或是一行還不是任務的文字上時，按 &lt;code>Cmd&lt;/code> + &lt;code>T&lt;/code> 即可新增任務；而游標停在任務上時，按 &lt;code>Cmd&lt;/code> + &lt;code>T&lt;/code> 即可修改任務。&lt;/p>
+&lt;figure>
+&lt;picture>&lt;img
+srcset="
+/zh/post/task-management-with-obsidian/03.gif,
+/zh/post/task-management-with-obsidian/03.gif 2x"
+src="https://jsliang.com/zh/post/task-management-with-obsidian/03.gif" title="用熱鍵快速新增、修改任務" width="743" height="772" loading="lazy"/>&lt;/picture>
+&lt;figcaption>用熱鍵快速新增、修改任務&lt;/figcaption>
+&lt;/figure>
+&lt;h4 id="用-tasks-plugin-自動產生週期性任務" >用 Tasks plugin 自動產生週期性任務
+&lt;span>
+&lt;a href="#%e7%94%a8-tasks-plugin-%e8%87%aa%e5%8b%95%e7%94%a2%e7%94%9f%e9%80%b1%e6%9c%9f%e6%80%a7%e4%bb%bb%e5%8b%99">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h4>&lt;p>除了基本的新增、修改任務外，我極度仰賴 Tasks plugin 自動產生週期性任務 &lt;a href="https://schemar.github.io/obsidian-tasks/getting-started/recurring-tasks/">Recurring Tasks&lt;/a> 的功能。我靠這個功能去產生週期性會議：&lt;/p>
+&lt;pre>&lt;code>- [ ] 10:00 weekly sync 🔁 every week on Wednesday 📅 2022-02-09
+&lt;/code>&lt;/pre>
+&lt;p>或是提醒自己洗牙、帶小孩塗氟、發票對獎：&lt;/p>
+&lt;pre>&lt;code>- [ ] 塗氟 🔁 every 180 days 📅 2021-11-05
+- [ ] 洗牙 🔁 every 180 days 📅 2022-01-27
+- [ ] 發票對獎 🔁 every 2 months on the 5th 📅 2022-04-05
+&lt;/code>&lt;/pre>
+&lt;p>Tasks plugin 週期性任務的產生邏輯比較特別。它並不是自動在指定時間到時幫你新增一筆，而是你把目前這個項目標示為完成時，Tasks plugin 才自動根據你定義的重複規則（recurrence）去產生下一筆。下一筆的 due date 是根據現在這一筆的 due date 往後推算。&lt;/p>
+&lt;p>以上面的洗牙任務為例，當我把這個任務標示完成時，Tasks plugin 便自動幫我產生下一個任務，直接新增在原任務上方，due date 照我指定的在原訂完成日 1 月 28 日的 180 天後。這樣我便知道下一次洗牙要預約在 7 月 27 日之後。&lt;/p>
+&lt;pre>&lt;code>- [ ] 洗牙 🔁 every 180 days 📅 2022-07-27
+- [x] 洗牙 🔁 every 180 days 📅 2022-01-28 ✅ 2022-01-28
+&lt;/code>&lt;/pre>
+&lt;h4 id="劃掉任務時務必透過-tasks-plugin-的指令" >劃掉任務時務必透過 Tasks plugin 的指令
+&lt;span>
+&lt;a href="#%e5%8a%83%e6%8e%89%e4%bb%bb%e5%8b%99%e6%99%82%e5%8b%99%e5%bf%85%e9%80%8f%e9%81%8e-tasks-plugin-%e7%9a%84%e6%8c%87%e4%bb%a4">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h4>&lt;p>初期使用 Tasks plugin 還有一點需要習慣：如果不是處在閱讀模式 Reading View 下，在標示任務完成時不能直接&lt;a href="https://help.obsidian.md/How+to/Format+your+notes#Task+list">用 Obsidian 原生的方式&lt;/a>把任務劃掉。必須先把游標停在任務上，再執行 Tasks plugin 的「Tasks: Toggle task done」指令，這樣 Tasks plugin 才會幫你加上完成日期、並且複製下一個任務等等。所以我也為這個完成指令設了熱鍵 &lt;code>Cmd&lt;/code> + &lt;code>Shift&lt;/code> + &lt;code>Enter&lt;/code>。&lt;/p>
+&lt;figure>
+&lt;picture>&lt;img
+srcset="
+/zh/post/task-management-with-obsidian/04_hub2ebf7a063a7e8f7a98b28e5dd0504c1_153876_1051x0_resize_box_3.png,
+/zh/post/task-management-with-obsidian/04_hub2ebf7a063a7e8f7a98b28e5dd0504c1_153876_2102x0_resize_box_3.png 2x"
+src="https://jsliang.com/zh/post/task-management-with-obsidian/04_hub2ebf7a063a7e8f7a98b28e5dd0504c1_153876_1051x0_resize_box_3.png" title="我為 Tasks plugin 設定的熱鍵" width="1051" height="522" loading="lazy"/>&lt;/picture>
+&lt;figcaption>我為 Tasks plugin 設定的熱鍵&lt;/figcaption>
+&lt;/figure>
+&lt;p>在閱讀模式下就沒有這個問題，直接滑鼠點選核取方塊即可。&lt;/p>
+&lt;h3 id="會議或討論紀錄" >會議或討論紀錄
+&lt;span>
+&lt;a href="#%e6%9c%83%e8%ad%b0%e6%88%96%e8%a8%8e%e8%ab%96%e7%b4%80%e9%8c%84">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;p>前面提過我會把會議都記成一筆任務，除了提醒我當日有這個會，也方便日後回顧時記得曾經在這個日子有過相關討論。那我自己隨筆記的討論紀錄是怎麼儲存的呢？&lt;/p>
+&lt;p>如果是 Slack 或 Jira 上的純文字討論，我會直接用 Markdown 的超連結語法連到討論串的永久網址：&lt;/p>
+&lt;pre>&lt;code>- [x] 和小美討論 [ISSUE-123](https://jira.ticket.url) - [Slack](https://slack.archive.link) 📅 2022-03-01 ✅ 2022-03-01
+&lt;/code>&lt;/pre>
+&lt;p>時間允許的話，我會試著多加一句文字摘要；沒空的話，至少有連結，日後在閱讀模式點一下滑鼠就可以回顧整個脈胳。&lt;/p>
+&lt;p>但如果是完全視訊、音訊的會議，沒有網址可以回顧，只有自己的隨筆記錄，怎麼儲存？我一開始的做法是為個別討論都開一則筆記去儲存我討論中記下的待辦事項或重點，然後再連結回這個主題頁。例如下面任務描述裡的 &lt;code>[[會議紀錄 2022-03-23]]&lt;/code> 連結到另一個標題為「會議紀錄 2022-03-23」的筆記：&lt;/p>
+&lt;pre>&lt;code>- [x] 10:00-11:00 週會 [[會議紀錄 2022-03-23]] 🔁 every week on Wednesday 📅 2022-03-23 ✅ 2022-03-23
+&lt;/code>&lt;/pre>
+&lt;p>試行一兩週後，我發現自己實在不愛看過往討論紀錄時需要一直跳頁。我乾脆把所有內容都直接縮排記在討論任務下方，這樣一頁可以看完，也方便搜尋。&lt;/p>
+&lt;pre>&lt;code>- [ ] 10:00-11:00 週會 🔁 every week on Wednesday 📅 2022-03-30
+- 123
+- 456
+- 789
+- [x] 10:00-11:00 週會 🔁 every week on Wednesday 📅 2022-03-23 ✅ 2022-03-23
+- 1
+- 2
+- 2a
+- 2b
+- 3
+&lt;/code>&lt;/pre>
+&lt;h4 id="用-zoom-plugin-幫助專注" >用 Zoom plugin 幫助專注
+&lt;span>
+&lt;a href="#%e7%94%a8-zoom-plugin-%e5%b9%ab%e5%8a%a9%e5%b0%88%e6%b3%a8">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h4>&lt;p>上述把所有筆記都塞在同一頁的缺點是，會議當下要紀錄時，太多不相關的文字出現在畫面上容易分心。為了避免眼花，我只好先開一個空白筆記做記錄，之後再剪貼回主題筆記。直到後來發現有個 plugin 可以解決這個問題：&lt;a href="https://github.com/vslinko/obsidian-zoom">Zoom&lt;/a>。&lt;/p>
+&lt;p>Zoom 就像 &lt;a href="https://workflowy.com/">Workflowy&lt;/a> 或 &lt;a href="https://roamresearch.com/">Roam Research&lt;/a> 的介面一樣，可以讓你 zoom in 到指定的層級，並且把目前的路徑顯示在最上方。所以我可以直接 zoom in 到主題頁當下的會議這一層，視覺上過濾掉其他不重要的訊息。&lt;/p>
+&lt;ul>
+&lt;li>Zoom in：游標移到要 zoom in 的層級，按下熱鍵 &lt;code>Cmd&lt;/code> + &lt;code>.&lt;/code>&lt;/li>
+&lt;li>Zoom out：按下熱鍵 &lt;code>Cmd&lt;/code> + &lt;code>Shift&lt;/code> + &lt;code>.&lt;/code>，或是滑鼠直接點選上方的路徑&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img
+srcset="
+/zh/post/task-management-with-obsidian/05.zh.gif,
+/zh/post/task-management-with-obsidian/05.zh.gif 2x"
+src="https://jsliang.com/zh/post/task-management-with-obsidian/05.zh.gif" width="684" height="368" loading="lazy"/>&lt;/p>
+&lt;p>Zoom plugin 還有另一個姊妹 plugin：&lt;a href="https://github.com/vslinko/obsidian-outliner">Outliner&lt;/a>。兩個搭配使用會讓整體體驗更接近 Workflowy 或 Roam Research，喜愛這類介面的人不妨兩個都安裝起來玩看看。我是覺得 Zoom 對我而言已很足夠。&lt;/p>
+&lt;h2 id="結語" >結語
+&lt;span>
+&lt;a href="#%e7%b5%90%e8%aa%9e">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>以上就是我目前利用 Obsidian 管理任務清單的系統。&lt;/p>
+&lt;p>我喜歡目前這個流程的原因是它非常簡單（只有兩種筆記），但能紀錄的又遠比以前手寫子彈筆記詳細。雖然在撰寫主題筆記時使用了兩個 plugins，但這些 plugins 都只是輔助編輯，文件內容完整保留了所有該有的資訊。即便用 Obsidian 以外的文字編輯器開啟，因為是用 Markdown 語法寫成，筆記本身也還是好讀，我不必擔心這些筆記內容會因為哪天 Obsidian 無法使用而難以取回。&lt;/p>
+&lt;p>如果你本身已有使用專業的任務管理軟體，可能會覺得這一切未免也太拼裝了吧？為什麼不直接使用專門的工具就好呢？這部份我同意。但如果你之前使用的工具是手寫筆記本或是數位軟體上的純文字紀錄，或許會跟我一樣喜愛 Obsidian。它不僅是一個強大的 Markdown 文字編輯器，更能夠特化成適應使用者個人偏好的工具。&lt;/p>
+&lt;p>除了任務清單外，我的 Obsidian 同時還有我的日誌以及個人知識庫。不過日誌和知識庫的流程我仍在探索中，等日後有心得再分享。&lt;/p></description></item><item><title>我為何用 Obsidian 取代子彈筆記</title><link>https://jsliang.com/zh/post/why-i-replaced-my-bujo-with-obsidian/</link><pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate><guid>https://jsliang.com/zh/post/why-i-replaced-my-bujo-with-obsidian/</guid><description>&lt;p>這幾年一直在尋找適合自己的任務與知識的管理工具，我想我終於找到了。&lt;/p>
+&lt;p>這篇文章先簡述我之前做過的嘗試，以及為什麼目前選擇用 Obsidian。&lt;a href="https://jsliang.com/zh/post/task-management-with-obsidian/">下一篇文章&lt;/a>進一步分享我現在是如何使用 Obsidian。&lt;/p>
+&lt;h2 id="手寫子彈筆記" >手寫子彈筆記
+&lt;span>
+&lt;a href="#%e6%89%8b%e5%af%ab%e5%ad%90%e5%bd%88%e7%ad%86%e8%a8%98">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>三年前因為同事的介紹而讀了《子彈思考整理術》，深受啟發，用了兩年紙本的子彈筆記。因為很懶得寫字，所以我子彈筆記的用法也很單純，純當任務管理系統使用而已，沒有像 Instagram 或 Pinterest 上常見的手繪精美的插圖或頁面、也沒有拿來規劃夢想或進行回顧與檢討。但即使是這樣也對我有很大的幫助：&lt;/p>
+&lt;ol>
+&lt;li>彈性：可以隨時根據自己的需求調整，讓系統適應我的需求，而不是讓我去適應系統。&lt;/li>
+&lt;li>聚焦：子彈筆記一開始最讓我遲疑的是「轉移 migration」這一步驟，也就是「原訂計畫裡沒做完的項目，要手動謄寫到未來的日誌裡」。但我後來體會到，這個手寫的過程很麻煩沒錯，而「麻煩」正是它的精髓，因為它強迫我去思考：「這項目真的有重要到值得我多花力氣去重抄一遍嗎？」&lt;/li>
+&lt;/ol>
+&lt;p>然而手寫兩年子彈筆記後，我還是遇到瓶頸了。如果你之前也是手寫筆記，或許會對我遇過的問題有共鳴。&lt;/p>
+&lt;p>我的子彈筆記本上，每天的日誌能記下的往往只有簡單的：&lt;/p>
+&lt;p>□ 做這件事&lt;br>
+□ 做那件事&lt;br>
+□ TICKET-123&lt;br>
+□ 回覆小美的 Slack 訊息&lt;/p>
+&lt;p>但很快就發現上面的內容不夠詳細。我天真以為親手寫下的東西能夠記一輩子，事後卻發現不用一年，我一個月甚至一週就忘光光了。我太高估自己的記憶。&lt;/p>
+&lt;p>首先，只有票號的話，日後回顧根本不知道 TICKET-123 這張票的內容是什麼。為了減少未來的自己開瀏覽器找票的時間，我只好勤勞點多寫點字，例如：「TICKET-123 按下 XX 鈕後沒看到應該要有的 OO 畫面」。這部份還算可以解決。&lt;/p>
+&lt;p>還有「回覆小美的 Slack 訊息」也是。寫筆記的當下總是非常相信自己的記性。一個月後，不只是討論主題與內容我很可能不記得，連這個討論是發生在兩人間的一對一私訊、群組私訊、或是哪個公開頻道，我可能都沒印象，只能事後想辦法靠 Slack 的搜尋功能把細節撈回來。這部份我沒有想到有效的解法。畢竟 Slack 的訊息網址太長，我無法手抄在筆記本上；就算很認真地手抄了，要盯著再手動輸入瀏覽器網址列開啟頁面也不實際，只能由它去。&lt;/p>
+&lt;p>再來是我發現子彈筆記很難有效率地集中回顧某個專案的任務。我知道子彈筆記有「群組 collection」的概念，可以讓你一個主題獨立一頁，在上面寫下這個主題的資訊（背景、相關文件、聯絡人…等），並進行規劃。然而想要一目瞭然地看到這個主題的所有任務的狀態，似乎沒有很方便的方法，因為每個任務最終都是寫在日誌頁上執行。為了解決這問題，我只好定期彙整各個專案具體做了哪些相關任務，再抄寫在週誌或月誌方便日後快速回顧。&lt;/p>
+&lt;p>總結我使用手寫子彈筆記本時，想記但很難記的事情主要有兩大類：&lt;/p>
+&lt;ol>
+&lt;li>個別任務的細節：具體是什麼事、會議或討論內容、相關的網址連結等&lt;/li>
+&lt;li>專案的視角：這個專案下面的任務有哪些、這些任務在哪些日子執行&lt;/li>
+&lt;/ol>
+&lt;p>我開始思考：究竟有什麼樣的數位工具，足夠彈性到讓我能像子彈筆記一樣隨時依自己的習慣、需求調整，同時又能方便管理各種資料？&lt;/p>
+&lt;h2 id="notion" >Notion
+&lt;span>
+&lt;a href="#notion">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>我在去年十二月透過「&lt;a href="https://productivitylabpro.com/notion-magic-bullet-journal/">搞定！比子彈筆記好用 100 倍的神奇整理術&lt;/a>」一文認識 August Bradley 的 PPV 系統後，眼界大開，從來沒想到 Notion 可以有這些運用方式。於是在公司年底佛心的一週連假期間，我參考 August Bradley 的 &lt;a href="https://www.youtube.com/watch?v=d93SGaf82OM&amp;amp;list=PLAl0gPKnL3V-Z59QCzscDEHIkptuYUOtB&amp;amp;ab_channel=AugustBradley-LifeDesign">YouTube 影片系列&lt;/a>，把原有的手寫子彈筆記系統都轉移到 Notion 上。&lt;/p>
+&lt;p>August Bradley 的 PPV 系統非常強大，包含了每日的待辦事項清單、定期回顧檢視、以及知識管理系統，完全解決了我前述的痛點。然而在我重度使用 Notion 一個月後，開始有了別的擔憂。&lt;/p>
+&lt;ol>
+&lt;li>Notion 的資料都在雲端：這對我個人而言最困擾的是一定要連網才能使用。我常常在電梯裡或是地下室突然有想法、待辦事項需要記錄，但因為連不上 Notion，只能先用別的軟體記下來，之後回到有網路的地方再複製回去。&lt;/li>
+&lt;li>Notion 的檔案格式是封閉的：這或許是它的優點，但對我而言也是個憂點。特化的資料格式讓 Notion 的功能非常靈活好用，但萬一哪天 Notion 收了，想要把存在裡面的資料轉移出來、匯入別的軟體繼續使用，恐怕體驗會和本來差非常多。或許有點杞人憂天，但隨著我用得愈來愈順手，可以預見我未來幾年的生活各面向都會記錄在裡面，要是哪天這些資料遺失了、或是不能照我習慣的方式取用，那損失可不是開玩笑的。&lt;/li>
+&lt;/ol>
+&lt;h2 id="obsidian" >Obsidian
+&lt;span>
+&lt;a href="#obsidian">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>今年一月左右，我從 YouTube 的自動推薦的影片裡認識了 &lt;a href="https://obsidian.md/">Obsidian&lt;/a>。Obsidian 官方主打的強項在個人知識管理，但深入兔子洞後，我發現它社群強大、plugin 眾多，更驚喜的是安裝適合的 plugin 可以做到我本來用 Notion 在做的事、完全取代我之前用 Notion 建立的 PPV 系統。同時它有我想要的一切優點：&lt;/p>
+&lt;ol>
+&lt;li>可以像子彈筆記本、Notion 一樣彈性組合自己想要的筆記流程&lt;/li>
+&lt;li>資料在本地端&lt;/li>
+&lt;li>檔案是非常常見的純文字 Markdown 格式，搜尋方便、適用 git 等版本控制軟體&lt;/li>
+&lt;/ol>
+&lt;p>於是現在我的任務管理和知識管理都在 Obsidian 上了。&lt;/p>
+&lt;p>在使用 &lt;a href="https://obsidian.md/">Obsidian&lt;/a> 進行任務管理前，需要先理解的它的侷限：Obsidian 的設計初衷是在你的本地端建立如同 wiki 一樣各筆記間可以互相連結的個人知識系統（Personal Knowledge Management），任務管理從來不是官方主打的核心功能。所有任務管理的功能都是靠非官方的社群人士另外開發 plugin 達到。所以如果你追求非常強大的任務管理，或許 &lt;a href="https://todoist.com/">Todoist&lt;/a>、&lt;a href="https://culturedcode.com/things/">Things 3&lt;/a>、&lt;a href="https://noteplan.co/">NotePlan&lt;/a> 、&lt;a href="https://todo.microsoft.com/">Microsoft To Do&lt;/a> 這類專門的軟體會更符合需求。&lt;/p>
+&lt;p>管理個人待辦事項一向是非常個人的領域，適合我的流程與工具不見得適合你。我慣用的工具經過最初的手寫子彈筆記、數位的 Notion 最後才到現在使用 Obsidian，因此本來也是用單純的筆記本（實體或是數位軟體）去管理待辦事項的人的思維應該和我會比較接近，也比較可能覺得這裡介紹的方式有趣。如果你已經有使用專門的任務管理軟體，那我的分享對你的參考價值恐怕就不太高了。&lt;/p>
+&lt;p>也因為 Obsidian 非常彈性靈活，剛開始很容易茫然、不知道從何開始，我自己從二月開始用到現在也調整了無數次。因此我想分享我現在 Obsidian 的使用方式，一方面留個紀錄（半年後我很可能又會有別的用法），另一方面也供剛好有類似需求的朋友參考。&lt;/p>
+&lt;p>如果你讀到這裡仍有興趣想了解我現在是怎麼使用 Obsidian 的話，歡迎繼續往下閱讀：&lt;a href="https://jsliang.com/zh/post/task-management-with-obsidian/">我如何用 Obsidian 管理任務清單&lt;/a>&lt;/p></description></item></channel></rss>

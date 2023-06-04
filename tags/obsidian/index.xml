@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on Jenny Liang (jsliang)</title><link>https://jsliang.com/tags/obsidian/</link><description>Jenny Liang (jsliang) (Obsidian)</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 02 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jsliang.com/tags/obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Task Management with Obsidian</title><link>https://jsliang.com/post/task-management-with-obsidian/</link><pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate><guid>https://jsliang.com/post/task-management-with-obsidian/</guid><description>&lt;p>&lt;img
+srcset="
+/post/task-management-with-obsidian/01_hu7f3e718fcacb385a6463057f375fbe25_978212_1006x0_resize_box_3.png,
+/post/task-management-with-obsidian/01_hu7f3e718fcacb385a6463057f375fbe25_978212_2012x0_resize_box_3.png 2x"
+src="https://jsliang.com/post/task-management-with-obsidian/01_hu7f3e718fcacb385a6463057f375fbe25_978212_1006x0_resize_box_3.png" width="1006" height="804" loading="lazy"/>&lt;/p>
+&lt;p>I&amp;rsquo;ve been experimenting with ways to organize my life with a note-taking app since I learned about &lt;a href="https://www.youtube.com/user/augustbradley">August Bradley&lt;/a>’s &lt;a href="https://www.youtube.com/watch?v=d93SGaf82OM&amp;amp;list=PLAl0gPKnL3V-Z59QCzscDEHIkptuYUOtB&amp;amp;ab_channel=AugustBradley-LifeDesign">PPV System&lt;/a> last December 2021. After fiddling with Obsidian for two months, I think I have finally settled on a simple system.&lt;/p>
+&lt;h1 id="what-is-obsidian" >What is Obsidian?
+&lt;span>
+&lt;a href="#what-is-obsidian">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&lt;a href="https://obsidian.md/">Obsidian&lt;/a> is a Markdown editor that specializes in personal knowledge management. As of writing, it is free for personal use but not open-source. It works cross-platform on Windows, macOS, Linux, iOS and Android.&lt;/p>
+&lt;p>I love Obsidian for its command palette, customizable hotkeys, vim key bindings and versatile community plugins. Together, these features make the user experience similar to that of &lt;a href="https://code.visualstudio.com/">Visual Studio Code&lt;/a>, the source code editor I use daily as a software engineer.&lt;/p>
+&lt;p>If you&amp;rsquo;re new to Obsidian, you can &lt;a href="https://obsidian.md/download">download&lt;/a> a copy and get yourself started with the official docs.&lt;/p>
+&lt;h1 id="overview-of-my-task-management-system" >Overview of my task management system
+&lt;span>
+&lt;a href="#overview-of-my-task-management-system">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>I experimented with various workflows and figured I had to make it dead simple for me. So now I&amp;rsquo;m settled with having only two types of task management notes in my vault:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Action Zone:&lt;/strong> a single note that shows today&amp;rsquo;s tasks, overdue tasks, this week&amp;rsquo;s tasks, and unscheduled tasks&lt;/li>
+&lt;li>&lt;strong>Topics:&lt;/strong> a dedicated note for each project/topic to keep the related information (documentation, stakeholder contacts, Slack channels, etc.), planned/completed tasks, and meeting/discussion notes.&lt;/li>
+&lt;/ol>
+&lt;h2 id="1-daily-tasks-in-the-action-zone-note" >1. Daily tasks in the &amp;ldquo;Action Zone&amp;rdquo; note
+&lt;span>
+&lt;a href="#1-daily-tasks-in-the-action-zone-note">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>My &amp;ldquo;Action Zone&amp;rdquo; note was inspired by August Bradley&amp;rsquo;s &lt;a href="https://youtu.be/lK_Ysf0Ko9E%E3%80%82">Notion Daily &amp;ldquo;Action Zone&amp;rdquo; Dashboard Design&lt;/a>. I open this note every morning to find out the tasks I scheduled for today.&lt;/p>
+&lt;figure>
+&lt;picture>&lt;img
+srcset="
+/post/task-management-with-obsidian/01_hu7f3e718fcacb385a6463057f375fbe25_978212_1006x0_resize_box_3.png,
+/post/task-management-with-obsidian/01_hu7f3e718fcacb385a6463057f375fbe25_978212_2012x0_resize_box_3.png 2x"
+src="https://jsliang.com/post/task-management-with-obsidian/01_hu7f3e718fcacb385a6463057f375fbe25_978212_1006x0_resize_box_3.png" title="The same &amp;#34;Action Zone&amp;#34; note in source mode (left) and reading mode (right)" width="1006" height="804" loading="lazy"/>&lt;/picture>
+&lt;figcaption>The same &amp;#34;Action Zone&amp;#34; note in source mode (left) and reading mode (right)&lt;/figcaption>
+&lt;/figure>
+&lt;p>The task lists in the &lt;strong>Action Zone&lt;/strong> note are generated dynamically. The actual tasks live in other topic notes and are collected here with the query language of the &lt;a href="https://github.com/schemar/obsidian-tasks">Tasks plugin&lt;/a>.&lt;/p>
+&lt;p>The following is one Tasks plugin query in my &lt;strong>Action Zone&lt;/strong> note that collects tasks for today:&lt;/p>
+&lt;pre>&lt;code>## Today's Tasks
+```tasks
+not done
+due today
+sort by description
+```
+&lt;/code>&lt;/pre>
+&lt;p>The query itself should be self-explanatory:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>not done&lt;/code> - tasks that aren&amp;rsquo;t done&lt;/li>
+&lt;li>&lt;code>due today&lt;/code> - tasks that are due today&lt;/li>
+&lt;li>&lt;code>sort by description&lt;/code> - sorted by the descriptions of tasks; I only use this sorting option in today&amp;rsquo;s task lists as this helps sort the tasks by time (I prepend the scheduled time in 24-hour format to the task description)&lt;/li>
+&lt;/ul>
+&lt;p>For more details on how to use the query language of Tasks plugin, please check out the official documentation: &lt;a href="https://schemar.github.io/obsidian-tasks/queries/">Queries - Obsidian Tasks&lt;/a>&lt;/p>
+&lt;p>Next, I review my overdue tasks. These are the tasks I planned to get done yesterday but are still unchecked today.&lt;/p>
+&lt;p>Query for overdue tasks:&lt;/p>
+&lt;pre>&lt;code>## Overdue Tasks
+```tasks
+not done
+due before today
+sort by due
+```
+&lt;/code>&lt;/pre>
+&lt;p>I would click the pencil icon at the end of each task to open the edit panel and manually change the value of the &lt;strong>Due&lt;/strong> field to today or some other day in the future. I love that I can type &lt;code>today&lt;/code>, &lt;code>next sat&lt;/code>, or even &lt;code>next month&lt;/code> and leave it to the plugin to resolve the date.&lt;/p>
+&lt;figure>
+&lt;picture>&lt;img
+srcset="
+/post/task-management-with-obsidian/02.gif,
+/post/task-management-with-obsidian/02.gif 2x"
+src="https://jsliang.com/post/task-management-with-obsidian/02.gif" title="Editing a task" width="698" height="770" loading="lazy"/>&lt;/picture>
+&lt;figcaption>Editing a task&lt;/figcaption>
+&lt;/figure>
+&lt;p>It might seem a lot of effort to edit the tasks one by one, but this is natural for me since I have done bullet journaling for more than two years. This process is just like the &lt;a href="https://bulletjournal.com/blogs/bulletjournalist/migration">migration&lt;/a> of bullet journaling – it makes me pause and consider each item:&lt;/p>
+&lt;ul>
+&lt;li>Not necessary? Just delete it.&lt;/li>
+&lt;li>Mandatory? Plan for it.
+&lt;ul>
+&lt;li>Urgent? Schedule it for today.&lt;/li>
+&lt;li>Not urgent? Move it to some other day in the future. Out of sight, out of mind. Just be mindful of what I can do at the moment.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>As for &amp;ldquo;This Week&amp;rsquo;s Tasks&amp;rdquo; and &amp;ldquo;Unscheduled Tasks&amp;rdquo; sections –- I hate to admit that I don&amp;rsquo;t look at them. I&amp;rsquo;m never good at getting ahead of my todo lists, and I rarely finish all I have planned and pick new ones from the future.&lt;/p>
+&lt;pre>&lt;code>## This Week's Tasks
+```tasks
+not done
+due after today
+due before in 1 week
+sort by due
+```
+## Unscheduled Tasks
+```tasks
+not done
+no due date
+sort by path
+```
+&lt;/code>&lt;/pre>
+&lt;p>When I open the &lt;strong>Action Zone&lt;/strong> note for review every morning, I also check my calendar and see if any meetings are not listed. Then, I would quickly open the related topic note with a hotkey and add the meeting task to the note. (The default hotkey for opening a note is &lt;code>Cmd&lt;/code> + &lt;code>O&lt;/code>, but I changed it to &lt;code>Cmd&lt;/code> + &lt;code>P&lt;/code> to make the experience more similar to Visual Studio Code.)&lt;/p>
+&lt;p>In the next section, I will explain what a topic note is like and how I add tasks to it.&lt;/p>
+&lt;h2 id="2-projects-and-tasks-in-topic-notes" >2. Projects and tasks in topic notes
+&lt;span>
+&lt;a href="#2-projects-and-tasks-in-topic-notes">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>For each task, there&amp;rsquo;s a hyperlink to the actual topic note where this task resides. Click the link to open that topic note in the same pane, or &lt;code>Cmd&lt;/code> + click to open the note in a new pane.&lt;/p>
+&lt;figure>
+&lt;picture>&lt;img
+srcset="
+/post/task-management-with-obsidian/06_hub097560247c0945edbb04d7f1550e334_110795_612x0_resize_box_3.png,
+/post/task-management-with-obsidian/06_hub097560247c0945edbb04d7f1550e334_110795_1224x0_resize_box_3.png 2x"
+src="https://jsliang.com/post/task-management-with-obsidian/06_hub097560247c0945edbb04d7f1550e334_110795_612x0_resize_box_3.png" title="For each task, there&amp;#39;s a hyperlink to the actual topic note where this task resides." width="612" height="227" loading="lazy"/>&lt;/picture>
+&lt;figcaption>For each task, there&amp;#39;s a hyperlink to the actual topic note where this task resides.&lt;/figcaption>
+&lt;/figure>
+&lt;p>I note down three things in each topic note: information of the topic, tasks, and meeting minutes.&lt;/p>
+&lt;h3 id="information" >Information
+&lt;span>
+&lt;a href="#information">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;p>This part is free-form: background, documentation, Slack channels, Trello Cards, Jira Epics, etc. Anything related to this topic that I want to note down.&lt;/p>
+&lt;h3 id="adding-and-managing-tasks-with-the-tasks-plugin" >Adding and managing tasks with the Tasks plugin
+&lt;span>
+&lt;a href="#adding-and-managing-tasks-with-the-tasks-plugin">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;p>I create all tasks via the &lt;a href="https://github.com/schemar/obsidian-tasks">Tasks plugin&lt;/a>. This ensures tasks show up on the &lt;strong>Action Zone&lt;/strong> note on the date I specified. In addition, the plugin automatically resolves dates from human-readable strings, e.g. &lt;code>today&lt;/code>, &lt;code>tomorrow&lt;/code>, &lt;code>next month&lt;/code>, which saves me from doing the math or struggling with date picker widgets.&lt;/p>
+&lt;p>You need to open the command palette with &lt;code>Cmd&lt;/code> + &lt;code>P&lt;/code>, then select and run the command: &lt;strong>Tasks: Create or edit task&lt;/strong> to open the Tasks plugin. I mapped this command to a hotkey &lt;code>Cmd&lt;/code> + &lt;code>T&lt;/code> to speed it up. This way, I can quickly create a task with my cursor on an empty line or a non-task paragraph or edit a task with my cursor on it, by hitting &lt;code>Cmd&lt;/code> + &lt;code>T&lt;/code>.&lt;/p>
+&lt;figure>
+&lt;picture>&lt;img
+srcset="
+/post/task-management-with-obsidian/03.gif,
+/post/task-management-with-obsidian/03.gif 2x"
+src="https://jsliang.com/post/task-management-with-obsidian/03.gif" title="Adding/editing tasks with hotkeys" width="743" height="772" loading="lazy"/>&lt;/picture>
+&lt;figcaption>Adding/editing tasks with hotkeys&lt;/figcaption>
+&lt;/figure>
+&lt;h4 id="recurring-tasks" >Recurring tasks
+&lt;span>
+&lt;a href="#recurring-tasks">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h4>&lt;p>I rely heavily on the &lt;a href="https://schemar.github.io/obsidian-tasks/getting-started/recurring-tasks/">Recurring Tasks&lt;/a> feature of the Tasks plugin. I create recurring meetings this way:&lt;/p>
+&lt;pre>&lt;code>- [ ] 10:00 weekly sync 🔁 every week on Wednesday 📅 2022-02-09
+&lt;/code>&lt;/pre>
+&lt;p>Or remind me of regular health checks:&lt;/p>
+&lt;pre>&lt;code>- [ ] kids teeth fluoridization 🔁 every 180 days 📅 2021-11-05
+- [ ] teeth scaling 🔁 every 180 days 📅 2022-01-27
+&lt;/code>&lt;/pre>
+&lt;p>Note that the next recurring task are not generated until you mark the current task as done. When a recurring task is marked done, the Tasks plugin copies the current task, inserts the copy one line above the current one and sets the due date of this new task to the next occurrence.&lt;/p>
+&lt;pre>&lt;code>- [ ] teeth scaling 🔁 every 180 days 📅 2022-07-27
+- [x] teeth scaling 🔁 every 180 days 📅 2022-01-28 ✅ 2022-01-28
+&lt;/code>&lt;/pre>
+&lt;h4 id="be-sure-to-toggle-a-task-with-the-tasks-plugin-command" >Be sure to toggle a task with the Tasks plugin command
+&lt;span>
+&lt;a href="#be-sure-to-toggle-a-task-with-the-tasks-plugin-command">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h4>&lt;p>There&amp;rsquo;s one thing I had to get used to when I first used Tasks plugin: you cannot toggle a task done with the &lt;a href="https://help.obsidian.md/How+to/Format+your+notes#Task+list">native Obsidian approach&lt;/a> in source mode. Instead, you must place your cursor on the task and run the &lt;strong>Tasks: Toggle task done&lt;/strong> command from the command palette. Otherwise, the Tasks plugin would not append the completion date or create another recurring task for you. So, to speed it up, I also added a hotkey: &lt;code>Cmd&lt;/code> + &lt;code>Shift&lt;/code> + &lt;code>Enter&lt;/code> for toggling a task done.&lt;/p>
+&lt;figure>
+&lt;picture>&lt;img
+srcset="
+/post/task-management-with-obsidian/04_hub2ebf7a063a7e8f7a98b28e5dd0504c1_153876_1090x0_resize_box_3.png,
+/post/task-management-with-obsidian/04_hub2ebf7a063a7e8f7a98b28e5dd0504c1_153876_2180x0_resize_box_3.png 2x"
+src="https://jsliang.com/post/task-management-with-obsidian/04_hub2ebf7a063a7e8f7a98b28e5dd0504c1_153876_1090x0_resize_box_3.png" title="My hotkeys setting for the Tasks plugin" width="1090" height="541" loading="lazy"/>&lt;/picture>
+&lt;figcaption>My hotkeys setting for the Tasks plugin&lt;/figcaption>
+&lt;/figure>
+&lt;h3 id="meeting-notes" >Meeting notes
+&lt;span>
+&lt;a href="#meeting-notes">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;p>I would create a task for every meeting. This reminds me of the meeting during the day and helps me recall that such a discussion happened on a particular day in the future.&lt;/p>
+&lt;p>How do I store my notes of meetings, then?&lt;/p>
+&lt;p>If the discussion is on Slack or Jira, I keep the permalink of the thread:&lt;/p>
+&lt;pre>&lt;code>- [x] Discuss with Amy regarding [ISSUE-123](https://jira.ticket.url) - [Slack](https://slack.archive.link) 📅 2022-03-01 ✅ 2022-03-01
+&lt;/code>&lt;/pre>
+&lt;p>I try to jot down a summary of the discussion whenever I can. I don&amp;rsquo;t worry if I fail to summarize since I still have the link to refer to the full context.&lt;/p>
+&lt;p>How about notes taken during video/audio calls?&lt;/p>
+&lt;p>When I first tried out Obsidian, I created one note for each video/audio call and linked each note back to the topic note. For example, the &lt;code>[[weekly sync 2022-03-23]]&lt;/code> in the following task links to another note with the title &amp;ldquo;weekly sync 2022-03-23&amp;rdquo;:&lt;/p>
+&lt;pre>&lt;code>- [x] 10:00-11:00 weekly sync [[weekly sync 2022-03-23]] 🔁 every week on Wednesday 📅 2022-03-23 ✅ 2022-03-23
+&lt;/code>&lt;/pre>
+&lt;p>After working like this for two weeks, I was not too fond of the constant note-jumping when reviewing discussions on the same topic. So I decided to merge those notes to the topic note, indented under respective tasks. Having all notes in one file makes it easier to look back.&lt;/p>
+&lt;pre>&lt;code>- [ ] 10:00-11:00 weekly sync 🔁 every week on Wednesday 📅 2022-03-30
+- 123
+- 456
+- 789
+- [x] 10:00-11:00 weekly sync 🔁 every week on Wednesday 📅 2022-03-23 ✅ 2022-03-23
+- 1
+- 2
+- 2a
+- 2b
+- 3
+&lt;/code>&lt;/pre>
+&lt;h4 id="zooming-in-the-zoom-plugin" >Zooming in: the Zoom plugin
+&lt;span>
+&lt;a href="#zooming-in-the-zoom-plugin">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h4>&lt;p>The downside of having all notes in one file is distractions. I prefer to take notes on blank files during meetings as it helps me stay focused. I tried starting from a new file and then cutting &amp;amp; pasting notes from the new file to the topic note after each meeting &amp;ndash; until the &lt;a href="https://github.com/vslinko/obsidian-zoom">Zoom plugin&lt;/a> came to the rescue.&lt;/p>
+&lt;p>The Zoom plugin enables you to zoom in to a certain level of the document like &lt;a href="https://workflowy.com/">Workflowy&lt;/a> and &lt;a href="https://roamresearch.com/">Roam Research&lt;/a> do. There will be a breadcrumb at the top of the note to track where you are. With this plugin, I can zoom in to the current meeting task and filter out other parts of the note without leaving the file.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Zoom in:&lt;/strong> place your cursor on the item to zoom in, then press &lt;code>Cmd&lt;/code> + &lt;code>.&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Zoom out:&lt;/strong> press &lt;code>Cmd&lt;/code> + &lt;code>Shift&lt;/code> + &lt;code>.&lt;/code> or click the path in breadcrumbs&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img
+srcset="
+/post/task-management-with-obsidian/05.gif,
+/post/task-management-with-obsidian/05.gif 2x"
+src="https://jsliang.com/post/task-management-with-obsidian/05.gif" width="698" height="443" loading="lazy"/>&lt;/p>
+&lt;h1 id="wrapping-up" >Wrapping up
+&lt;span>
+&lt;a href="#wrapping-up">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>That&amp;rsquo;s it &amp;ndash; my task management system in Obsidian.&lt;/p>
+&lt;p>I love how simple and powerful it is. With only two types of notes, I manage more tasks and record more details in a more organized pattern than I could do with a handwritten journal.&lt;/p>
+&lt;p>Aside from task management, I also use Obsidian for journaling and knowledge management. I&amp;rsquo;m still exploring my workflows, though. I will share them once I find ones that work for me.&lt;/p>
+&lt;hr>
+&lt;p>Also published in: &lt;a href="https://forum.obsidian.md/t/35118">Simple task management workflow (w/o daily notes) - Share &amp;amp; showcase - Obsidian Forum&lt;/a>&lt;/p></description></item></channel></rss>
